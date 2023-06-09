@@ -19,4 +19,6 @@ O Instituto Glória é uma empresa que combate e reduz todo o tipo de violência
 ### Linhas de Código | Git Flow
 Consulte a [Documentação](https://docs.google.com/document/d/1YZssNIundGM-g023CLtZ_bH4cHC9dkk4sGn5a8XbNFg/edit?usp=sharing) feita para saber mais sobre Git, Git Flow, comandos de código, política de commits e pull request.
 
+### Modelagem 3D da Glória
+Consulte o [arquivo da modelagem](https://drive.google.com/file/d/1qQunUzHoYMgX7urhmsdhiOxBmdBip2mc/view?usp=drive_link) da Glória.
 
