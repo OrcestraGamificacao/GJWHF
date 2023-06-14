@@ -6,6 +6,11 @@ body {
   width: 90%;
   margin: 40px auto;
   text-align: center;
+  border-radius: 2rem;
+  border-color: black;
+  background-color: #ffca68;
+  margin-top: 2%;
+  padding-bottom: 3%;
 }
 
 button {
@@ -18,17 +23,16 @@ button {
   height: 70px;
   color: #fff;
   border-radius: 5px;
-  padding: 10px 25px;
-  font-family: 'Lato', sans-serif;
+  padding: 20px 25px;
+  font-family: "Lato", sans-serif;
   font-weight: 500;
   background: transparent;
   cursor: pointer;
   transition: all 0.3s ease;
   position: relative;
   display: inline-block;
-  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
-    7px 7px 20px 0px rgba(0, 0, 0, .1),
-    4px 4px 5px 0px rgba(0, 0, 0, .1);
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
   outline: none;
 }
 
@@ -36,6 +40,7 @@ button {
   .custom-btn {
     font-size: 14px;
     padding: 8px 15px;
+    margin-top: 0.2em;
   }
 }
 
@@ -83,7 +88,7 @@ button {
 }
 
 .btn-1:hover {
-  background: transparent;
+  background: #f0ecfc;
 }
 
 .btn-1 span:hover {
@@ -116,4 +121,82 @@ button {
 
 .btn-1 span:hover:after {
   width: 100%;
+}
+
+.buttons {
+  padding-top: 30%;
+}
+
+@media screen and (max-width: 768px) {
+  .buttons {
+    padding-top: 90%;
+    padding-bottom: 4%;
+  }
+}
+
+.text-button {
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  line-height: 1.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: black;
+
+}
+
+.text-question{
+    padding: 2em;
+    padding-top: 1em;
+    margin-left: 10em;
+    margin-right: 10em;
+    background-color: white;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    line-height: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    font-weight: 800;
+    border-radius: 15px;
+}
+
+.gloria{
+  width: 30%;
+  margin-top: -27%;
+  margin-bottom: 2.5%;
+}
+
+@media screen and (max-width: 768px) {
+  .gloria{
+    width: 60%;
+    margin-top: -0%;
+  }
+  .frame{
+    margin-top: 7%;
+  }
+  .buttons{
+    padding-top: 10%;
+  }
+  .text-question{
+    margin: 2em;
+    width: 70%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    line-height: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align:justify center;
+    margin-top: 5%;
+  }
 }
