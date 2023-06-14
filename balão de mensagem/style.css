@@ -51,6 +51,16 @@ button {
   height: 100%;
 }
 
+.gretting{
+    max-height: fit-content;
+    margin-bottom: 1%;
+}
+
+.text1{
+    margin-top: -2%;
+    max-height: fit-content;
+}
+
 @media screen and (max-width: 768px) {
   .custom-btn {
     font-size: 16px;
@@ -59,4 +69,14 @@ button {
   }
 }
 
-/* Está faltando a diminuição do espaçamento entre as frases!
+@media screen and (max-width: 768px) {
+    .gretting{
+        max-height: fit-content;
+        margin-bottom: 1%;
+    }
+   
+    .text1{
+        margin-top: -4.5%;
+        max-height: fit-content;
+    }
+}
