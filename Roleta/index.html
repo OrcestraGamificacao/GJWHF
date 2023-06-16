@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Roleta</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js"></script>
+</head>
+
+<body>   
+    <div class="folha">
+        <div class="seta"></div>
+        <div class="roleta" id="roleta">
+            <div class="box1"></div>
+            <div class="box2"></div>
+            <div class="box3"></div>
+            <div class="box4"></div>
+            <div class="box5"></div>
+            <div class="box6"></div>
+            <div class="box7"></div>
+            <div class="box8"></div>
+            
+            <div class="tema tema1" id="opt1">Tema 1</div>
+            <div class="tema tema2" id="opt0">Tema 2</div>
+            <div class="tema tema3" id="opt7">Tema 3</div>
+            <div class="tema tema4" id="opt6">Tema 4</div>
+            <div class="tema tema5" id="opt5">Tema 1</div>
+            <div class="tema tema6" id="opt4">Tema 2</div>
+            <div class="tema tema7" id="opt3">Tema 3</div>
+            <div class="tema tema8" id="opt2">Tema 4</div>
+            
+            <div id="btnPlay" class="btnRoleta play" onclick="playOnClick()">
+                <img src="./assets/gloria-heart.png" alt="Logo de Coração do Intituto Glória" class="btnRoleta imagem">
+            </div>
+            <div id="btnStop" class="btnRoleta stop" onclick="stopOnClick()">
+                <img src="./assets/gloria-heart.png" alt="Logo de Coração do Intituto Glória" class="btnRoleta imagem">
+            </div>
+        </div>
+    </div>
+    <p id="msgGanhador"></p>
+</body>
+
+</html>
