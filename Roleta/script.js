@@ -1,7 +1,7 @@
 //4 temas sorteados na roleta
 //banco com 10 perguntas pra cada tema
 //cada usuário responde apenas 5 perguntas do banco
-//45 135 225 315
+
 
 function playOnClick() {   
     globalObjects = {
