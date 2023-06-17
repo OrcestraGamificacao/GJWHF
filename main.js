@@ -1,3 +1,15 @@
+class Questao {
+    constructor(numQuestao, pergunta, alternativaA, alternativaB, alternativaC, resposta){
+        this.numQuestao = numQuestao
+        this.pergunta = pergunta
+        this.alternativaA = alternativaA
+        this.alternativaB = alternativaB
+        this.alternativaC = alternativaC
+        this.resposta = resposta
+    }
+}
+
+
 let instrucoes = document.querySelector('#instrucoes')
 let aviso = document.querySelector('#aviso')
 let respostaEsta = document.querySelector('#respostaEsta')
@@ -14,79 +26,27 @@ let c = document.querySelector('#c')
 let articleQuestoes = document.querySelector('.questoes')
 let alternativas = document.querySelector('#alternativas')
 
-const q0 = {
-    numQuestao: 0,
-    pergunta: 'Pergunta',
-    alternativaA: 'Alternativa A',
-    alternativaB: 'Alternativa B',
-    alternativaC: 'Alternativa C',
-    correta: 'Alternativa B'
-}
+const q0 = new Questao(0, 'Pergunta', 'Alternativa A', 'Alternativa B', 'Alternativa C', 'Alternativa B')
 
-const q1 = {
-    numQuestao: 1,
-    pergunta: 'Gamificação é:',
-    alternativaA: 'Jogo',
-    alternativaB: 'Juntar pontos',
-    alternativaC: 'Aplicar elementos de jogos em contextos reais',
-    correta: 'Aplicar elementos de jogos em contextos reais'
-}
+const q1 = new Questao(1, 'Gamificação é:', 'Jogo', 'Juntar pontos', 'Aplicar elementos de jogos em contextos reais', 'Aplicar elementos de jogos em contextos reais')
 
-const q2 = {
-    numQuestao: 2,
-    pergunta: 'A Diretoria de Operações da Orc é conhecida como:',
-    alternativaA: 'Diproj',
-    alternativaB: 'TOps',
-    alternativaC: 'Dirop',
-    correta: 'TOps'
-}
+const q2 = new Questao(2, 'A Diretoria de Operações da Orc é conhecida como:', 'Diproj', 'TOps', 'DirOp', 'TOps')
 
-const q3 = {
-    numQuestao: 3,
-    pergunta: 'Onde comer no Gama?',
-    alternativaA: 'Salgado de 1,50',
-    alternativaB: 'O belisco',
-    alternativaC: 'RU',
-    correta: 'Salgado de 1,50'
-}
+const q3 = new Questao(3, 'Onde comer no Gama?', 'Salgado de 1,50', 'O belisco', 'RU', 'Salgado de 1,50')
 
-const q4 = {
-    numQuestao: 4,
-    pergunta: 'Quantas Anas tem na Orc?',
-    alternativaA: '3',
-    alternativaB: '4',
-    alternativaC: '5',
-    correta: '4'
-}
+const q4 = new Questao(4, 'Quantas Anas tem na Orc?', '3', '4', '5', '4')
 
-const q5 = {
-    numQuestao: 5,
-    pergunta: 'Quantos membros tem na Orc?',
-    alternativaA: '42',
-    alternativaB: '41',
-    alternativaC: '43',
-    correta: '42'
-}
+const q5 = new Questao(5, 'Quantos membros tem na Orc?', '42', '41', '43', '42')
 
 const questoes = [q0, q1, q2, q3, q4, q5]
 
 let numero = document.querySelector('#numero')
 let total = document.querySelector('#total')
 
-numero.textContent = q1.numQuestao
-
 let totalDeQuestoes = (questoes.length) - 1
 total.textContent = totalDeQuestoes
 
-numQuestao.textContent = q1.numQuestao
-pergunta.textContent = q1.pergunta
-a.textContent = q1.alternativaA
-b.textContent = q1.alternativaB
-c.textContent = q1.alternativaC
-
-a.setAttribute('value', '1A')
-b.setAttribute('value', '1B')
-c.setAttribute('value', '1C')
+proximaQuestao(1)
 
 function proximaQuestao(nQuestao) {
     numero.textContent = nQuestao
@@ -119,7 +79,7 @@ function verificarSeAcertou(nQuestao, resposta) {
     
     let numeroDaQuestao = nQuestao.value
     let respostaEscolhida = resposta.textContent
-    let certa = questoes[numeroDaQuestao].correta
+    let certa = questoes[numeroDaQuestao].resposta
 
     if (respostaEscolhida == certa) {
         pontos += 10
