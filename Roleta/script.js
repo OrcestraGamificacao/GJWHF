@@ -13,16 +13,16 @@ function playOnClick() {
     globalObjects.timeInitial = new Date();
     globalObjects.btnPlay.style.visibility = "hidden";
     globalObjects.btnStop.style.visibility = "visible";
-    globalObjects.roleta.style.animation = "roleta 2s linear infinite";
+    globalObjects.roleta.style.animation = "roleta 1s linear infinite";
 }
 
 function calculate() {
     var timeFinal = new Date();
     var tempo = Math.abs(timeFinal - globalObjects.timeInitial);
-    var box = parseInt(tempo / 250);
-    if (box > 7)
+    var box = parseInt(tempo / 125);
+    if (box > 7){
         box = parseInt(box % 8);
-    
+    }
     console.log(globalObjects.timeInitial, timeFinal, tempo, box, (tempo / 250));
     return box;
 }
