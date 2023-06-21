@@ -1,0 +1,223 @@
+.folha {
+    position: relative;
+    background-color: #cdcdcd;
+    width: 600px;
+    height: 600px;
+    padding: 50px;
+}
+
+.roleta {
+    border: 20px solid #F0DBEF;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+path {
+  fill: transparent;
+}
+
+.seta {
+    position: absolute;
+    left: 50.4%;
+    border-bottom: 0px solid transparent;
+    border-left: 18px solid transparent;
+    border-right: 18px solid transparent;
+    border-top: 65px solid #624eb4;
+    border-radius: 20px;
+    width: 0;
+    height: 0;
+    z-index: 999;
+}
+
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6,
+.box7,
+.box8 {
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+.box1 {
+    border-top: 150px solid transparent;
+    border-right: 150px solid transparent;
+    border-bottom: 150px solid #612368;
+    border-left: 150px solid #612368;
+}
+
+.box5 {
+    border-top: 150px solid #FFCA05;
+    border-right: 150px solid #FFCA05;
+    border-bottom: 150px solid transparent;
+    border-left: 150px solid transparent;
+}
+
+.box2 {
+    border-top: 150px solid #F2E744;
+    border-right: 150px solid transparent;
+    border-bottom: 150px solid transparent;
+    border-left: 150px solid #F2E744;
+    left: 50%;
+}
+
+.box6 {
+    border-top: 150px solid transparent;
+    border-right: 150px solid #BC88BC;
+    border-bottom: 150px solid #BC88BC;
+    border-left: 150px solid transparent;
+    left: 50%
+}
+
+.box4 {
+    border-top: 150px solid transparent;
+    border-right: 150px solid transparent;
+    border-bottom: 150px solid #FFCA05;
+    border-left: 150px solid #FFCA05;
+    top: 50%;
+    left: 50%;
+}
+
+.box8 {
+    border-top: 150px solid #612368;
+    border-right: 150px solid #612368;
+    border-bottom: 150px solid transparent;
+    border-left: 150px solid transparent;
+    top: 50%;
+    left: 50%;
+}
+
+.box3 {
+    border-top: 150px solid #BC88BC;
+    border-right: 150px solid transparent;
+    border-bottom: 150px solid transparent;
+    border-left: 150px solid #BC88BC;
+    top: 50%;
+}
+
+.box7 {
+    border-top: 150px solid transparent;
+    border-right: 150px solid #F2E744;
+    border-bottom: 150px solid #F2E744;
+    border-left: 150px solid transparent;
+    top: 50%;
+}
+
+@keyframes roleta {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+.tema {
+    position: absolute;
+    z-index: 999;
+    font-size: 27px;
+    font-weight: bold;
+    color: white;
+}
+
+.tema1 {
+    top: 34%;
+    left: 8%;
+    transform: rotate(25deg);
+}
+
+.tema2 {
+    top: 15%;
+    left: 28%;
+    transform: rotate(65deg);
+}
+
+.tema3 {
+    top: 15%;
+    left: 57%;
+    transform: rotate(110deg);
+}
+
+.tema4 {
+    top: 33%;
+    right: 10%;
+    transform: rotate(150deg);
+}
+
+.tema5 {
+    top: 60%;
+    right: 10%;
+    transform: rotate(205deg);
+}
+
+.tema6 {
+    top: 80%;
+    right: 28%;
+    transform: rotate(245deg);
+}
+
+.tema7 {
+    top: 80%;
+    left: 30%;
+    transform: rotate(300deg);
+}
+
+.tema8 {
+    top: 60%;
+    left: 10%;
+    transform: rotate(335deg);
+}
+
+.btnRoleta {
+    position: absolute;
+    background-color: #F0DBEF;
+    cursor: pointer;
+    top:40%;
+    left: 41.5%;
+    border-radius: 50%;
+    height: 18%;
+    width: 18%;
+}
+
+.imagem {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+
+    border: 0px;
+    cursor: pointer;
+}
+
+.play {
+    z-index: 999;
+    animation: pulsar 2s infinite;
+}
+
+.play:hover{
+    animation: pulsar paused;
+}
+
+.stop {
+    animation: pulsar paused;
+}
+
+@keyframes pulsar {
+    0% {
+      transform: scale(1);
+    }
+    70% {
+      transform: scale(1.2);
+    }
+      100% {
+      transform: scale(1);
+    }
+  }
