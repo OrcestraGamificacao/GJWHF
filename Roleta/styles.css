@@ -1,9 +1,15 @@
+body{
+    height: 100vh; 
+    background: #bc88bc;
+}
+
 .folha {
     position: relative;
-    background-color: #cdcdcd;
+    left: 50%;
+    transform: translate(-50%);
     width: 600px;
     height: 600px;
-    padding: 50px;
+    padding: 20px 40px 60px 40px;
 }
 
 .roleta {
