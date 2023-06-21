@@ -1,17 +1,6 @@
+//Buscando o tema sorteado e pegando HTML
 const temaSorteado = localStorage.getItem('temaSorteado')
 console.log(temaSorteado)
-
-class Questao {
-    constructor(numQuestao, pergunta, alternativaA, alternativaB, alternativaC, resposta){
-        this.numQuestao = numQuestao
-        this.pergunta = pergunta
-        this.alternativaA = alternativaA
-        this.alternativaB = alternativaB
-        this.alternativaC = alternativaC
-        this.resposta = resposta
-    }
-}
-
 
 let instrucoes = document.querySelector('#instrucoes')
 let aviso = document.querySelector('#aviso')
@@ -29,6 +18,7 @@ let c = document.querySelector('#c')
 let articleQuestoes = document.querySelector('.questoes')
 let alternativas = document.querySelector('#alternativas')
 
+//Declarando questões
 const q0 = new Questao(0, 'Pergunta', 'Alternativa A', 'Alternativa B', 'Alternativa C', 'Alternativa B')
 
 const q1 = new Questao(1, 'Gamificação é:', 'Jogo', 'Juntar pontos', 'Aplicar elementos de jogos em contextos reais', 'Aplicar elementos de jogos em contextos reais')

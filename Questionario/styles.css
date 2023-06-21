@@ -9,7 +9,8 @@
 body {
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(#bc88bc, #ffffff);
+    background: rgb(97,35,104);
+    background: radial-gradient(circle, rgba(97,35,104,1) 0%, rgba(188,136,188,1) 100%);
     color: #fff;
 }
 

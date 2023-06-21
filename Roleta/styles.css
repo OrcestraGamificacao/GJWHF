@@ -1,6 +1,7 @@
 body{
     height: 100vh; 
-    background: #bc88bc;
+    background: rgb(97,35,104);
+    background: radial-gradient(circle, rgba(97,35,104,1) 0%, rgba(188,136,188,1) 100%);
 }
 
 .folha {
