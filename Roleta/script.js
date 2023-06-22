@@ -41,5 +41,8 @@ function stopOnClick() {
     'O tema sorteado foi: ' + boxWinner.innerText // Alterado de innerHTML para innerText
 }
 
+const tempos = [3000, 3250 , 3500, 3750, 4000]
+let tempoSorteado = tempos[Math.floor(Math.random()*tempos.length)]
+
 // Esperar 3 segundos antes de chamar a função stopOnClick
-setTimeout(stopOnClick, 3000)
+setTimeout(stopOnClick, tempoSorteado)
