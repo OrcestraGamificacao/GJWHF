@@ -1,18 +1,6 @@
 const temaSorteado = localStorage.getItem('temaSorteado')
 console.log(temaSorteado)
 
-const q0 = new Questao(0, 'Pergunta', 'Alternativa A', 'Alternativa B', 'Alternativa C', 'Alternativa B')
-
-const q1 = new Questao(1, 'Gamificação é:', 'Jogo', 'Juntar pontos', 'Aplicar elementos de jogos em contextos reais', 'sim', 'Aplicar elementos de jogos em contextos reais')
-
-const q2 = new Questao(2, 'A Diretoria de Operações da Orc é conhecida como:', 'Diproj', 'TOps', 'DirOp', 'sim', 'TOps')
-
-const q3 = new Questao(3, 'Onde comer no Gama?', 'Salgado de 1,50', 'O belisco', 'RU', 'sim', 'Salgado de 1,50')
-
-const q4 = new Questao(4, 'Quantas Anas tem na Orc?', '3', '4', '5', 'sim', '4')
-
-const q5 = new Questao(5, 'Quantos membros tem na Orc?', '42', '41', '43', 'sim', '42')
-
 let enunciado = document.getElementById('#pergunta')
 
 let a = document.querySelector('#a')
@@ -20,10 +8,37 @@ let b = document.querySelector('#b')
 let c = document.querySelector('#c')
 let d = document.querySelector('#d')
 
-const questoes = [q0, q1, q2, q3, q4, q5]
+let questoesTema = [] // todas as questoes do tema
+let questoes = [] // questoes sorteadas
+let questaoExtra
+questoes[0] = q0 // usei a q0 só para o index ir acompanhando o numero da questao
 const totalDeQuestoes = 5
 
-let pontos = 0
+if (temaSorteado == 'Tecnologia'){
+    questoesTema = tecQuestoes
+    questaoExtra = tecExtra
+} else if (temaSorteado == 'Inovação'){
+    questoesTema = inovQuestoes
+    questaoExtra = inovExtra
+} else if (temaSorteado == 'Educação'){
+    questoesTema = eduQuestoes
+    questaoExtra = eduExtra
+} else if (temaSorteado == 'Saúde'){
+    questoesTema = saudeQuestoes
+    questaoExtra = saudeExtra
+}
+
+while (questoes.length < 7){ // sorteio das questoes 
+    let questaoSorteada = questoesTema[Math.floor(Math.random() * questoesTema.length)]
+
+    if (questoes.indexOf(questaoSorteada) == -1){  // confere se a questao ja foi sorteada
+        questoes.push(questaoSorteada)
+    }
+}
+
+questoes[6] = questaoExtra // a questao extra nao entra no sorteio
+
+console.log(questoes)
 
 proximaQuestao(1)
 
@@ -52,7 +67,7 @@ function verificarSeAcertou(selecao) {
     let respostaCerta = questoes[numInt].resposta
     
     if (respostaCerta == respostaSelecionada) {
-        pontos += 1
+        Usuario.pontuacao += 1
         console.log('certo')
     } else {
         console.log('errado')
@@ -62,10 +77,12 @@ function verificarSeAcertou(selecao) {
         proxima = numInt + 1
         if (proxima <= totalDeQuestoes) {
             proximaQuestao(proxima)
-        }
-        else {
+        } else if (proxima > totalDeQuestoes && Usuario.pontuacao == 4) {
+            proximaQuestao(6)
             console.log('fim')
-            console.log('pontos: '+pontos)
+        } else {
+            console.log('fim')
+            console.log('pontos: '+ Usuario.pontuacao)
         }
     }, 250)
 
