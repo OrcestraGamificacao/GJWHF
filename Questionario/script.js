@@ -36,8 +36,6 @@ while (questoes.length < 7){ // sorteio das questoes
     }
 }
 
-questoes[6] = questaoExtra // a questao extra nao entra no sorteio
-
 console.log(questoes)
 
 proximaQuestao(1)

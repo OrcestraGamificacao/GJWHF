@@ -48,8 +48,6 @@ const tecQ9 = new Questao(9, 'texto introdutorio - tecnologia 9', 'Pergunta tecn
 
 const tecQ10 = new Questao(10, 'texto introdutorio - tecnologia 10', 'Pergunta tecnologia 10', '10a - tecnologia', '10b - tecnologia', '10c - tecnologia', '10d - tecnologia (certa)', '10d - tecnologia (certa)', 'Você acertou!', 'Você errou!')
 
-const tecExtra = new Questao(11, 'texto introdutorio', 'Pergunta extra', 'A', 'B', 'C', 'D', 'D', 'Você acertou!', 'Você errou!')
-
 const tecQuestoes = [q0, tecQ1, tecQ2, tecQ3, tecQ4, tecQ5, tecQ6, tecQ7, tecQ8, tecQ9, tecQ10]
 
 
@@ -74,8 +72,6 @@ const inovQ8 = new Questao(8, 'texto introdutorio - inovaçao 8', 'Pergunta inov
 const inovQ9 = new Questao(9, 'texto introdutorio - inovaçao 9', 'Pergunta inovaçao 9', '9a - inovaçao', '9b - inovaçao', '9c - inovaçao (certa)', '9d - inovaçao', '9c - inovaçao (certa)', 'Você acertou!', 'Você errou!')
 
 const inovQ10 = new Questao(10, 'texto introdutorio - inovaçao 10', 'Pergunta inovaçao 10', '10a - inovaçao', '10b - inovaçao', '10c - inovaçao', '10d - inovaçao (certa)', '10d - inovaçao (certa)', 'Você acertou!', 'Você errou!')
-
-const inovExtra = new Questao(11, 'texto introdutorio', 'Pergunta extra', 'A', 'B', 'C', 'D', 'D', 'Você acertou!', 'Você errou!')
 
 const inovQuestoes = [q0, inovQ1, inovQ2, inovQ3, inovQ4, inovQ5, inovQ6, inovQ7, inovQ8, inovQ9, inovQ10]
 
@@ -102,8 +98,6 @@ const eduQ9 = new Questao(9, 'texto introdutorio - educaçao 9', 'Pergunta educa
 
 const eduQ10 = new Questao(10, 'texto introdutorio - educaçao 10', 'Pergunta educaçao 10', '10a - educaçao', '10b - educaçao', '10c - educaçao', '10d - educaçao (certa)', '10d - educaçao (certa)', 'Você acertou!', 'Você errou!')
 
-const eduExtra = new Questao(11, 'texto introdutorio', 'Pergunta extra', 'A', 'B', 'C', 'D', 'D', 'Você acertou!', 'Você errou!')
-
 const eduQuestoes = [q0, eduQ1, eduQ2, eduQ3, eduQ4, eduQ5, eduQ6, eduQ7, eduQ8, eduQ9, eduQ10]
 
 
@@ -128,7 +122,5 @@ const saudeQ8 = new Questao(8, 'texto introdutorio - saude 8', 'Pergunta saude 8
 const saudeQ9 = new Questao(9, 'texto introdutorio - saude 9', 'Pergunta saude 9', '9a - saude', '9b - saude', '9c - saude (certa)', '9d - saude', '9c - saude (certa)', 'Você acertou!', 'Você errou!')
 
 const saudeQ10 = new Questao(10, 'texto introdutorio - saude 10', 'Pergunta saude 10', '10a - saude', '10b - saude', '10c - saude', '10d - saude (certa)', '10d - saude (certa)', 'Você acertou!', 'Você errou!')
-
-const saudeExtra = new Questao(11, 'texto introdutorio', 'Pergunta extra', 'A', 'B', 'C', 'D', 'D', 'Você acertou!', 'Você errou!')
 
 const saudeQuestoes = [q0, saudeQ1, saudeQ2, saudeQ3, saudeQ4, saudeQ5, saudeQ6, saudeQ7, saudeQ8, saudeQ9, saudeQ10]
