@@ -23,7 +23,7 @@ function playOnClick() {
 function calculate() {
   var timeFinal = new Date()
   var tempo = Math.abs(timeFinal - globalObjects.timeInitial)
-  var box = parseInt(tempo / 125)
+  var box = parseInt(tempo / 250)
   if (box > 7) {
     box = parseInt(box % 8)
   }
