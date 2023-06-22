@@ -1,19 +1,16 @@
-import './styles/App.css';
+import "./styles/App.css";
+import Box_Apresentacao from "./components/Box_Apresentacao";
 
 function App() {
   return (
     <div className="App">
       <div className="background">
-        <div className="rodape"></div>
+        <Box_Apresentacao />
       </div>
-      <div className="back-text-apresentation">
-          <h3>Olá, eu sou a Gloria, uma inteligência artificial, uma robozinha, focada em acabar com a violência contra mulheres e meninas!</h3>
-          <h4>Oferecimento</h4>
-          <h5>Orc'estra Gamificação | Instituto Glória | Na Praia</h5>
-          <div className="model-3d"></div>
-      </div>
+      
     </div>
   );
 }
 
 export default App;
+
