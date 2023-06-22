@@ -10,25 +10,20 @@ let d = document.querySelector('#d')
 
 let questoesTema = [] // todas as questoes do tema
 let questoes = [] // questoes sorteadas
-let questaoExtra
 questoes[0] = q0 // usei a q0 só para o index ir acompanhando o numero da questao
 const totalDeQuestoes = 5
 
 if (temaSorteado == 'Tecnologia'){
     questoesTema = tecQuestoes
-    questaoExtra = tecExtra
 } else if (temaSorteado == 'Inovação'){
     questoesTema = inovQuestoes
-    questaoExtra = inovExtra
 } else if (temaSorteado == 'Educação'){
     questoesTema = eduQuestoes
-    questaoExtra = eduExtra
 } else if (temaSorteado == 'Saúde'){
     questoesTema = saudeQuestoes
-    questaoExtra = saudeExtra
 }
 
-while (questoes.length < 7){ // sorteio das questoes 
+while (questoes.length < 6){ // sorteio das questoes 
     let questaoSorteada = questoesTema[Math.floor(Math.random() * questoesTema.length)]
 
     if (questoes.indexOf(questaoSorteada) == -1){  // confere se a questao ja foi sorteada
@@ -69,16 +64,12 @@ function verificarSeAcertou(selecao) {
         console.log('certo')
         //mudar a cor do botão se a pessoa acertou
         selecao.style.backgroundColor = '#6aea6a'
-
-
     } else {
         console.log('errado')
         //mudar a cor do botão se a pessoa errou
         selecao.style.backgroundColor = '#ff6961'
 
-    }
-
-    
+    } 
 
     setTimeout(function() {
         proxima = numInt + 1
@@ -86,9 +77,6 @@ function verificarSeAcertou(selecao) {
             //voltar a cor original do botão após passar a pergunta
             selecao.style.backgroundColor = '';
             proximaQuestao(proxima)
-        } else if (proxima > totalDeQuestoes && Usuario.pontuacao == 4) {
-            proximaQuestao(6)
-            console.log('fim')
         } else {
             console.log('fim')
             console.log('pontos: '+ Usuario.pontuacao)
