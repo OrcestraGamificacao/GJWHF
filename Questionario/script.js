@@ -69,13 +69,24 @@ function verificarSeAcertou(selecao) {
     if (respostaCerta == respostaSelecionada) {
         Usuario.pontuacao += 1
         console.log('certo')
+        //mudar a cor do botão se a pessoa acertou
+        selecao.style.backgroundColor = '#6aea6a'
+
+
     } else {
         console.log('errado')
+        //mudar a cor do botão se a pessoa errou
+        selecao.style.backgroundColor = '#ff6961'
+
     }
+
+    
 
     setTimeout(function() {
         proxima = numInt + 1
         if (proxima <= totalDeQuestoes) {
+            //voltar a cor original do botão após passar a pergunta
+            selecao.style.backgroundColor = '';
             proximaQuestao(proxima)
         } else if (proxima > totalDeQuestoes && Usuario.pontuacao == 4) {
             proximaQuestao(6)
