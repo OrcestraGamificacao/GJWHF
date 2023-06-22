@@ -67,17 +67,17 @@ path {
 }
 
 .box2 {
-    border-top: 150px solid #F2E744;
+    border-top: 150px solid #BC88BC;
     border-right: 150px solid transparent;
     border-bottom: 150px solid transparent;
-    border-left: 150px solid #F2E744;
+    border-left: 150px solid #BC88BC;
     left: 50%;
 }
 
 .box6 {
     border-top: 150px solid transparent;
-    border-right: 150px solid #BC88BC;
-    border-bottom: 150px solid #BC88BC;
+    border-right: 150px solid #F2E744;
+    border-bottom: 150px solid #F2E744;
     border-left: 150px solid transparent;
     left: 50%
 }
@@ -101,17 +101,17 @@ path {
 }
 
 .box3 {
-    border-top: 150px solid #BC88BC;
+    border-top: 150px solid #F2E744;
     border-right: 150px solid transparent;
     border-bottom: 150px solid transparent;
-    border-left: 150px solid #BC88BC;
+    border-left: 150px solid #F2E744;
     top: 50%;
 }
 
 .box7 {
     border-top: 150px solid transparent;
-    border-right: 150px solid #F2E744;
-    border-bottom: 150px solid #F2E744;
+    border-right: 150px solid #BC88BC;
+    border-bottom: 150px solid #BC88BC;
     border-left: 150px solid transparent;
     top: 50%;
 }
