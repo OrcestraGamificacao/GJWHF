@@ -1,6 +1,3 @@
-//4 temas sorteados na roleta
-//banco com 10 perguntas pra cada tema
-//cada usuário responde apenas 5 perguntas do banco
 
 // Iniciar o giro da roleta
 function playOnClick() {
