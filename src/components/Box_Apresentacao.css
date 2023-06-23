@@ -82,3 +82,21 @@ h5 {
 .logos-container{
   text-align: center;
 }
+
+/* Da Malena :3 */
+
+.none{
+  display: none;
+}
+
+.gloria-imagem{
+  display: block;
+  margin: 0 auto;
+}
+
+.botao-play{
+  padding: 10px 15px;
+  position: fixed;
+  top: 500px;
+  left: 45%;
+}
