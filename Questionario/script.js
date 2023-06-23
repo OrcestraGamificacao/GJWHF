@@ -56,6 +56,8 @@ function proximaQuestao(nQuestao) {
     d.setAttribute('value', nQuestao)
 }
 
+const btnProximaQuestao = document.getElementById('btnProximaQuestao');
+
 
 function verificarSeAcertou(selecao) {
 
@@ -71,6 +73,7 @@ function verificarSeAcertou(selecao) {
         console.log('certo')
         //mudar a cor do botão se a pessoa acertou
         selecao.style.backgroundColor = '#6aea6a'
+        
 
 
     } else {
@@ -80,17 +83,24 @@ function verificarSeAcertou(selecao) {
 
     }
 
+    a.disabled = true;
+    b.disabled = true;
+    c.disabled = true;
+    d.disabled = true;
+
     
 
-    setTimeout(function() {
+    btnProximaQuestao.addEventListener('click', function() {
+
+        a.disabled = false;
+        b.disabled = false;
+        c.disabled = false;
+        d.disabled = false;
         proxima = numInt + 1
         if (proxima <= totalDeQuestoes) {
             //voltar a cor original do botão após passar a pergunta
             selecao.style.backgroundColor = '';
             proximaQuestao(proxima)
-        } else if (proxima > totalDeQuestoes && Usuario.pontuacao == 4) {
-            proximaQuestao(6)
-            console.log('fim')
         } else {
             console.log('fim')
             console.log('pontos: '+ Usuario.pontuacao)
