@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <!--É uma tag meta utilizada para comunicar aos navegadores 
+        qual é o formato de codificação de caracteres utilizado 
+        naquele documento.-->
+    <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+    <!--viewport = controla como um site é exibido em um dispositivo móvel. 
+        Quando o Google avalia o quanto seu site é otimizado para 
+        dispositivos móveis, ele analisa a configuração da janela de 
+        visualização como um critério para otimização
+        width=device-width =  define o viewport com a largura do dispositivo. 
+        initial-scale=1 = define o nível de zoom inicial quando o usuário visita a página.-->
+    <title>Testes botões da glória</title>
+
+    <script src="../Model/modelUsuario.js"></script>
+    <script src="../Model/modelQuestao.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <!--Rel = define o relacionamento entre o arquivo em que o comando está 
+        escrito e o arquivo que é definido no caminho do href-->
+  </head>
+
+  <header>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+  </header>
+  <body>
+    <div class="page">
+        <div class="frame">
+            <div class="buttons">
+                <img class="gloria" src="/Red Gradient Profile Photo Instagram Post.png" alt="Glória" type="image">
+                <div class="text-question" id="#pergunta"></div>
+                <ol type="a" class="alternativas">
+                    <button class="custom-btn btn-1" id="a" onclick="verificarSeAcertou(this)"></button>
+                    <button class="custom-btn btn-1" id="b" onclick="verificarSeAcertou(this)"></button>
+        
+                    <br />
+        
+                    <button class="custom-btn btn-1" id="c" onclick="verificarSeAcertou(this)"></button>
+                    <button class="custom-btn btn-1" id="d" onclick="verificarSeAcertou(this)"></button>
+                </ol>
+              
+            </div>
+          </div>
+          <div><button id="btnProximaQuestao">Próxima Questão</button></div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
