@@ -71,7 +71,17 @@ function verificarSeAcertou(selecao) {
 
     } 
 
-    setTimeout(function() {
+    a.disabled = true;
+    b.disabled = true;
+    c.disabled = true;
+    d.disabled = true;
+
+    btnProximaQuestao.addEventListener('click', function() {
+
+        a.disabled = false;
+        b.disabled = false;
+        c.disabled = false;
+        d.disabled = false;
         proxima = numInt + 1
         if (proxima <= totalDeQuestoes) {
             //voltar a cor original do botão após passar a pergunta
@@ -84,3 +94,7 @@ function verificarSeAcertou(selecao) {
     }, 250)
 
 }
+
+
+
+
