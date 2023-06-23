@@ -1,24 +1,70 @@
-# Projeto Girls Just Wanna Have Fun
-### O que é?
-O Instituto Glória é uma empresa que combate e reduz todo o tipo de violência contra mulheres e meninas. Com isso, a fim de promover mudanças significativas na sociedade e inspirando mulheres a se empoderarem e enfrentarem os desafios que encontram, foi utilizado a gamificação.
-### Time de Membros do Projeto assistentes
-<li>Maria Eduarda Dos Santos Abritta Ferreira, Gerente do Projeto;</li>
-<li>Ana Clara Rodrigues Itacaramby, time Gamificação;</li>
-<li>Anna Clara Cardoso Evangelista Brandão, time Gamificação;</li>
-<li>Clara Closs, time Gamificação;</li>
-<li>Mariana Fonseca Silva, time Gamificação;</li>
-<li>Sabrina Caldas Berno, time Gamificação;</li>
-<li>Alexia Naara da Silva Cardoso, time Desenvolvimento;</li>
-<li>Amanda de Moura da Silva, time Desenvolvimento;</li>
-<li>Ana Clara Barbosa Borges, time Desenvolvimento;</li>
-<li>Ana Luiza Pfeilsticker de Oliveira Araújo Tristão, time Desenvolvimento;</li>
-<li>Camila Costa de Souza Careli, time Desenvolvimento;</li>
-<li>Maria Alice Bernardo da Costa Silva, time Desenvolvimento;</li>
-<li>Maria Helena Carvalho, time Desenvolvimento.</li>
+# Getting Started with Create React App
 
-### Linhas de Código | Git Flow
-Consulte a [Documentação](https://docs.google.com/document/d/1YZssNIundGM-g023CLtZ_bH4cHC9dkk4sGn5a8XbNFg/edit?usp=sharing) feita para saber mais sobre Git, Git Flow, comandos de código, política de commits e pull request.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-### Modelagem 3D da Glória
-Consulte o [arquivo da modelagem](https://drive.google.com/file/d/1qQunUzHoYMgX7urhmsdhiOxBmdBip2mc/view?usp=drive_link) da Glória.
+## Available Scripts
 
+In the project directory, you can run:
+
+### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
+
+### `npm test`
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
