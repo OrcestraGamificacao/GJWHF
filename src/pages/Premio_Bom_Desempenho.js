@@ -1,4 +1,4 @@
-const Premio_Bom_Desempenho = (props) => {
+const Premio_Bom_Desempenho = () => {
 
   return (
     <div className='Premio_Bom_Desempenho'></div>
