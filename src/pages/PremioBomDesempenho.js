@@ -1,7 +1,7 @@
 const PremioBomDesempenho = () => {
 
   return (
-    <div className='PremioBomDesempenho'></div>
+    <div className='PremioBomDesempenho'>PremioBomDesempenho</div>
   )
 }
 
