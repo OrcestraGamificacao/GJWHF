@@ -1,7 +1,7 @@
 const PerguntaComentario = () => {
 
   return (
-    <div className='PerguntaComentario'></div>
+    <div className='PerguntaComentario'>PerguntaComentario</div>
   )
 }
 
