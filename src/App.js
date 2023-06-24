@@ -1,4 +1,5 @@
 import "./styles/App.css";
+import Gloria from "./components/Gloria";
 import BoxApresentacao from "./components/BoxApresentacao";
 import BotaoAvancar from "./components/BotaoAvancar";
 
@@ -7,10 +8,11 @@ function App() {
     <div className="App">
       <div className="background">
         <BoxApresentacao/>
+        <Gloria/>
         <BotaoAvancar />
         {/* <PerguntaOpcoes/> */}
       </div>
-      
+
     </div>
   );
 }
