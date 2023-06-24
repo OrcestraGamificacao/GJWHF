@@ -19,21 +19,6 @@ h3 {
   font-size: 14px;
 }
 
-h4 {
-  margin-top: 5%;
-  text-align: center;
-  color: #050505;
-  font-weight: 500;
-}
-
-h5 {
-  margin-top: 5%;
-  text-align: center;
-  color: #050505;
-  font-weight: 600;
-  font-size: medium;
-}
-
 .box-apresentation {
   /* Rectangle */
   position: absolute;
@@ -80,5 +65,7 @@ h5 {
 }
 
 .logos-container{
+  margin-top: 10%;
   text-align: center;
+  
 }
