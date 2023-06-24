@@ -7,8 +7,8 @@ function App() {
   return (
     <div className="App">
       <div className="background">
-        <Gloria />
         <BoxApresentacao/>
+        <Gloria/>
         <BotaoAvancar />
         {/* <PerguntaOpcoes/> */}
       </div>

@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import Groria from '../gloria/Gloria.mp4'
-import "./Box_Apresentacao.css";
+import "../styles/BoxApresentacao.css";
+import { useEffect } from 'react';
 
 const Gloria = () => {
   const videoRef = useRef(null);
@@ -23,57 +24,61 @@ const Gloria = () => {
     }
 
     const doLoad = () => {
-      video.play();
-      video.addEventListener('play', () => {
-        canvas.width = video.videoWidth / 5;
-        canvas.height = video.videoHeight / 5;
-        canvas2.width = 500;
-        canvas2.height = 450;
-        timerCallback();
-      }, false);
-    };
-
-    const timerCallback = () => {
-      if (video.paused || video.ended) {
-        return;
-      }
-      computeFrame();
-      setTimeout(() => {
-        timerCallback();
-      }, 0);
-    };
-
-    const computeFrame = () => {
-      ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
-      const frame = ctx.getImageData(0, 0, canvas.width, canvas.height);
-      const data = frame.data;
-
-      for (let i = 0; i < data.length; i += 4) {
-        const r = data[i + 0];
-        const g = data[i + 1];
-        const b = data[i + 2];
-
-        const color = {r, g, b};
-
-        if(distance(color, referenceColor) < tolerance){
-          data[i + 3] = 0
+        video.play();
+        video.addEventListener('loadedmetadata', () => {
+          canvas.width = video.videoWidth / 5;
+          canvas.height = video.videoHeight / 5;
+          canvas2.width = 500;
+          canvas2.height = 450;
+          timerCallback();
+        }, false);
+      };
+  
+      const timerCallback = () => {
+        if (video.paused || video.ended) {
+          return;
         }
-      }
-
-      const offsetX = (canvas2.width - canvas.width) / 2;
-      const offsetY = (canvas2.height - canvas.height);
-      ctx2.putImageData(frame, offsetX, offsetY);
+        computeFrame();
+        setTimeout(() => {
+          timerCallback();
+        }, 0);
+      };
+  
+      const computeFrame = () => {
+        ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+        const frame = ctx.getImageData(0, 0, canvas.width, canvas.height);
+        const data = frame.data;
+  
+        for (let i = 0; i < data.length; i += 4) {
+          const r = data[i + 0];
+          const g = data[i + 1];
+          const b = data[i + 2];
+  
+          const color = { r, g, b };
+  
+          if (distance(color, referenceColor) < tolerance) {
+            data[i + 3] = 0;
+          }
+        }
+  
+        const offsetX = (canvas2.width - canvas.width) / 2;
+        const offsetY = (canvas2.height - canvas.height);
+        ctx2.putImageData(frame, offsetX, offsetY);
+      };
+  
+      doLoad();
     };
+  
+    useEffect(() => {
+      handleClick(); // Chama handleClick quando o componente for montado
+    }, []);
 
-    doLoad();
-  };
 
   return (
     <div>
-      <video id="video" ref={videoRef} src={Groria} className="none"></video>
+      <video id="video" ref={videoRef} src={Groria} className="none"  autoPlay muted></video>
       <canvas id="canva" ref={canvasRef} className="none"></canvas>
       <canvas id="c2" ref={canvas2Ref} className="gloria-imagem"></canvas>
-      <button id="botao" onClick={handleClick} className="botao-play">Load Gloria</button>
     </div>
   )
 }
