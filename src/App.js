@@ -1,12 +1,13 @@
 import "./styles/App.css";
 import BoxApresentacao from "./components/BoxApresentacao";
-import PerguntaOpcoes from "./pages/PerguntaOpcoes"
+import BotaoAvancar from "./components/BotaoAvancar";
 
 function App() {
   return (
     <div className="App">
       <div className="background">
         <BoxApresentacao/>
+        <BotaoAvancar />
         {/* <PerguntaOpcoes/> */}
       </div>
       
@@ -15,4 +16,3 @@ function App() {
 }
 
 export default App;
-
