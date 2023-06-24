@@ -1,7 +1,7 @@
 import React from 'react';
-import "./Box_Apresentacao.css";
+import "./BoxApresentacao.css";
 
-function Box_Apresentacao() {
+function BoxApresentacao() {
   return (
     <div>
       <div className="box-apresentation">
@@ -11,7 +11,7 @@ function Box_Apresentacao() {
             <div className="logos-container">
               <img src="src\components\assets\LogoOrc.png" alt="Logo Orc" />
               <img src="src\components\assets\LogoGloria.png" alt="Logo Gloria" />
-              <img src="src\components\assets\LogoNaParia.png" alt="Logo Orc" />
+              <img src="src\components\assets\LogoNaParia.png" alt="Logo Na Praia" />
             </div>
           </h3>
         </div>
@@ -20,4 +20,4 @@ function Box_Apresentacao() {
   );
 }
 
-export default Box_Apresentacao;
+export default BoxApresentacao;
