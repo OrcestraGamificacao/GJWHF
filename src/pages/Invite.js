@@ -1,7 +1,7 @@
 const Invite = () => {
 
   return (
-    <div className='invite'>      INVITE</div>
+    <div className='invite'>INVITE</div>
   )
 }
 
