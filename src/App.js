@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <div className="background">
-        {/* <Box_Apresentacao /> */}
+        <Box_Apresentacao />
         <Gloria />
       </div>
 
