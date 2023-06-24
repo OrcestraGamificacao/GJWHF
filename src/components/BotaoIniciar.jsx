@@ -11,7 +11,7 @@ function BotaoIniciar() {
 
   return (
       <div className="wrapper">
-        <button onClick={changeUrl} className="grow_ellipse">GROW ELLIPSE</button>
+        <button onClick={changeUrl} className="grow_ellipse">INICIAR AGORA</button>
       </div>
   );
 }

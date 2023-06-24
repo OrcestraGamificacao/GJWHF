@@ -1,6 +1,5 @@
 import React from 'react';
 import "../styles/BoxApresentacao.css";
-import Gloria from './Gloria';
 
 function BoxApresentacao() {
   return (
@@ -16,8 +15,6 @@ function BoxApresentacao() {
               <img src="src\components\assets\NaPraiaNew.png" alt="Logo Na Praia" />
             </div>
           </h3>
-          
-          
         </div>
       </div>
     </div>

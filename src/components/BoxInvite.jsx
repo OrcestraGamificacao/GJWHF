@@ -1,6 +1,5 @@
 import React from 'react';
 import '../styles/BoxInvite.css';
-import BotaoIniciar from './BotaoIniciar';
 
 function BoxInvite() {
   return (
