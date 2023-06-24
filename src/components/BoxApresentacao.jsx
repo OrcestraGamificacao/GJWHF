@@ -1,5 +1,5 @@
 import React from 'react';
-import "./BoxApresentacao.css";
+import "../styles/BoxApresentacao.css";
 
 function BoxApresentacao() {
   return (
