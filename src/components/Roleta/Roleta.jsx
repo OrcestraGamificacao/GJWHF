@@ -45,16 +45,14 @@ const Roleta = () => {
 
     // Parar o giro da roleta e exibir o tema sorteado
     function stopOnClick() {
-        // roletaObj.roleta.style.animationPlayState = "paused";
         setAnimacao(false)
         var box = calculate()
 
         if(box !== null){
             const boxGanhador = document.getElementById("opt".concat(box)).innerHTML
-
             console.log("Tema sorteado:", boxGanhador);        
+            
             //Pop up de revelação do tema
-
             setTimeout(function(){
                 
                 let timerInterval

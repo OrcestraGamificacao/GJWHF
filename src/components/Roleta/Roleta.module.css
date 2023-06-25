@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
 .folha {
     position: relative;
     left: 50%;
@@ -135,8 +137,10 @@
     position: absolute;
     z-index: 999;
     font-size: 27px;
-    font-weight: bold;
+    font-weight: 400;
     color: white;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 2px;
 }
 
 .tema1 {

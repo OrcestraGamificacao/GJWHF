@@ -1,14 +1,24 @@
-/* .background-invite {
-  background-image: url("../images/napraia2.png");
-  height: 100vh;
-  width: 100%;
-  background-size: cover;
-  background-position: center;
-  opacity: 1; 
-  margin-top: -40%;
-  padding: 0;
-} */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
+body {
+    background-image: url("../images/napraia2.png");
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    opacity: 1;
+    padding: 0;
+}
+
+.titulo{
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+    font-size: 30px;
+    font-family: 'Lato', sans-serif;
+
+    color: '#939598';
+}
+/* 
 .box-invite-elements {
     display: flex;
     flex-direction: column;
@@ -23,7 +33,7 @@
 } 
 
 .boxInvite {
-    /* Rectangle */
+    
     position: absolute;
     width: 40%;
     height: 80%;
@@ -42,9 +52,9 @@
 
 .titulo{
     font-size: 20;
-}
+} */
 
-@media screen and (max-width: 1024px) {
+/* @media screen and (max-width: 1024px) {
     .box-invite {
         width: 60%;
         left: 50%;
@@ -69,4 +79,4 @@
         top: 50%;
         transform: translate(-50%, -50%);
     }
-}
+} */
