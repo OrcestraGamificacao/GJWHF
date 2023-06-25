@@ -1,4 +1,4 @@
-import { Questao, q0 } from "../modelUsuario"
+import { Questao, q0 } from "../modelQuestao"
 
 // Questoes de saude
 const saudeQ1 = new Questao(1, 'texto introdutorio - saude 1', 'Pergunta saude 1', '1a - saude', '1b - saude', '1c - saude', '1d - saude (certa)', '1d - saude (certa)', 'Você acertou!', 'Você errou!')

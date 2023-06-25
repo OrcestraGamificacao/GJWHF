@@ -1,4 +1,4 @@
-import { Questao, q0 } from '../modelUsuario'
+import { Questao, q0 } from '../modelQuestao'
 
 // Questoes de educação
 const eduQ1 = new Questao(1, 'texto introdutorio - educaçao 1', 'Pergunta educaçao 1', '1a - educaçao', '1b - educaçao', '1c - educaçao', '1d - educaçao (certa)', '1d - educaçao (certa)', 'Você acertou!', 'Você errou!')
