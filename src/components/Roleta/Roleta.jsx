@@ -1,10 +1,13 @@
 import React, { useState} from "react"
 import Swal from 'sweetalert2'
+import { useNavigate } from "react-router-dom";
+
 
 import styles from "./Roleta.module.css"
 import pngCoracaoGloria from '../assets/gloria-heart.png'
 
 const Roleta = () => {    
+    const navigate = useNavigate();
     let roletaObj;
     const [animacao, setAnimacao] = useState(false)
 
@@ -59,7 +62,7 @@ const Roleta = () => {
                 Swal.fire({
                     title: 'O tema sorteado foi:',
                     html: boxGanhador,
-                    timer: 2000,
+                    timer: 2500,
                     //timerProgressBar: true,
                     width: '40%',
                     padding: '15px',
@@ -72,6 +75,7 @@ const Roleta = () => {
                     willClose: () => {
                         clearInterval(timerInterval)
                         localStorage.setItem('temaSorteado', boxGanhador)
+                        navigate("/Questionario");
                     }
                 }).then((result) => {
                     if (result.dismiss === Swal.DismissReason.timer) {
