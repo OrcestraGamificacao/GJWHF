@@ -1,8 +1,8 @@
-body{
+/* body{
     height: 100vh; 
     background: rgb(97,35,104);
     background: radial-gradient(circle, rgba(97,35,104,1) 0%, rgba(188,136,188,1) 100%);
-}
+} */
 
 .folha {
     position: relative;
@@ -20,6 +20,17 @@ body{
     height: 100%;
     border-radius: 50%;
     overflow: hidden;
+    animation: roleta 1.9s linear infinite;
+}
+
+.roletaPausada{
+    border: 20px solid #F0DBEF;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    animation-play-state: paused;
 }
 
 path {
@@ -224,7 +235,11 @@ path {
     70% {
       transform: scale(1.2);
     }
-      100% {
+    100% {
       transform: scale(1);
     }
-  }
+}
+
+.swal2-confirm::after {
+    background-color: transparent !important;
+}
