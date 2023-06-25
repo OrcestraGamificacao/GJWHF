@@ -1,9 +1,3 @@
-/* body{
-    height: 100vh; 
-    background: rgb(97,35,104);
-    background: radial-gradient(circle, rgba(97,35,104,1) 0%, rgba(188,136,188,1) 100%);
-} */
-
 .folha {
     position: relative;
     left: 50%;
@@ -33,9 +27,9 @@
     animation-play-state: paused;
 }
 
-path {
+/* path {
   fill: transparent;
-}
+} */
 
 .seta {
     position: absolute;
@@ -238,8 +232,4 @@ path {
     100% {
       transform: scale(1);
     }
-}
-
-.swal2-confirm::after {
-    background-color: transparent !important;
 }

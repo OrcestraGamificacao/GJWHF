@@ -14,7 +14,7 @@ import PerguntaOpcoes from './pages/PerguntaOpcoes';
 import PremioBomDesempenho from './pages/PremioBomDesempenho';
 import PremioParticipacao from './pages/PremioParticipacao';
 import Resposta from './pages/Resposta';
-import TelaRoleta from './pages/TelaRoleta';
+import TelaRoleta from "./pages/Tela Roleta/TelaRoleta";
 import TemaEscolhido from './pages/TemaEscolhido';
 
 const router = createBrowserRouter([
@@ -51,7 +51,7 @@ const router = createBrowserRouter([
     element: <Resposta />
   },
   {
-    path: 'TelaRoleta',
+    path: '/TelaRoleta',
     element: <TelaRoleta />
   },
   {
