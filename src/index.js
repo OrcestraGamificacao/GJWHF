@@ -5,7 +5,6 @@ import App from './App'
 
 // 1 - configurando o router
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-
 import PerguntaComentario from './pages/PerguntaComentario'
 import PerguntaFullText from './pages/PerguntaFullText'
 import TelaQuestionario from './pages/Tela Questionario/TelaQuestionario'
