@@ -13,11 +13,11 @@
     position: relative;
     z-index: 1;
     overflow: hidden;
-    border-radius: 50px;
+    border-radius: 0px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    margin-top: 77%;
-    margin-left: 5%;
+    margin-top: 75%;
+    margin-left: -4%;
     cursor: pointer;
   }
 

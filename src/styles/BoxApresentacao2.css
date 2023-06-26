@@ -1,39 +1,40 @@
-.background-invite {
-  background-image: url("../images/napraia2.png");
+.background-Apresentacao2{
+background-image: url("../images/napraia2.png");
   height: 100vh;
   width: 100%;
   background-size: cover;
   background-position: center;
   opacity: 1; /* Adjust the opacity as needed */
-  margin-top: -40%;
+  margin-top: 0%;
   padding: 0;
   transform: scale(1.05);
 }
 
-.box-invite-elements {
+.box-apresentation2-elements {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     text-align: justify;
     position: relative;
-    z-index: 1;
-    margin-top: -15%;
+    z-index: 2;
+    margin-top: -10%;
     padding: 0 10%;
     font-family: 'Montserrat', sans-serif;
   }
   
-.box-invite-title h3 {
+.box-apresentation2-title h3 {
     margin-top: 25%;
     font-weight: 700;
     text-align: center;
     color: #050505;
     text-align: justify;
-    font-size: 20px;
+    font-size: 14px;
+    z-index: 10;
   }
   
   
-  .box-invite {
+  .box-apresentation2 {
     /* Rectangle */
     position: absolute;
     width: 40%;
@@ -50,9 +51,13 @@
     justify-content: center;
     align-items: flex-start;
   }
+
+  .botaoAvançar{
+    margin-top: -49%;
+  }
   
   @media screen and (max-width: 1024px) {
-    .box-invite {
+    .box-apresentation2 {
       width: 60%;
       left: 50%;
       top: 50%;
@@ -61,7 +66,7 @@
   }
   
   @media screen and (max-width: 768px) {
-    .box-invite {
+    .box-apresentation2 {
       width: 80%;
       left: 53%;
       top: 50%;
@@ -70,7 +75,7 @@
   }
   
   @media screen and (max-width: 480px) {
-    .box-invite {
+    .box-apresentation2 {
       width: 90%;
       left: 50%;
       top: 50%;

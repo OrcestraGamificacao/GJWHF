@@ -16,6 +16,9 @@ import PremioParticipacao from './pages/PremioParticipacao';
 import Resposta from './pages/Resposta';
 import TelaRoleta from "./pages/Tela Roleta/TelaRoleta";
 import TemaEscolhido from './pages/TemaEscolhido';
+import Apresentacao2 from './pages/Apresentacao2';
+import Apresentacao3 from './pages/Apresentacao3';
+
 
 const router = createBrowserRouter([
   {
@@ -57,6 +60,14 @@ const router = createBrowserRouter([
   {
     path: '/TemaEscolhido',
     element: <TemaEscolhido />
+  },
+  {
+    path: '/BoxApresentacao2',
+    element: <Apresentacao2 />
+  },
+  {
+    path: '/BoxApresentacao3',
+    element: <Apresentacao3 />
   },
 ])
 

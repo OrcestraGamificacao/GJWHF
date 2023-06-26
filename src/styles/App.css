@@ -15,4 +15,5 @@
   opacity: 1; /* Adjust the opacity as needed */
   margin: 0;
   padding: 0;
+  transform: scale(1.05);
 }

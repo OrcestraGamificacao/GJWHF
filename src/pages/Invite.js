@@ -10,7 +10,6 @@ const Invite = () => {
           <BoxInvite />
           <BotaoIniciar />
       </div>
-      
     </div>
   )
 }

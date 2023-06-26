@@ -15,9 +15,8 @@ function BoxApresentacao() {
     <div>
       <div className="box-apresentation">
         <div className="box-apresentation-elements">
-        
           <h3 className="box-apresentation-title">
-            Olá, eu sou a Glória, uma inteligência artificial com o propósito de combater a violência contra mulheres e meninas. Sou uma 'robozinha' desenvolvida com a missão de contribuir para um mundo mais seguro e igualitário para todas as mulheres. Meu objetivo principal é criar conscientização, educar e fornecer recursos para prevenir a violência e apoiar as vítimas. Para me ajudar nessa missão, tenho o oferecimento de:
+            Olá praiano! eu sou a Glória, uma inteligência artificial com o propósito de combater a violência contra mulheres e meninas. Sou uma 'robozinha' desenvolvida com a missão de contribuir para um mundo mais seguro e igualitário para todas as mulheres. Meu objetivo principal é criar conscientização, educar e fornecer recursos para prevenir a violência e apoiar as vítimas. Para me ajudar nessa missão, tenho o oferecimento de:
             <div className="logos-container">
               <img /*src={OrcNew}*/ src="src\components\assets\OrcNew.png" alt="Logo Orc" />
               <img /*src={GloriaNew}*/ src="src\components\assets\GloriaNew.png" alt="Logo Gloria" />
