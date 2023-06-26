@@ -1,7 +1,10 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 85d3d05 (Merge branch 'Branch-Telas' of https://github.com/OrcestraGamificacao/GJWHF into Branch-Telas)
+=======
+>>>>>>> cc04482bac56fdde80de41080d4b87fd4b16c766
 .box-apresentation-elements {
   display: flex;
   flex-direction: column;
@@ -9,10 +12,9 @@
   align-items: center;
   text-align: justify;
   position: relative;
-  z-index: 2;
+  z-index: 1;
   margin-top: -15%;
   padding: 0 10%;
-  font-family: 'Montserrat', sans-serif;
 }
 
 h3 {
@@ -22,9 +24,22 @@ h3 {
   color: #050505;
   text-align: justify;
   font-size: 14px;
-  z-index: 10;
 }
 
+h4 {
+  margin-top: 5%;
+  text-align: center;
+  color: #050505;
+  font-weight: 500;
+}
+
+h5 {
+  margin-top: 5%;
+  text-align: center;
+  color: #050505;
+  font-weight: 600;
+  font-size: medium;
+}
 
 .box-apresentation {
   /* Rectangle */
@@ -32,13 +47,13 @@ h3 {
   width: 40%;
   height: 80%;
   border: 5px solid aliceblue;
-  background: linear-gradient(180deg, #f2e744 -10%, #bc88bc 71.98%);
+  background: linear-gradient(180deg, #f2e744 0%, #bc88bc 71.98%);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
   border-radius: 59.8751px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  opacity: 0.85;
+  opacity: 0.7;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -56,7 +71,7 @@ h3 {
 @media screen and (max-width: 768px) {
   .box-apresentation {
     width: 80%;
-    left: 53%;
+    left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
   }
@@ -72,9 +87,9 @@ h3 {
 }
 
 .logos-container{
-  margin-top: 10%;
   text-align: center;
 }
+<<<<<<< HEAD
 
 /* Da Malena :3 */
 
@@ -185,3 +200,5 @@ h3 {
 >>>>>>> 45e98f7d4bae060bddbe982b223b5f787022bc5a
 =======
 >>>>>>> parent of 85d3d05 (Merge branch 'Branch-Telas' of https://github.com/OrcestraGamificacao/GJWHF into Branch-Telas)
+=======
+>>>>>>> cc04482bac56fdde80de41080d4b87fd4b16c766
