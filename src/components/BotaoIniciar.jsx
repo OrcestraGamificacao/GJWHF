@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/BotaoIniciar.css";
+import '../styles/BotaoIniciar.css'
 import { useNavigate } from "react-router-dom";
 
 function BotaoIniciar() {
