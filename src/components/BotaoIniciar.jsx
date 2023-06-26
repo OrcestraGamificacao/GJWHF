@@ -1,4 +1,8 @@
 import React from "react";
+<<<<<<< HEAD
+=======
+import "../styles/BotaoIniciar.css";
+>>>>>>> parent of 847e686 (Arrumando o botao iniciar)
 import { useNavigate } from "react-router-dom";
 import '../styles/BotaoIniciar.css'
 

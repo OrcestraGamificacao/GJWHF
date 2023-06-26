@@ -1,5 +1,6 @@
   .wrapper {
     z-index: 1;
+    
   }
   button {
     font-size: 2em;
@@ -14,6 +15,8 @@
     border-radius: 0px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
+    margin-top: 75%;
+    margin-left: -4%;
     cursor: pointer;
   }
 
