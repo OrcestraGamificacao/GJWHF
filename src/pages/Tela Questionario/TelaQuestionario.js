@@ -1,4 +1,5 @@
 import BotaoResposta from "../../components/Botao de Resposta/BotaoResposta";
+import { useRef, useLayoutEffect } from "react";
 
 import { Usuario } from "../../Model/modelUsuario";
 import { q0 } from "../../Model/modelQuestao"
@@ -9,7 +10,11 @@ import { saudeQuestoes } from "../../Model/Banco de Questoes/saude"
 
 import styles from "./TelaQuestionario.module.css"
 
-const PerguntaOpcoes = () => {
+
+const TelaQuestionario = () => {
+
+  let questaoAtual = 0
+
   const temaSorteado = localStorage.getItem('temaSorteado')
   console.log(temaSorteado)
 
@@ -46,80 +51,92 @@ const PerguntaOpcoes = () => {
 
   console.log(questoes)
 
+  let numQuestao = 0
   let proxima = 1
-  proximaQuestao(proxima)
+  proximaQuestao(1)
 
   function proximaQuestao(nQuestao) {
       enunciado = questoes[nQuestao].pergunta
+      questaoAtual = nQuestao
 
       textoA = questoes[nQuestao].alternativaA
       textoB = questoes[nQuestao].alternativaB
       textoC = questoes[nQuestao].alternativaC
       textoD = questoes[nQuestao].alternativaD
 
-      a.setAttribute('value', nQuestao)
-      b.setAttribute('value', nQuestao)
-      c.setAttribute('value', nQuestao)
-      d.setAttribute('value', nQuestao)
+      console.log(nQuestao)
+
+      console.log(a)
+      console.log(b)
+      console.log(c)
+      console.log(d)
+
+      numQuestao ++
+      // a.setAttribute('value', nQuestao)
+      // b.setAttribute('value', nQuestao)
+      // c.setAttribute('value', nQuestao)
+      // d.setAttribute('value', nQuestao)
   }
 
+  // function verificarSeAcertou(selecao) {
 
-  function verificarSeAcertou(selecao) {
-
-      let num = selecao.getAttribute('value')
-      let numInt = parseInt(num)
-      console.log(numInt)
-      console.log(typeof numInt)
-      let respostaSelecionada = selecao.textContent
-      let respostaCerta = questoes[numInt].resposta
+  //     let num = selecao.getAttribute('value')
+  //     let numInt = parseInt(num)
+  //     console.log(numInt)
+  //     console.log(typeof numInt)
+  //     let respostaSelecionada = selecao.textContent
+  //     let respostaCerta = questoes[numInt].resposta
       
-      if (respostaCerta === respostaSelecionada) {
-          Usuario.pontuacao += 1
-          console.log('certo')
-          //mudar a cor do botão se a pessoa acertou
-          selecao.style.backgroundColor = '#6aea6a'
-      } else {
-          console.log('errado')
-          //mudar a cor do botão se a pessoa errou
-          selecao.style.backgroundColor = '#ff6961'
+  //     if (respostaCerta === respostaSelecionada) {
+  //         Usuario.pontuacao += 1
+  //         console.log('certo')
+  //         //mudar a cor do botão se a pessoa acertou
+  //         selecao.style.backgroundColor = '#6aea6a'
+  //     } else {
+  //         console.log('errado')
+  //         //mudar a cor do botão se a pessoa errou
+  //         selecao.style.backgroundColor = '#ff6961'
 
-      } 
+  //     } 
 
-      a.disabled = true;
-      b.disabled = true;
-      c.disabled = true;
-      d.disabled = true;
+  //     a.disabled = true;
+  //     b.disabled = true;
+  //     c.disabled = true;
+  //     d.disabled = true;
 
-      setTimeout(() => {
-        a.disabled = false;
-        b.disabled = false;
-        c.disabled = false;
-        d.disabled = false;
-        proxima = numInt + 1
+  //     setTimeout(() => {
+  //       a.disabled = false;
+  //       b.disabled = false;
+  //       c.disabled = false;
+  //       d.disabled = false;
+  //       proxima = numInt + 1
 
-        if (proxima <= totalDeQuestoes) {
-            //voltar a cor original do botão após passar a pergunta
-            selecao.style.backgroundColor = '';
-            proximaQuestao(proxima)
-        } else {
-            console.log('fim')
-            console.log('pontos: '+ Usuario.pontuacao)
-        }
+  //       if (proxima <= totalDeQuestoes) {
+  //           //voltar a cor original do botão após passar a pergunta
+  //           selecao.style.backgroundColor = '';
+  //           proximaQuestao(proxima)
+  //       } else {
+  //           console.log('fim')
+  //           console.log('pontos: '+ Usuario.pontuacao)
+  //       }
 
-      }, 250)
+  //     }, 250)
 
-  }
+  // }
+
 
   return (
     <div className={styles.containerQuestionario}>
       <div className={styles.enunciado} id="#pergunta">{enunciado}</div>
-      <BotaoResposta id='a' texto={textoA} onClick={() => verificarSeAcertou(textoA)}/>
-      <BotaoResposta id='b' texto={textoB} onClick={() => verificarSeAcertou(textoB)}/>
-      <BotaoResposta id='c' texto={textoC} onClick={() => verificarSeAcertou(textoC)}/>
-      <BotaoResposta id='d' texto={textoD} onClick={() => verificarSeAcertou(textoD)}/>
+      <p>Pergunta {questaoAtual} de 5</p>
+      <BotaoResposta value={numQuestao} id={'a'} texto={textoA}/>
+      <BotaoResposta value={numQuestao} id={'b'} texto={textoB}/>
+      <BotaoResposta value={numQuestao} id={'c'} texto={textoC}/>
+      <BotaoResposta value={numQuestao} id={'d'} texto={textoD}/>
       <div><button id="btnProximaQuestao">Próxima Questão</button></div>
     </div>
   )
 }
 
-export default PerguntaOpcoes;
+export default TelaQuestionario;
+
