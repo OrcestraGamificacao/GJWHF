@@ -1,27 +1,20 @@
 import React from "react";
-<<<<<<< HEAD
-=======
 import "../styles/BotaoIniciar.css";
->>>>>>> parent of 847e686 (Arrumando o botao iniciar)
 import { useNavigate } from "react-router-dom";
-import '../styles/BotaoIniciar.css'
 
 function BotaoIniciar() {
   const navigate = useNavigate();
 
   const changeUrl = () => {
-    navigate("/BoxApresentacao2");
+    navigate("/PerguntaFullText");
   };
 
   return (
       <div className="wrapper">
-<<<<<<< HEAD
-        <button onClick={changeUrl} className="grow_ellipse">SÓ SE FOR AGORA</button>
-=======
-        <button style={{ marginTop: "72%"}} onClick={changeUrl} className="grow_ellipse">SÓ SE FOR AGORA</button>
->>>>>>> 45e98f7d4bae060bddbe982b223b5f787022bc5a
+        <button onClick={changeUrl} className="grow_ellipse">INICIAR AGORA</button>
       </div>
   );
 }
 
 export default BotaoIniciar;
+
