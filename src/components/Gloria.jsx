@@ -1,9 +1,9 @@
 import React, { useRef } from 'react';
-import Groria from '../gloria/Gloria.mp4'
 import "../styles/BoxApresentacao.css";
 import { useEffect } from 'react';
+import PropTypes from 'prop-types';
 
-const Gloria = () => {
+const Gloria = ({animacao}) => {
   const videoRef = useRef(null);
   const canvasRef = useRef(null);
   const canvas2Ref = useRef(null);
@@ -76,11 +76,15 @@ const Gloria = () => {
 
   return (
     <div>
-      <video id="video" ref={videoRef} src={Groria} className="none"  autoPlay muted></video>
+      <video id="video" ref={videoRef} src={animacao} className="none"  autoPlay muted loop></video>
       <canvas id="canva" ref={canvasRef} className="none"></canvas>
       <canvas id="c2" ref={canvas2Ref} className="gloria-imagem"></canvas>
     </div>
   )
 }
 
+
+Gloria.propTypes = {
+    animacao: PropTypes.string.isRequired, // Prop para a URL do vídeo
+  };
 export default Gloria
