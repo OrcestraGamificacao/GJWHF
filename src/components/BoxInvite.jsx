@@ -12,9 +12,10 @@ function BoxInvite() {
           <br></br>
           E para não ficar sozinha nessa missão gostaria de convidar você, que está aproveitando o Na Praia Festival, para me ajudar a conquistar este objetivo.<br>
           </br><br></br>
-          O que me diz? Vamos juntos contribuir para um mundo melhor para todas elas? 
-
+          O que me diz? Vamos juntos contribuir para um mundo melhor para todas elas? <br>
+          </br><br></br>
           </h3>
+          
         </div>
       </div>
     </div>
