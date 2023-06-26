@@ -1,4 +1,4 @@
-/*import React, { useState} from "react"
+import React, { useState} from "react"
 import Swal from 'sweetalert2'
 import { useNavigate } from "react-router-dom";
 
@@ -128,4 +128,4 @@ const Roleta = () => {
     )
 }
 
-export default Roleta*/
+export default Roleta
