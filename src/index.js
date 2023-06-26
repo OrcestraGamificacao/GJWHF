@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom/client';
 import './styles/index.css';
 import App from './App';
 
-<<<<<<< HEAD
 // 1 - configurando o router
 import{
   createBrowserRouter, RouterProvider
@@ -72,8 +71,6 @@ const router = createBrowserRouter([
   },
 ])
 
-=======
->>>>>>> 45e98f7d4bae060bddbe982b223b5f787022bc5a
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
