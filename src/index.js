@@ -10,11 +10,11 @@ import{
 
 import PerguntaComentario from './pages/PerguntaComentario';
 import PerguntaFullText from './pages/PerguntaFullText';
-import PerguntaOpcoes from './pages/PerguntaOpcoes';
+import TelaQuestionario from "./pages/Tela Questionario/TelaQuestionario";
 import PremioBomDesempenho from './pages/PremioBomDesempenho';
 import PremioParticipacao from './pages/PremioParticipacao';
 import Resposta from './pages/Resposta';
-import TelaRoleta from "./pages/Tela Roleta/TelaRoleta";
+import TelaRoleta from "./pages/TelaRoleta";
 import TemaEscolhido from './pages/TemaEscolhido';
 import Apresentacao2 from './pages/Apresentacao2';
 import Apresentacao3 from './pages/Apresentacao3';
@@ -38,8 +38,8 @@ const router = createBrowserRouter([
     element: <PerguntaFullText />
   },
   {
-    path: '/PerguntaOpcoes',
-    element: <PerguntaOpcoes />
+    path: '/Questionario',
+    element: <TelaQuestionario />
   },
   {
     path: '/PremioBomDesempenho',

@@ -1,10 +1,13 @@
 import React, { useState} from "react"
 import Swal from 'sweetalert2'
+import { useNavigate } from "react-router-dom";
+
 
 import styles from "./Roleta.module.css"
 import pngCoracaoGloria from '../assets/gloria-heart.png'
 
 const Roleta = () => {    
+    const navigate = useNavigate();
     let roletaObj;
     const [animacao, setAnimacao] = useState(false)
 
@@ -45,23 +48,21 @@ const Roleta = () => {
 
     // Parar o giro da roleta e exibir o tema sorteado
     function stopOnClick() {
-        // roletaObj.roleta.style.animationPlayState = "paused";
         setAnimacao(false)
         var box = calculate()
 
         if(box !== null){
             const boxGanhador = document.getElementById("opt".concat(box)).innerHTML
-
             console.log("Tema sorteado:", boxGanhador);        
+            
             //Pop up de revelação do tema
-
             setTimeout(function(){
                 
                 let timerInterval
                 Swal.fire({
                     title: 'O tema sorteado foi:',
                     html: boxGanhador,
-                    timer: 2000,
+                    timer: 2500,
                     //timerProgressBar: true,
                     width: '40%',
                     padding: '15px',
@@ -74,6 +75,7 @@ const Roleta = () => {
                     willClose: () => {
                         clearInterval(timerInterval)
                         localStorage.setItem('temaSorteado', boxGanhador)
+                        navigate("/Questionario");
                     }
                 }).then((result) => {
                     if (result.dismiss === Swal.DismissReason.timer) {
