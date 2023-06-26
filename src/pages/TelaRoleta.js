@@ -1,4 +1,4 @@
-import React from "react";
+/*import React from "react";
 import Roleta from "../components/Roleta/Roleta";
 import "../styles/TelaRoleta.css"
 import BalaoMensagem from "../components/Balao de Mensagem/BalaoMensagem";
@@ -15,5 +15,4 @@ const TelaRoleta = () => {
   )
 }
 
-export default TelaRoleta;
-
+export default TelaRoleta;*/
