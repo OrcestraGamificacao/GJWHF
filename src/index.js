@@ -1,28 +1,22 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import Invite from  './pages/Invite';
-import App from './App';
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import Invite from './pages/Invite'
+import App from './App'
 
 // 1 - configurando o router
-import{
-  createBrowserRouter, RouterProvider
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
-import PerguntaComentario from './pages/PerguntaComentario';
-import PerguntaFullText from './pages/PerguntaFullText';
-import TelaQuestionario from "./pages/Tela Questionario/TelaQuestionario";
-import PremioBomDesempenho from './pages/PremioBomDesempenho';
-import PremioParticipacao from './pages/PremioParticipacao';
-import Resposta from './pages/Resposta';
-import TelaRoleta from "./pages/TelaRoleta";
-import TemaEscolhido from './pages/TemaEscolhido';
-import Apresentacao2 from './pages/Apresentacao2';
-import Apresentacao3 from './pages/Apresentacao3';
+import PerguntaComentario from './pages/PerguntaComentario'
+import PerguntaFullText from './pages/PerguntaFullText'
+import TelaQuestionario from './pages/Tela Questionario/TelaQuestionario'
+import PremioBomDesempenho from './pages/PremioBomDesempenho'
+import PremioParticipacao from './pages/PremioParticipacao'
+import Resposta from './pages/Resposta'
+import TelaRoleta from './pages/TelaRoleta'
+import TemaEscolhido from './pages/TemaEscolhido'
+import Apresentacao2 from './pages/Apresentacao2'
+import Apresentacao3 from './pages/Apresentacao3'
 
-<<<<<<< HEAD
-
-=======
->>>>>>> parent of 85d3d05 (Merge branch 'Branch-Telas' of https://github.com/OrcestraGamificacao/GJWHF into Branch-Telas)
 const router = createBrowserRouter([
   {
     path: '/',
@@ -64,23 +58,19 @@ const router = createBrowserRouter([
     path: '/TemaEscolhido',
     element: <TemaEscolhido />
   },
-<<<<<<< HEAD
   {
-=======
-    {
->>>>>>> parent of 85d3d05 (Merge branch 'Branch-Telas' of https://github.com/OrcestraGamificacao/GJWHF into Branch-Telas)
     path: '/BoxApresentacao2',
     element: <Apresentacao2 />
   },
   {
     path: '/BoxApresentacao3',
     element: <Apresentacao3 />
-  },
+  }
 ])
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   <React.StrictMode>
     <RouterProvider router={router} />
   </React.StrictMode>
-);
+)
