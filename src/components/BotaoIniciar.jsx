@@ -6,12 +6,12 @@ function BotaoIniciar() {
   const navigate = useNavigate();
 
   const changeUrl = () => {
-    navigate("/PerguntaFullText");
+    navigate("/BoxApresentacao2");
   };
 
   return (
       <div className="wrapper">
-        <button onClick={changeUrl} className="grow_ellipse">INICIAR AGORA</button>
+        <button onClick={changeUrl} className="grow_ellipse">SÓ SE FOR AGORA</button>
       </div>
   );
 }
