@@ -6,13 +6,13 @@ function BotaoAvancar3() {
   const navigate = useNavigate();
 
   const changeUrl = () => {
-    navigate("/PerguntaFullText");
+    navigate("/ApresentacaoGami");
   };
 
   return (
     <div className="wrapper" onClick={changeUrl}>
       <a href="" className="cta">
-        <span>BORA COMEÇAR</span>
+        <span>REGRAS</span>
         <span>
           <svg
             width="66px"
