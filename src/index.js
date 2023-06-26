@@ -14,7 +14,6 @@ import Resposta from './pages/Resposta'
 import TelaRoleta from './pages/TelaRoleta'
 import TemaEscolhido from './pages/TemaEscolhido'
 import Apresentacao2 from './pages/Apresentacao2'
-import Apresentacao3 from './pages/Apresentacao3'
 import ApresentacaoGami from './pages/ExplicacaoGamificacao'
 
 const router = createBrowserRouter([
@@ -31,16 +30,12 @@ const router = createBrowserRouter([
     element: <Apresentacao2 />
   },
   {
-    path: '/BoxApresentacao3',
-    element: <Apresentacao3 />
+    path: '/ApresentacaoGami',
+    element: <ApresentacaoGami />
   },
   {
     path: '/PerguntaComentario',
     element: <PerguntaComentario />
-  },
-  {
-    path: '/ApresentacaoGami',
-    element: <ApresentacaoGami />
   },
   {
     path: '/PerguntaFullText',

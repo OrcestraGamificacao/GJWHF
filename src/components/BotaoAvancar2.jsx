@@ -6,7 +6,7 @@ function BotaoAvancar2() {
   const navigate = useNavigate();
 
   const changeUrl = () => {
-    navigate("/BoxApresentacao3");
+    navigate("/ApresentacaoGami");
   };
 
   return (
