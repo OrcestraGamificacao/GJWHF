@@ -1,4 +1,4 @@
-function Questao(numQuestao, textoIntrodutorio , pergunta, alternativaA, alternativaB, alternativaC, alternativaD, resposta, textoCorreto, textoErrado){
+function Questao(numQuestao, textoIntrodutorio , pergunta, alternativaA, alternativaB, alternativaC, alternativaD, resposta, textoExplicativo){
     this.numQuestao = numQuestao
     this.textoIntrodutorio = textoIntrodutorio
     this.pergunta = pergunta
@@ -7,8 +7,7 @@ function Questao(numQuestao, textoIntrodutorio , pergunta, alternativaA, alterna
     this.alternativaC = alternativaC
     this.alternativaD = alternativaD
     this.resposta = resposta
-    this.textoCorreto = textoCorreto
-    this.textoErrado = textoErrado
+    this.textoExplicativo = textoExplicativo
 }
 
 const q0 = new Questao()
