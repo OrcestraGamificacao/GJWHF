@@ -26,6 +26,14 @@ const router = createBrowserRouter([
     element: <Invite />
   },
   {
+    path: '/BoxApresentacao2',
+    element: <Apresentacao2 />
+  },
+  {
+    path: '/BoxApresentacao3',
+    element: <Apresentacao3 />
+  },
+  {
     path: '/PerguntaComentario',
     element: <PerguntaComentario />
   },
@@ -56,14 +64,6 @@ const router = createBrowserRouter([
   {
     path: '/TemaEscolhido',
     element: <TemaEscolhido />
-  },
-  {
-    path: '/BoxApresentacao2',
-    element: <Apresentacao2 />
-  },
-  {
-    path: '/BoxApresentacao3',
-    element: <Apresentacao3 />
   }
 ])
 
