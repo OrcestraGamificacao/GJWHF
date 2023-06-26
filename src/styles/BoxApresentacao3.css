@@ -1,0 +1,84 @@
+.background-Apresentacao3{
+background-image: url("../images/napraia2.png");
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 1; /* Adjust the opacity as needed */
+  margin-top: -0%;
+  padding: 0;
+  transform: scale(1.05);
+}
+
+.box-apresentation3-elements {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: justify;
+    position: relative;
+    z-index: 2;
+    margin-top: -10%;
+    padding: 0 10%;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+.box-apresentation3-title h3 {
+    margin-top: 25%;
+    font-weight: 700;
+    text-align: center;
+    color: #050505;
+    text-align: justify;
+    font-size: 14px;
+    z-index: 10;
+  }
+  
+  
+  .box-apresentation3 {
+    /* Rectangle */
+    position: absolute;
+    width: 40%;
+    height: 80%;
+    border: 5px solid aliceblue;
+    background: linear-gradient(180deg, #f2e744 -10%, #bc88bc 71.98%);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 59.8751px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.85;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .botaoAvançar{
+    margin-top: -49%;
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .box-apresentation3 {
+      width: 60%;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .box-apresentation3 {
+      width: 80%;
+      left: 53%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .box-apresentation3 {
+      width: 90%;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
