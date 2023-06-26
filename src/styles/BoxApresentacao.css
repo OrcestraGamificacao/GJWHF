@@ -6,32 +6,19 @@
   text-align: justify;
   position: relative;
   z-index: 1;
-  margin-top: -15%;
+  margin-top: 5%;
   padding: 0 10%;
 }
 
 h3 {
-  margin-top: 25%;
-  font-weight: 700;
+  margin-top: 7%;
+  margin-bottom: 7%;
+  font-weight: 600;
   text-align: center;
   color: #050505;
   text-align: justify;
   font-size: 14px;
-}
-
-h4 {
-  margin-top: 5%;
-  text-align: center;
-  color: #050505;
-  font-weight: 500;
-}
-
-h5 {
-  margin-top: 5%;
-  text-align: center;
-  color: #050505;
-  font-weight: 600;
-  font-size: medium;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .box-apresentation {
@@ -46,7 +33,7 @@ h5 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  opacity: 0.7;
+  opacity: 0.85;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -80,6 +67,7 @@ h5 {
 }
 
 .logos-container{
+  margin-top: 7%;
   text-align: center;
 }
 
