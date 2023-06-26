@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './styles/index.css';
+import Invite from  './pages/Invite';
 import App from './App';
 
 // 1 - configurando o router
@@ -19,7 +19,10 @@ import TemaEscolhido from './pages/TemaEscolhido';
 import Apresentacao2 from './pages/Apresentacao2';
 import Apresentacao3 from './pages/Apresentacao3';
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of 85d3d05 (Merge branch 'Branch-Telas' of https://github.com/OrcestraGamificacao/GJWHF into Branch-Telas)
 const router = createBrowserRouter([
   {
     path: '/',
@@ -61,7 +64,11 @@ const router = createBrowserRouter([
     path: '/TemaEscolhido',
     element: <TemaEscolhido />
   },
+<<<<<<< HEAD
   {
+=======
+    {
+>>>>>>> parent of 85d3d05 (Merge branch 'Branch-Telas' of https://github.com/OrcestraGamificacao/GJWHF into Branch-Telas)
     path: '/BoxApresentacao2',
     element: <Apresentacao2 />
   },
@@ -74,10 +81,6 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals

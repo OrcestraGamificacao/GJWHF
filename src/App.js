@@ -1,16 +1,19 @@
 import "./styles/App.css";
-import Box_Apresentacao from "./components/Box_Apresentacao";
+import Gloria from "./components/Gloria";
+import BoxApresentacao from "./components/BoxApresentacao";
+import BotaoAvancar from "./components/BotaoAvancar";
 
 function App() {
   return (
     <div className="App">
       <div className="background">
-        <Box_Apresentacao />
+        <BoxApresentacao/>
+        <Gloria/>
+        <BotaoAvancar />
       </div>
-      
+
     </div>
   );
 }
 
 export default App;
-
