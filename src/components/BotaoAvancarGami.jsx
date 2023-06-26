@@ -6,11 +6,11 @@ function BotaoAvancar3() {
   const navigate = useNavigate();
 
   const changeUrl = () => {
-    navigate("/PerguntaFullText");
+    navigate("/TelaRoleta");
   };
 
   return (
-    <div className="wrapper" onClick={changeUrl}>
+    <div className="wrapper" style={{ marginLeft: "20%"}} onClick={changeUrl}>
       <a href="" className="cta">
         <span>BORA COMEÇAR</span>
         <span>

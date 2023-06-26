@@ -4,9 +4,9 @@ import "../styles/BoxExplicacaoGami.css";
 function BoxExplicacaoGami() {
   return (
     <div>
-      <div className="box-ExplicacaoGami">
-        <div className="box-ExplicacaoGami-elements">
-        <h3 className="box-ExplicacaoGami-title">
+      <div className="box-ExplicacaoGamificacao">
+        <div className="box-ExplicacaoGamificacao-elements">
+        <h3 className="box-ExplicacaoGamificacao-title">
           Você vai participar de um questionário, onde terá história de mulheres incíveis na história. Então, primeiramente, irá girar uma roleta para saber em qual tema você vai jogar, sendo eles: Tecnologia, Inovação, Saúde, Educação e Política! 
           <br></br>
           Após girar a roleta e descobrir seu tema, terá um questionário com 5 perguntas. Cada pergunta tem seu contexto no balãozinho, caso queira entender melhor sobre a pergunta. 

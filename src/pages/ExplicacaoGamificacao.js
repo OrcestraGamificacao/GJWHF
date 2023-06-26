@@ -1,10 +1,10 @@
 import BoxExplicacaoGami from '../components/BoxExplicacaoGami'
 import BotaoAvancarGami from '../components/BotaoAvancarGami'
 
-const ApresentacaoGami = () => {
+const ExplicacaoGamificacao = () => {
   return (
-    <div className="ApresentacaoGami">
-      <div className="background-ApresentacaoGami">
+    <div className="ExplicacaoGamificacao">
+      <div className="background-ExplicacaoGamificacao">
         <BoxExplicacaoGami />
       </div>
       <div className="botaoAvançar">
@@ -14,4 +14,4 @@ const ApresentacaoGami = () => {
   )
 }
 
-export default ApresentacaoGami
+export default ExplicacaoGamificacao

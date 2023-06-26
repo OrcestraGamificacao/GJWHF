@@ -1,4 +1,7 @@
 import React from 'react';
+import InputNome from './InputNome';
+import BotaoIniciar from './BotaoIniciar';
+
 import '../styles/BoxInvite.css';
 
 function BoxInvite() {
@@ -15,7 +18,8 @@ function BoxInvite() {
           O que me diz? Vamos juntos contribuir para um mundo melhor para todas elas? <br>
           </br><br></br>
           </h3>
-          
+          <InputNome />
+          <BotaoIniciar />
         </div>
       </div>
     </div>

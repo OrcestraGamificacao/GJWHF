@@ -1,6 +1,18 @@
   .wrapper {
     z-index: 1;
-    
+    /* margin-top: 0;
+    padding-top: 0%;
+    width: fit-content;
+    height: fit-content; */
+    /* margin-top: 0; */
+  }
+  .wrapper-btniniciar{
+    z-index: 1;
+    display: flex;
+    justify-content: left;
+    transform: scale(0.37);
+    margin-left: 40%;
+    margin-top: 10%;
   }
   button {
     font-size: 2em;
@@ -11,11 +23,11 @@
     margin: 1rem;
     position: relative;
     z-index: 1;
-    overflow: hidden;
+    /* overflow: hidden; */
     border-radius: 0px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    margin-top: 73%;
+    /* margin-top: 73%; */
     margin-left: 4%;
     cursor: pointer;
     transform: scale(0.85);

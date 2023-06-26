@@ -10,7 +10,7 @@ function BotaoIniciar() {
   };
 
   return (
-      <div className="wrapper">
+      <div className="wrapper-btniniciar">
         <button onClick={changeUrl} className="grow_ellipse">SÓ SE FOR AGORA</button>
       </div>
   );
