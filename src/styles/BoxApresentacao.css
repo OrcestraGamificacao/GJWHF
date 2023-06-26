@@ -1,0 +1,88 @@
+.box-apresentation-elements {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: justify;
+  position: relative;
+  z-index: 2;
+  margin-top: -15%;
+  padding: 0 10%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h3 {
+  margin-top: 25%;
+  font-weight: 700;
+  text-align: center;
+  color: #050505;
+  text-align: justify;
+  font-size: 14px;
+  z-index: 10;
+}
+
+
+.box-apresentation {
+  /* Rectangle */
+  position: absolute;
+  width: 40%;
+  height: 80%;
+  border: 5px solid aliceblue;
+  background: linear-gradient(180deg, #f2e744 -10%, #bc88bc 71.98%);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 59.8751px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.85;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+@media screen and (max-width: 1024px) {
+  .box-apresentation {
+    width: 60%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .box-apresentation {
+    width: 80%;
+    left: 53%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .box-apresentation {
+    width: 90%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.logos-container{
+  margin-top: 10%;
+  text-align: center;
+}
+
+/* Da Malena :3 */
+
+.none{
+  display: none;
+
+}
+
+.gloria-imagem{
+  margin: 10 auto;
+  position: absolute;
+  bottom: 0;
+  border-radius: 37%;
+
+}
