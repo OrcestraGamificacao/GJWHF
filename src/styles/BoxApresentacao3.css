@@ -5,7 +5,7 @@ background-image: url("../images/napraia2.png");
   background-size: cover;
   background-position: center;
   opacity: 1; /* Adjust the opacity as needed */
-  margin-top: -0%;
+  margin-top: 0%;
   padding: 0;
   transform: scale(1.05);
 }
@@ -40,7 +40,7 @@ background-image: url("../images/napraia2.png");
     width: 40%;
     height: 80%;
     border: 5px solid aliceblue;
-    background: linear-gradient(180deg, #f2e744 -10%, #bc88bc 71.98%);
+    background: linear-gradient(180deg, #f2e744 0%, #bc88bc 71.98%);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
     border-radius: 59.8751px;
     top: 50%;
