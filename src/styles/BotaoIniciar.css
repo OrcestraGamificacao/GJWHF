@@ -1,25 +1,29 @@
 .wrapper-btniniciar {
   z-index: 1;
-  
 }
+
 .grow_ellipse {
   font-size: 2em;
   background: #612368;
   color: #ffF;
   border: 0.45rem solid #fff;
   padding: 0.85em 0.75em;
-  margin: 1rem;
-  position: relative;
-  z-index: 1;
-  overflow: hidden;
+  /* margin: 1rem; */
+  /* position: relative; */
+  z-index: 3;
+  /* overflow: hidden; */
   border-radius: 0px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
-  margin-top: 38%;
-  margin-left: 50.5%;
+  /* margin-top: 39%; */
+  /* margin-left: 50.5%; */
   cursor: pointer;
   transform: scale(0.3);
+  position: absolute;
+  bottom: -6%;
+  left: 55%;
 }
+
 
 .grow_ellipse:hover {
   color: #612368;
@@ -126,6 +130,7 @@
 .grow_ellipse.grow_spin:hover::after {
   transform: scale(1, 1) rotate(0deg);
 }
+
 
 @keyframes pulse {
   0% {

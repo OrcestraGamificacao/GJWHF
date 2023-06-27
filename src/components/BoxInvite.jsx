@@ -1,12 +1,30 @@
-import React from 'react';
-import InputNome from './InputNome';
+import React, { useState } from 'react';
+import { useNavigate } from "react-router-dom";
+import Gloria from "./Gloria";
 
-
+import "../styles/BotaoIniciar.css";
 import '../styles/BoxInvite.css';
 
+import gloriaFalando from '../gloria/gloria_falando.mp4';
+
 function BoxInvite() {
+  const [nome, setNome] = useState("");
+
+  const navigate = useNavigate();
+
+  const changeUrl = () => {
+    sessionStorage.setItem("nome", nome);
+
+    navigate("/BoxApresentacao2");
+  };
+
+  const handleInputChange = (e) => {
+    e.preventDefault();
+    setNome(e.currentTarget.value);
+  }
+
   return (
-    <div>
+    <div className='container-invite'>
       <div className="box-invite">
         <div className="box-invite-elements">
           <h3 className="box-invite-title">
@@ -18,8 +36,12 @@ function BoxInvite() {
           O que me diz? Vamos juntos contribuir para um mundo melhor para todas elas? <br>
           </br><br></br>
           </h3>
-          <InputNome />
+          <input value={nome} type="text" placeholder= "Digite seu nome" id='input-nome' onChange={(e) => handleInputChange(e)}/>
+          <button onClick={changeUrl} className="grow_ellipse">SÓ SE FOR AGORA</button>
         </div>
+      </div>
+      <div className='container-gloria-invite'>
+        <Gloria animacao={gloriaFalando} max-width={500} scale={1}/>
       </div>
     </div>
   );

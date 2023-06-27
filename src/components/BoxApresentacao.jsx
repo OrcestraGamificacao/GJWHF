@@ -23,7 +23,9 @@ function BoxApresentacao() {
         </div>
         <BotaoAvancar />
       </div>
-      <Gloria animacao={gloriaFalando} maxWidth={600} scale={1}/>
+      <div className='container-gloria-init'>
+        <Gloria animacao={gloriaFalando} maxWidth={800} scale={1}/>
+      </div>
     </div>
   );
 }

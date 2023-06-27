@@ -6,13 +6,14 @@
   text-align: justify;
   position: relative;
   z-index: 1;
-  margin-top: 7%;
+  /* margin-top: 5%; */
   padding: 0 10%;
 }
 
+
 h3 {
-  margin-top: 7%;
-  margin-bottom: 7%;
+  /* margin-top: 7%;
+  margin-bottom: 7%; */
   font-weight: 600;
   text-align: center;
   color: #050505;
@@ -20,6 +21,7 @@ h3 {
   font-size: 14px;
   margin-bottom: 0;
 }
+
 
 .container-box-apresentation {
   display: flex;
@@ -32,13 +34,14 @@ h3 {
   overflow: hidden;
 }
 
+
 .box-apresentation {
   /* Rectangle */
   position: realtive;
   width: 40%;
   height: 80%;
   border: 5px solid aliceblue;
-  background: linear-gradient(180deg, rgb(238, 206, 92) 0%, rgb(188, 136, 188, 0.7) 71.98%);
+  background: linear-gradient(180deg, rgb(255, 202, 5, 0.7) 0%, rgb(188, 136, 188, 0.7) 71.98%);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
   border-radius: 59.8751px;
   /* top: 50%;
@@ -56,49 +59,34 @@ h3 {
 }
 
 /* @media screen and (max-width: 1024px) {
-  .box-apresentation {
-    width: 60%;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
+.box-apresentation {
+width: 60%;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
 }
+}
+
 
 @media screen and (max-width: 768px) {
-  .box-apresentation {
-    width: 80%;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
+.box-apresentation {
+width: 80%;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+}
 }
 
+
 @media screen and (max-width: 480px) {
-  .box-apresentation {
-    width: 90%;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
+.box-apresentation {
+width: 90%;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+}
 } */
 
-@media screen and (max-width: 1024px) {
-  .box-apresentation {
-    width: 60%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .box-apresentation {
-    width: 80%;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .box-apresentation {
-    width: 90%;
-  }
-}
 
 .logos-container{
   /* margin-top: 7%; */
@@ -109,11 +97,8 @@ h3 {
   height: 10%;
 }
 
-/* Da Malena :3 */
-
 .none{
   display: none;
-
 }
 
 .gloria-imagem{
@@ -151,6 +136,42 @@ h3 {
   display: flex;
   justify-content: center;
   position: absolute;
-  bottom: -5%;
   z-index: 2;
 }
+
+.container-gloria-init {
+  position: absolute;
+  bottom: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  height: auto;
+}
+
+@media screen and (max-width: 1024px) {
+  .box-apresentation {
+    width: 60%;
+  }
+  .container-gloria {
+    width: 20%;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .box-apresentation {
+    width: 80%;
+  }
+  .container-gloria {
+    width: 40%;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  .box-apresentation {
+    width: 90%;
+  }
+}
+  

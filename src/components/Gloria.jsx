@@ -11,7 +11,6 @@ const Gloria = ({animacao, maxWidth, scale}) => {
   const referenceColor = {r:0, g:255, b:0}
 
   const width = (window.innerWidth > maxWidth ? maxWidth : window.innerWidth * scale)
-  console.log(width)
   const handleClick = () => {
     const video = videoRef.current;
     const canvas = canvasRef.current;
