@@ -26,10 +26,10 @@ const Gloria = ({animacao}) => {
     const doLoad = () => {
         video.play();
         video.addEventListener('loadedmetadata', () => {
-          canvas.width = video.videoWidth / 6.2;
-          canvas.height = video.videoHeight / 8.2;
-          canvas2.width = 280;
-          canvas2.height = 250;
+          canvas.width = video.videoWidth / 5;
+          canvas.height = video.videoHeight / 5;
+          canvas2.width = 500;
+          canvas2.height = 450;
           timerCallback();
         }, false);
       };
