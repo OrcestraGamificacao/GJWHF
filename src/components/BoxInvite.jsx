@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useNavigate } from "react-router-dom";
 import Gloria from "./Gloria";
 
@@ -8,6 +8,8 @@ import '../styles/BoxInvite.css';
 import gloriaFalando from '../gloria/gloria_falando.mp4';
 
 function BoxInvite() {
+  const [scale, setScale] = useState(1)
+
   const [nome, setNome] = useState("");
 
   const navigate = useNavigate();
@@ -22,6 +24,12 @@ function BoxInvite() {
     e.preventDefault();
     setNome(e.currentTarget.value);
   }
+
+  useEffect(() => {
+    if (window.innerWidth > 720) {
+      setScale(0.4)
+    }
+  }, [])
 
   return (
     <div className='container-invite'>
@@ -41,7 +49,7 @@ function BoxInvite() {
         </div>
       </div>
       <div className='container-gloria-invite'>
-        <Gloria animacao={gloriaFalando} max-width={500} scale={1}/>
+        <Gloria animacao={gloriaFalando} max-width={800} scale={scale}/>
       </div>
     </div>
   );
