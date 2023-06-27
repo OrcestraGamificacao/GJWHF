@@ -1,4 +1,4 @@
-/*import React, { useState} from "react"
+import React, { useState} from "react"
 import Swal from 'sweetalert2'
 import { useNavigate } from "react-router-dom";
 
@@ -100,11 +100,11 @@ const Roleta = () => {
                 <div className={styles.box7}></div>
                 <div className={styles.box8}></div>
 
-                <div className={`${styles.tema} ${styles.tema1}`} id="opt1">Tecnologia</div>
+                <div className={`${styles.tema} ${styles.tema1}`} id="opt1">Ativismo</div>
                 <div className={`${styles.tema} ${styles.tema2}`} id="opt0">Inovação</div>
                 <div className={`${styles.tema} ${styles.tema3}`} id="opt7">Saúde</div>
                 <div className={`${styles.tema} ${styles.tema4}`} id="opt6">Educação</div>
-                <div className={`${styles.tema} ${styles.tema5}`} id="opt5">Tecnologia</div>
+                <div className={`${styles.tema} ${styles.tema5}`} id="opt5">Ativismo</div>
                 <div className={`${styles.tema} ${styles.tema6}`} id="opt4">Inovação</div>
                 <div className={`${styles.tema} ${styles.tema7}`} id="opt3">Saúde</div>
                 <div className={`${styles.tema} ${styles.tema8}`} id="opt2">Educação</div>
@@ -128,4 +128,4 @@ const Roleta = () => {
     )
 }
 
-export default Roleta*/
+export default Roleta
