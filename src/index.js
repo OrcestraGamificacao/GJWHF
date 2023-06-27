@@ -15,6 +15,8 @@ import PremioParticipacao from './pages/PremioParticipacao'
 import Apresentacao2 from './pages/Apresentacao2'
 import ApresentacaoGami from './pages/ExplicacaoGamificacao'
 
+import './styles/index.css'
+
 const router = createBrowserRouter([
   {
     path: '/',

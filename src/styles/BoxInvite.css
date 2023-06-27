@@ -21,6 +21,7 @@
     /* margin-top: 2%; */
     padding: 0 10%;
     font-family: 'Montserrat', sans-serif;
+    height: -webkit-fill-available;
   }
   
 .box-invite-title h3 {

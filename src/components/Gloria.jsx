@@ -26,10 +26,10 @@ const Gloria = ({animacao}) => {
     const doLoad = () => {
         video.play();
         video.addEventListener('loadedmetadata', () => {
-          canvas.width = video.videoWidth / 5;
-          canvas.height = video.videoHeight / 5;
-          canvas2.width = 500;
-          canvas2.height = 450;
+          canvas.width = video.videoWidth / 6.2;
+          canvas.height = video.videoHeight / 8.2;
+          canvas2.width = 280;
+          canvas2.height = 250;
           timerCallback();
         }, false);
       };
@@ -71,11 +71,11 @@ const Gloria = ({animacao}) => {
   
     useEffect(() => {
       handleClick(); // Chama handleClick quando o componente for montado
-    }, []);
+    });
 
 
   return (
-    <div>
+    <div className='container-gloria'>
       <video id="video" ref={videoRef} src={animacao} className="none"  autoPlay muted loop></video>
       <canvas id="canva" ref={canvasRef} className="none"></canvas>
       <canvas id="c2" ref={canvas2Ref} className="gloria-imagem"></canvas>
