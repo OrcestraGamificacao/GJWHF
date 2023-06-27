@@ -1,6 +1,6 @@
 import React from 'react';
 import InputNome from './InputNome';
-import BotaoIniciar from './BotaoIniciar';
+
 
 import '../styles/BoxInvite.css';
 
@@ -19,7 +19,6 @@ function BoxInvite() {
           </br><br></br>
           </h3>
           <InputNome />
-          <BotaoIniciar />
         </div>
       </div>
     </div>
