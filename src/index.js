@@ -12,7 +12,6 @@ import PremioBomDesempenho from './pages/PremioBomDesempenho'
 import PremioParticipacao from './pages/PremioParticipacao'
 import Resposta from './pages/Resposta'
 import TelaRoleta from './pages/TelaRoleta'
-import TemaEscolhido from './pages/TemaEscolhido'
 import Apresentacao2 from './pages/Apresentacao2'
 import ApresentacaoGami from './pages/ExplicacaoGamificacao'
 
