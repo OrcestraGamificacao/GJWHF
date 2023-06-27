@@ -1,6 +1,8 @@
-const Usuario = {
-    nome: '',
-    pontuacao: 0
+class Usuario {
+    constructor(nome, pontuacao){
+        this.nome = nome
+        this.pontuacao = pontuacao
+    }
 }
 
 export { Usuario }
