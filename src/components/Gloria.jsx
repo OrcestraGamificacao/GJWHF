@@ -27,7 +27,7 @@ const Gloria = ({animacao, maxWidth, scale}) => {
     const doLoad = () => {
         video.play();
         video.addEventListener('loadedmetadata', () => {
-          let scalar = 2160 / width
+          let scalar = 720 / width
           canvas.width = video.videoWidth / scalar;
           canvas.height = video.videoHeight / scalar;
           canvas2.width = width;

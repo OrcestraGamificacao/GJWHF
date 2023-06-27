@@ -25,8 +25,7 @@ const TelaRoleta = () => {
           <h1 className="roletaTitle">Gire a roleta e descubra qual será seu tema sobre o mundo do protagonismo feminino</h1>
         </di>
         <div className="roletaDivInferior">
-          <Gloria animacao={gloriaFalando} maxWidth={60000} scale={scale}/>
-        
+
           <div className="Roleta">
             <Roleta/>
           </div>

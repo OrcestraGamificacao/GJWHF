@@ -40,6 +40,7 @@
     border: none;
 }
 
+
 .container-gloria {
   width: 60%;
   height: auto;
@@ -47,6 +48,7 @@
   justify-content: center;
   position: absolute;
   z-index: 2;
+
 }
 
 .container-gloria-init {
@@ -65,10 +67,11 @@
 .boxQuestoes{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .questoesEsquerda,
 .questoesDireita{
   flex-direction: column;
+  margin: 1rem;
 }

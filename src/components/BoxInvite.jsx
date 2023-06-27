@@ -5,7 +5,7 @@ import Gloria from "./Gloria";
 import "../styles/BotaoIniciar.css";
 import '../styles/BoxInvite.css';
 
-import gloriaFalando from '../gloria/gloria_falando.mp4';
+import gloriaFalando from '../gloria/Gloria_Meio_Da_Fala.mp4';
 
 function BoxInvite() {
   const [scale, setScale] = useState(1)
@@ -50,7 +50,7 @@ function BoxInvite() {
         </div>
       </div>
       <div className='container-gloria-invite'>
-        <Gloria animacao={gloriaFalando} max-width={800} scale={scale}/>
+      <Gloria animacao={gloriaFalando} maxWidth={60000} scale={scale}/>
       </div>
     </div>
   );

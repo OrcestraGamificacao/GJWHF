@@ -5,7 +5,7 @@ import "../styles/BoxApresentacao.css";
 import logoOrc from "./assets/LogoOrc.png";
 import logoGloria from "./assets/LogoGloria.png";
 import logoNaPraia from "./assets/LogoNaParia.png";
-import gloriaFalando from '../gloria/gloria_falando.mp4';
+import gloriaFalando from '../gloria/Gloria_Meio_Da_Fala.mp4';
 
 function BoxApresentacao() {
   const [scale, setScale] = useState(1)

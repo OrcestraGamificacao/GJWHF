@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { BiSolidHelpCircle } from "react-icons/bi";
 
-import gloriaFalando from '../../gloria/gloria_falando.mp4';
+import gloriaFalando from '../../gloria/Gloria_Meio_Da_Fala.mp4';
+import gloriaSorrindo from '../../gloria/Gloria_Sorrindo.mp4';
+import gloriaBrava from '../../gloria/Gloria_Sem_Entender.mp4';
+
 
 import questoesInovacao from "../../Model/Banco de Questoes/inovacao";
 import questoesAtivismo from "../../Model/Banco de Questoes/ativismo";
@@ -43,6 +46,8 @@ function TelaQuestionario() {
 	const [numQuestao, setNumQuestão] = useState(0);
 	const temaSorteado = useLocalStorage("temaSorteado");
 
+
+	const [gloriaAnimacao, setGloriaAnimacao ] = useState(gloriaFalando)
 	const [questoesTema, setQuestoesTema] = useState(false);
 	const [indexArray, setIndexArray] = useState(0);
 	const [pontuacao, setPontuacao] = useState(0)
@@ -70,6 +75,7 @@ function TelaQuestionario() {
 
 	const proximaQuestao = () => {
 		setDesabilitado(false)
+		setGloriaAnimacao(gloriaFalando)
 
 		if (indexArray < 4) {
 			setIndexArray((valorAtual) => valorAtual + 1);
@@ -83,24 +89,40 @@ function TelaQuestionario() {
 				if (questoesTema[indexArray].alternativaA === questoesTema[indexArray].resposta){
 					setPontuacao((ponto) => ponto+1)
 					console.log('certo')
+					setGloriaAnimacao(gloriaSorrindo)
+				}
+				else{
+					setGloriaAnimacao(gloriaBrava)
 				}
 				break;
 			case "QuesB":
 				if (questoesTema[indexArray].alternativaB === questoesTema[indexArray].resposta){
 					setPontuacao((ponto) => ponto+1)
 					console.log('certo')
+					setGloriaAnimacao(gloriaSorrindo)
+				}
+				else{
+					setGloriaAnimacao(gloriaBrava)
 				}
 				break;
 			case "QuesC":
 				if (questoesTema[indexArray].alternativaC === questoesTema[indexArray].resposta){
 					setPontuacao((ponto) => ponto+1)
 					console.log('certo')
+					setGloriaAnimacao(gloriaSorrindo)
+				}
+				else{
+					setGloriaAnimacao(gloriaBrava)
 				}
 				break;
 			case "QuesD":
 				if (questoesTema[indexArray].alternativaD === questoesTema[indexArray].resposta){
 					setPontuacao((ponto) => ponto+1)
 					console.log('certo')
+					setGloriaAnimacao(gloriaSorrindo)
+				}
+				else{
+					setGloriaAnimacao(gloriaBrava)
 				}
 				break;
 			default:
@@ -151,7 +173,7 @@ function TelaQuestionario() {
 			</div>
 			
 			<div className='container-gloria-init'>
-        	<Gloria animacao={gloriaFalando} maxWidth={60000} scale={scale}/>
+        	<Gloria animacao={gloriaAnimacao} maxWidth={60000} scale={scale}/>
       		</div>
 
 			<button id="btnProximaQuestao" onClick={proximaQuestao}>
