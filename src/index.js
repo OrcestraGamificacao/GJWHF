@@ -10,8 +10,9 @@ import PerguntaFullText from './pages/PerguntaFullText'
 import TelaQuestionario from './pages/Tela Questionario/TelaQuestionario'
 import PremioBomDesempenho from './pages/PremioBomDesempenho'
 import PremioParticipacao from './pages/PremioParticipacao'
-//import Resposta from './pages/Resposta'import TelaRoleta from './pages/TelaRoleta'
-//import TemaEscolhido from './pages/TemaEscolhido'*/
+import Resposta from './pages/Resposta'
+import TelaRoleta from './pages/TelaRoleta'
+import TemaEscolhido from './pages/TemaEscolhido'
 import Apresentacao2 from './pages/Apresentacao2'
 import ApresentacaoGami from './pages/ExplicacaoGamificacao'
 
@@ -53,20 +54,16 @@ const router = createBrowserRouter([
   {
     path: '/PremioParticipacao',
     element: <PremioParticipacao />
-  }
-  /*{
+  },
+  {
     path: '/Resposta',
     element: <Resposta />
-  }*/
-  /*{
+  }
+  {
     path: '/TelaRoleta',
     element: <TelaRoleta />
   },
-  {
-    path: '/TemaEscolhido',
-    element: <TemaEscolhido />
-  }*/
-])
+  ])
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
