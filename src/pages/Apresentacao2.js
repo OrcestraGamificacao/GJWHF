@@ -8,9 +8,6 @@ const Apresentacao2 = () => {
       <div className="background-Apresentacao2">
           <BoxApresentacao2 />
       </div>
-      <div className='botaoAvançar'>
-        <BotaoAvancar2 />
-      </div>
     </div>
   )
 }
