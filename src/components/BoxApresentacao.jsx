@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import BotaoAvancar from "./BotaoAvancar";
 import Gloria from "./Gloria";
 import "../styles/BoxApresentacao.css";
@@ -8,6 +8,14 @@ import logoNaPraia from "./assets/LogoNaParia.png";
 import gloriaFalando from '../gloria/gloria_falando.mp4';
 
 function BoxApresentacao() {
+  const [scale, setScale] = useState(1)
+
+  useEffect(() => {
+    if (window.innerWidth > 720) {
+      setScale(0.3)
+    }
+  }, [])
+
   return (
     <div className='container-box-apresentation'>
       <div className="logos-container">
@@ -24,7 +32,7 @@ function BoxApresentacao() {
         <BotaoAvancar />
       </div>
       <div className='container-gloria-init'>
-        <Gloria animacao={gloriaFalando} maxWidth={600} scale={1}/>
+        <Gloria animacao={gloriaFalando} maxWidth={60000} scale={scale}/>
       </div>
     </div>
   );

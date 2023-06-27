@@ -27,7 +27,7 @@ function BoxInvite() {
 
   useEffect(() => {
     if (window.innerWidth > 720) {
-      setScale(0.4)
+      setScale(0.3)
     }
   }, [])
 

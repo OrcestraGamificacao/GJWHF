@@ -37,7 +37,7 @@ h3 {
 
 .box-apresentation {
   /* Rectangle */
-  position: realtive;
+  position: relative;
   width: 40%;
   height: 80%;
   border: 5px solid aliceblue;
