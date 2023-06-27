@@ -57,7 +57,7 @@ const router = createBrowserRouter([
   {
     path: '/Resposta',
     element: <Resposta />
-  }
+  },
   {
     path: '/TelaRoleta',
     element: <TelaRoleta />
