@@ -82,13 +82,12 @@
 }
 
 .btn1:hover {
-  /* background: transparent; */
+  background: transparent;
   
 }
 
 .detalhes:hover {
-  color: #bc88bc;
-  color: black;
+  color: #612368;
 }
 
 .detalhes:before,
@@ -101,7 +100,7 @@
   transition: all 0.3s ease;
 }
 
-.detalhes:before {
+/* .detalhes:before {
   width: 2px;
   height: 0%;
 }
@@ -109,7 +108,7 @@
 .detalhes:after {
   height: 2px;
   width: 0%;
-}
+} */
 
 .detalhes:hover:before {
   height: 100%;

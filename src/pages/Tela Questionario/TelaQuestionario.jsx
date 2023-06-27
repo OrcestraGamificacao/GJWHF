@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { BiSolidHelpCircle } from "react-icons/bi";
 
 import gloriaFalando from '../../gloria/gloria_falando.mp4';
 
@@ -129,7 +130,7 @@ function TelaQuestionario() {
 		<div className="containerQuestionario">
 
 			<p className="questionarioNumPergunta">Pergunta {indexArray + 1} de 5</p>
-			<button className="iconContexto"></button>
+			<button className="iconContexto"><BiSolidHelpCircle/></button>
 
 			<div className="enunciado">
 				<h1 className="questionarioEnunciado" id="#pergunta">

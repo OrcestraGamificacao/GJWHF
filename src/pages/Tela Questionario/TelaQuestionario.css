@@ -6,6 +6,14 @@
     align-items: center;
 }
 
+.questionarioNumPergunta{
+
+}
+
+.iconContexto{
+
+}
+
 .questionarioEnunciado{
     text-align: center;
     width: 100%;
@@ -54,7 +62,6 @@
 .container-gloria-botao {
   
 }
-
 .boxQuestoes{
   display: flex;
   flex-direction: row;
