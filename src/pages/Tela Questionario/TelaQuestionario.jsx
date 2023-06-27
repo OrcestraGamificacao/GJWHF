@@ -30,11 +30,10 @@ function TelaQuestionario() {
 	const [numQuestao, setNumQuestão] = useState(0);
 	const temaSorteado = useLocalStorage("temaSorteado");
 
-	// function sorteiaArray() {
-	// 	return Math.random() < Math.random();
-	// }
-
 	const [questoesTema, setQuestoesTema] = useState(false);
+	const [indexArray, setIndexArray] = useState(0);
+	const [pontuacao, setPontuacao] = useState(0)
+	const [desabilitado, setDesabilitado] = useState(false)
 
 	const getQuestoes = () => {
 		switch (temaSorteado) {
@@ -56,13 +55,64 @@ function TelaQuestionario() {
 		}
 	};
 
-	const [indexArray, setIndexArray] = useState(0);
-
 	const proximaQuestao = () => {
+		setDesabilitado(false)
+
 		if (indexArray < 4) {
 			setIndexArray((valorAtual) => valorAtual + 1);
 		}
 	};
+
+	function verificaQuestaoA(){
+
+		if (questoesTema[indexArray].alternativaA === questoesTema[indexArray].resposta){
+			setPontuacao((ponto) => ponto+1)
+			console.log('certo')
+
+		} else{
+			console.log('errado')
+		}
+		setDesabilitado(true)
+	}
+
+	function verificaQuestaoB(){
+
+		if (questoesTema[indexArray].alternativaB === questoesTema[indexArray].resposta){
+			setPontuacao((ponto) => ponto+1)
+			console.log('certo')
+		} else{
+			console.log('errado')
+		}
+		setDesabilitado(true)
+
+	}
+
+	function verificaQuestaoC(){
+		
+		if (questoesTema[indexArray].alternativaC === questoesTema[indexArray].resposta){
+			setPontuacao((ponto) => ponto+1)
+			console.log('certo')
+
+		} else{
+			console.log('errado')
+		}
+		setDesabilitado(true)
+	}
+
+	function verificaQuestaoD(){
+		if (questoesTema[indexArray].alternativaD === questoesTema[indexArray].resposta){
+			setPontuacao((ponto) => ponto+1)
+			console.log('certo')
+		} else{
+			console.log('errado')
+		}
+
+		setDesabilitado(true)
+	}
+
+	useEffect(() => {
+		console.log(pontuacao)
+	}, [pontuacao])
 
 	useEffect(() => {
 		console.log({ questoesTema });
@@ -79,15 +129,15 @@ function TelaQuestionario() {
 
 	return (
 		<div className="containerQuestionario">
-			<h1 className="enunciado" id="#pergunta">
+			<h1 className="quastionarioEnunciado" id="#pergunta">
 				{questoesTema[indexArray].pergunta}
 			</h1>
-			<p>Pergunta {indexArray + 1} de 5</p>
+			<p className="questionarioNumPergunta">Pergunta {indexArray + 1} de 5</p>
 			<ol>
-				<BotaoResposta texto={questoesTema[indexArray].alternativaA} />
-				<BotaoResposta texto={questoesTema[indexArray].alternativaB} />
-				<BotaoResposta texto={questoesTema[indexArray].alternativaC} />
-				<BotaoResposta texto={questoesTema[indexArray].alternativaD} />
+				<BotaoResposta texto={questoesTema[indexArray].alternativaA} acao={verificaQuestaoA} disabled={desabilitado}/>
+				<BotaoResposta texto={questoesTema[indexArray].alternativaB} acao={verificaQuestaoB} disabled={desabilitado}/>
+				<BotaoResposta texto={questoesTema[indexArray].alternativaC} acao={verificaQuestaoC} disabled={desabilitado}/>
+				<BotaoResposta texto={questoesTema[indexArray].alternativaD} acao={verificaQuestaoD} disabled={desabilitado}/>
 			</ol>
 			<button id="btnProximaQuestao" onClick={proximaQuestao}>
 				Próxima Questão

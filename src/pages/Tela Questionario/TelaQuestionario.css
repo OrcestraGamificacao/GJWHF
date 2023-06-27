@@ -1,7 +1,10 @@
 .containerQuestionario{
-
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    align-content: center;
 }
 
-.enunciado{
-    
+.questionarioEnunciado{
+    text-align: center;
 }
