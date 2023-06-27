@@ -101,11 +101,11 @@ const Roleta = () => {
                 <div className={styles.box8}></div>
 
                 <div className={`${styles.tema} ${styles.tema1}`} id="opt1">Ativismo</div>
-                <div className={`${styles.tema} ${styles.tema2}`} id="opt0">Política</div>
+                <div className={`${styles.tema} ${styles.tema2}`} id="opt0">Inovação</div>
                 <div className={`${styles.tema} ${styles.tema3}`} id="opt7">Saúde</div>
                 <div className={`${styles.tema} ${styles.tema4}`} id="opt6">Educação</div>
                 <div className={`${styles.tema} ${styles.tema5}`} id="opt5">Ativismo</div>
-                <div className={`${styles.tema} ${styles.tema6}`} id="opt4">Política</div>
+                <div className={`${styles.tema} ${styles.tema6}`} id="opt4">Inovação</div>
                 <div className={`${styles.tema} ${styles.tema7}`} id="opt3">Saúde</div>
                 <div className={`${styles.tema} ${styles.tema8}`} id="opt2">Educação</div>
 
