@@ -1,18 +1,19 @@
-/*import React from "react";
+import React from "react";
 import Roleta from "../components/Roleta/Roleta";
 import "../styles/TelaRoleta.css"
-import BalaoMensagem from "../components/Balao de Mensagem/BalaoMensagem";
 
 const TelaRoleta = () => {
 
   return (
     <div className='TelaRoleta'>
       <div className="background-roleta">
-        <h1 className="titulo">Gire a roleta para descubrir seu tema!</h1>
-        <Roleta/>
+        <h1 style={{marginLeft: "30%", marginRight: "30%"}} className="titulo">Gire a roleta e encontre qual será o tema em que você irá descobrir mais sobre o mundo do protagonismo feminino no Marrocos</h1>
+        <div className="Roleta">
+          <Roleta/>
+        </div>
       </div>
     </div>
   )
 }
 
-export default TelaRoleta;*/
+export default TelaRoleta;
