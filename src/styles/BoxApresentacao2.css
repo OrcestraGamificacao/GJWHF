@@ -22,14 +22,12 @@
     font-family: 'Montserrat', sans-serif;
   }
   
-.box-apresentation2-title h3 {
-    margin-top: 25%;
+.box-apresentation2-title {
     font-weight: 700;
     text-align: center;
     color: #050505;
     text-align: justify;
-    font-size: 14px;
-    z-index: 10;
+    font-size: 0.9em;
   }
   
   
@@ -63,26 +61,20 @@
   @media screen and (max-width: 1024px) {
     .box-apresentation2 {
       width: 60%;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
     }
   }
   
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 600px) {
     .box-apresentation2 {
       width: 80%;
-      left: 53%;
-      top: 50%;
-      transform: translate(-50%, -50%);
     }
   }
   
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 400px) {
     .box-apresentation2 {
-      width: 90%;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
+      width: 80%;
+    }
+    .box-apresentation2-title{
+      font-size: 0.75em;
     }
   }
