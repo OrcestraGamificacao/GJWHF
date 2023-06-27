@@ -3,15 +3,14 @@ import "../styles/BoxApresentacao.css";
 import { useEffect } from 'react';
 import PropTypes from 'prop-types';
 
-const Gloria = ({animacao}) => {
+const Gloria = ({animacao, maxWidth, scale}) => {
   const videoRef = useRef(null);
   const canvasRef = useRef(null);
   const canvas2Ref = useRef(null);
   const tolerance = 205;
   const referenceColor = {r:0, g:255, b:0}
 
-  const maxWidth = 600
-  const width = (window.innerWidth > maxWidth ? maxWidth : window.innerWidth)
+  const width = (window.innerWidth > maxWidth ? maxWidth : window.innerWidth * scale)
   console.log(width)
   const handleClick = () => {
     const video = videoRef.current;
@@ -90,6 +89,8 @@ const Gloria = ({animacao}) => {
 
 
 Gloria.propTypes = {
-    animacao: PropTypes.string.isRequired, // Prop para a URL do vídeo
+    animacao: PropTypes.string.isRequired,
+    maxWidth: PropTypes.isRequired,
+    scale: PropTypes.isRequired, // Prop para a URL do vídeo
   };
 export default Gloria
