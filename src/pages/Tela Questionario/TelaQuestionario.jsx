@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 import questoesTecnologia from "../../Model/Banco de Questoes/tecnologia";
-import questoesInovacao from "../../Model/Banco de Questoes/inovacao";
+import questoesPolitica from "../../Model/Banco de Questoes/politica";
 import questoesEducacao from "../../Model/Banco de Questoes/educacao";
 import questoesSaude from "../../Model/Banco de Questoes/saude";
 
@@ -40,8 +40,8 @@ function TelaQuestionario() {
 			case "Tecnologia":
 				setQuestoesTema(() => shuffleArray([...questoesTecnologia()]));
 				break;
-			case "Inovação":
-				setQuestoesTema(() => shuffleArray([...questoesInovacao()]));
+			case "Política":
+				setQuestoesTema(() => shuffleArray([...questoesPolitica()]));
 				break;
 			case "Educação":
 				setQuestoesTema(() => shuffleArray([...questoesEducacao()]));
