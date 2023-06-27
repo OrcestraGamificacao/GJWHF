@@ -47,7 +47,7 @@ const Gloria = ({animacao, maxWidth, scale}) => {
       };
 
       const computeFrame = () => {
-        ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+        ctx.drawImage(video, 10, 0, canvas.width, canvas.height);
         const frame = ctx.getImageData(0, 0, canvas.width, canvas.height);
         const data = frame.data;
 

@@ -63,50 +63,36 @@ function TelaQuestionario() {
 		}
 	};
 
-	function verificaQuestaoA(){
-
-		if (questoesTema[indexArray].alternativaA === questoesTema[indexArray].resposta){
-			setPontuacao((ponto) => ponto+1)
-			console.log('certo')
-
-		} else{
-			console.log('errado')
+	function verificaQuestao(e){
+		const elemId = e.currentTarget.id;
+		switch (elemId) {
+			case "QuesA":
+				if (questoesTema[indexArray].alternativaA === questoesTema[indexArray].resposta){
+					setPontuacao((ponto) => ponto+1)
+					console.log('certo')
+				}
+				break;
+			case "QuesB":
+				if (questoesTema[indexArray].alternativaB === questoesTema[indexArray].resposta){
+					setPontuacao((ponto) => ponto+1)
+					console.log('certo')
+				}
+				break;
+			case "QuesC":
+				if (questoesTema[indexArray].alternativaC === questoesTema[indexArray].resposta){
+					setPontuacao((ponto) => ponto+1)
+					console.log('certo')
+				}
+				break;
+			case "QuesD":
+				if (questoesTema[indexArray].alternativaD === questoesTema[indexArray].resposta){
+					setPontuacao((ponto) => ponto+1)
+					console.log('certo')
+				}
+				break;
+			default:
+				break;
 		}
-		setDesabilitado(true)
-	}
-
-	function verificaQuestaoB(){
-
-		if (questoesTema[indexArray].alternativaB === questoesTema[indexArray].resposta){
-			setPontuacao((ponto) => ponto+1)
-			console.log('certo')
-		} else{
-			console.log('errado')
-		}
-		setDesabilitado(true)
-
-	}
-
-	function verificaQuestaoC(){
-		
-		if (questoesTema[indexArray].alternativaC === questoesTema[indexArray].resposta){
-			setPontuacao((ponto) => ponto+1)
-			console.log('certo')
-
-		} else{
-			console.log('errado')
-		}
-		setDesabilitado(true)
-	}
-
-	function verificaQuestaoD(){
-		if (questoesTema[indexArray].alternativaD === questoesTema[indexArray].resposta){
-			setPontuacao((ponto) => ponto+1)
-			console.log('certo')
-		} else{
-			console.log('errado')
-		}
-
 		setDesabilitado(true)
 	}
 
@@ -129,15 +115,15 @@ function TelaQuestionario() {
 
 	return (
 		<div className="containerQuestionario">
-			<h1 className="quastionarioEnunciado" id="#pergunta">
+			<h1 className="questionarioEnunciado" id="#pergunta">
 				{questoesTema[indexArray].pergunta}
 			</h1>
 			<p className="questionarioNumPergunta">Pergunta {indexArray + 1} de 5</p>
 			<ol>
-				<BotaoResposta texto={questoesTema[indexArray].alternativaA} acao={verificaQuestaoA} disabled={desabilitado}/>
-				<BotaoResposta texto={questoesTema[indexArray].alternativaB} acao={verificaQuestaoB} disabled={desabilitado}/>
-				<BotaoResposta texto={questoesTema[indexArray].alternativaC} acao={verificaQuestaoC} disabled={desabilitado}/>
-				<BotaoResposta texto={questoesTema[indexArray].alternativaD} acao={verificaQuestaoD} disabled={desabilitado}/>
+				<BotaoResposta texto={questoesTema[indexArray].alternativaA} questao={'QuesA'} acao={verificaQuestao} disabled={desabilitado}/>
+				<BotaoResposta texto={questoesTema[indexArray].alternativaB} questao={'QuesB'} acao={verificaQuestao} disabled={desabilitado}/>
+				<BotaoResposta texto={questoesTema[indexArray].alternativaC} questao={'QuesC'} acao={verificaQuestao} disabled={desabilitado}/>
+				<BotaoResposta texto={questoesTema[indexArray].alternativaD} questao={'QuesD'} acao={verificaQuestao} disabled={desabilitado}/>
 			</ol>
 			<button id="btnProximaQuestao" onClick={proximaQuestao}>
 				Próxima Questão

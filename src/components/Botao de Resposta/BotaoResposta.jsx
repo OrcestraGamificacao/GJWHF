@@ -4,7 +4,7 @@ import styles from './BotaoResposta.module.css'
 const BotaoResposta = (props) => {
     return(
         <div className={styles.frame}>
-            <button onClick={props.acao} className={`${styles.botao} ${styles.customBtn} ${styles.btn1}`} disabled={props.disabled}><span>{props.texto}</span></button>
+            <button onClick={(e) => props.acao(e)} className={`${styles.botao} ${styles.customBtn} ${styles.btn1}`} id={props.questao} disabled={props.disabled}><span>{props.texto}</span></button>
         </div>
     )
 }
