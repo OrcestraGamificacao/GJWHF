@@ -15,7 +15,7 @@ function BoxExplicacaoGami() {
           <br></br>
           Se você acertar as 5 perguntas, ganhará o selo "XXX", caso tenha acertado 3 perguntas de 5, ganhará o selo "XXX" e por último, se não acertar nenhuma pergunta, ganha o selo "XXX".
           <br></br>
-          Calma, TEREMOS PRÊMIO! Você precisa colecionar 5 seleos "XXX" para apresentar ao (LUGAR) e ganhar XX% de desconto na sua próxima bebida! Porem, você precisa irar print do seu selo e postar no seu Instagram o selo que você ganhou, marcando <a href="https://www.instagram.com/eusouagloria/" target="_blank" className="link-styled">@eusouagloria</a>, <a href="https://www.instagram.com/napraiafestival/" target="_blank" className="link-styled">@napraiafestival</a> e a <a href="https://www.instagram.com/orcgamificacao/" target="_blank" className="link-styled">@orcgamificacao</a>! 
+          Calma, TEREMOS PRÊMIO! Você precisa colecionar 5 seleos "XXX" para apresentar ao (LUGAR) e ganhar XX% de desconto na sua próxima bebida! Porém, você precisa tirar print do seu selo e postar no seu Instagram o selo que você ganhou, marcando <a href="https://www.instagram.com/eusouagloria/" target="_blank" className="link-styled">@eusouagloria</a>, <a href="https://www.instagram.com/napraiafestival/" target="_blank" className="link-styled">@napraiafestival</a> e a <a href="https://www.instagram.com/orcgamificacao/" target="_blank" className="link-styled">@orcgamificacao</a>! 
         </h3>
         </div>
     </div>
