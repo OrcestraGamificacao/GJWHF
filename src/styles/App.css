@@ -8,15 +8,17 @@
 
 .background {
   background-image: url("../images/napraia2.png");
-  height: 100vh;
+  height: 101vh;
   width: 100%;
   background-size: cover;
   background-position: center;
   opacity: 1; /* Adjust the opacity as needed */
-  margin: 0;
+  /* margin: 0;
   padding: 0;
   transform: scale(1.05);
   margin: 0;
   padding: 0;
-  transform: scale(1.05);
+  transform: scale(1.05); */
+  position: absolute;
+  top: -1%;
 }
