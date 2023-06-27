@@ -55,10 +55,10 @@ function TelaQuestionario() {
 
 	const getQuestoes = () => {
 		switch (temaSorteado) {
-			case "Tecnologia":
+			case "Inovação":
 				setQuestoesTema(() => shuffleArray([...questoesInovacao()]));
 				break;
-			case "Política":
+			case "Ativismo":
 				setQuestoesTema(() => shuffleArray([...questoesAtivismo()]));
 				break;
 			case "Educação":
