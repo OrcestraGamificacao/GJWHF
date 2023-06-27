@@ -82,6 +82,24 @@ h3 {
   }
 } */
 
+@media screen and (max-width: 1024px) {
+  .box-apresentation {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .box-apresentation {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .box-apresentation {
+    width: 90%;
+  }
+}
+
 .logos-container{
   /* margin-top: 7%; */
   text-align: center;
@@ -105,8 +123,6 @@ h3 {
   border-radius: 37%; */
   display: block;
   margin: 0 auto;
-  width: 40%;
-  height: auto;
 }
 
 .botao-play{
@@ -130,35 +146,11 @@ h3 {
 }
 
 .container-gloria {
-  width: 100%;
+  width: 60%;
   height: auto;
   display: flex;
   justify-content: center;
   position: absolute;
   bottom: -5%;
   z-index: 2;
-}
-
-@media screen and (max-width: 1024px) {
-  .box-apresentation {
-    width: 60%;
-  }
-  .gloria-imagem{
-    width: 50%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .box-apresentation {
-    width: 80%;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .box-apresentation {
-    width: 90%;
-  }
-  .gloria-imagem{
-    width: 80%;
-  }
 }

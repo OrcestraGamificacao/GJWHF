@@ -10,6 +10,9 @@ const Gloria = ({animacao}) => {
   const tolerance = 205;
   const referenceColor = {r:0, g:255, b:0}
 
+  const maxWidth = 600
+  const width = (window.innerWidth > maxWidth ? maxWidth : window.innerWidth)
+  console.log(width)
   const handleClick = () => {
     const video = videoRef.current;
     const canvas = canvasRef.current;
@@ -26,14 +29,15 @@ const Gloria = ({animacao}) => {
     const doLoad = () => {
         video.play();
         video.addEventListener('loadedmetadata', () => {
-          canvas.width = video.videoWidth / 5;
-          canvas.height = video.videoHeight / 5;
-          canvas2.width = 500;
-          canvas2.height = 450;
+          let scalar = 2160 / width
+          canvas.width = video.videoWidth / scalar;
+          canvas.height = video.videoHeight / scalar;
+          canvas2.width = width;
+          canvas2.height = width;
           timerCallback();
         }, false);
       };
-  
+
       const timerCallback = () => {
         if (video.paused || video.ended) {
           return;
@@ -43,34 +47,35 @@ const Gloria = ({animacao}) => {
           timerCallback();
         }, 0);
       };
-  
+
       const computeFrame = () => {
         ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
         const frame = ctx.getImageData(0, 0, canvas.width, canvas.height);
         const data = frame.data;
-  
+
         for (let i = 0; i < data.length; i += 4) {
           const r = data[i + 0];
           const g = data[i + 1];
           const b = data[i + 2];
-  
+
           const color = { r, g, b };
-  
+
           if (distance(color, referenceColor) < tolerance) {
             data[i + 3] = 0;
           }
         }
-  
+
         const offsetX = (canvas2.width - canvas.width) / 2;
         const offsetY = (canvas2.height - canvas.height);
         ctx2.putImageData(frame, offsetX, offsetY);
       };
-  
+
       doLoad();
     };
-  
+
     useEffect(() => {
       handleClick(); // Chama handleClick quando o componente for montado
+      const {innerWidth: width, innerHeight: height} = window;
     });
 
 
