@@ -23,7 +23,7 @@ function BoxApresentacao() {
         </div>
         <BotaoAvancar />
       </div>
-      <Gloria animacao={gloriaFalando}/>
+      <Gloria animacao={gloriaFalando} maxWidth={600} scale={1}/>
     </div>
   );
 }
