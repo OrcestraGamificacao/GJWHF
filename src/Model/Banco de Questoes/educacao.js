@@ -42,21 +42,20 @@ function questoesEducacao() {
         'Incorporando diferentes abordagens culturais e filosóficas em suas pesquisas.',
         'Ao ter uma formação e vivência em duas culturas distintas, Ilham Kadri foi exposta a diferentes maneiras de pensar, enxergar o mundo e abordar problemas. Isso pode ter ampliado sua capacidade de pensar de forma mais abrangente e flexível, permitindo que ela aborde questões científicas com uma perspectiva mais diversificada.')
 
-    // const eduQ5 = new Questao(5, 'texto introdutorio - educaçao 5', 'Pergunta educaçao 5', '5a - educaçao', '5b - educaçao', '5c - educaçao', '5d - educaçao (certa)', '5d - educaçao (certa)', 'Explicação')
+    const eduQ5 = new Questao(5, 'texto introdutorio - educaçao 5', 'Pergunta educaçao 5', '5a - educaçao', '5b - educaçao', '5c - educaçao', '5d - educaçao (certa)', '5d - educaçao (certa)', 'Explicação')
 
-    // const eduQ6 = new Questao(6, 'texto introdutorio - educaçao 6', 'Pergunta educaçao 6', '6a - educaçao', '6b - educaçao', '6c - educaçao', '6d - educaçao (certa)', '6d - educaçao (certa)', 'Explicação')
+    const eduQ6 = new Questao(6, 'texto introdutorio - educaçao 6', 'Pergunta educaçao 6', '6a - educaçao', '6b - educaçao', '6c - educaçao', '6d - educaçao (certa)', '6d - educaçao (certa)', 'Explicação')
 
-    // const eduQ7 = new Questao(7, 'texto introdutorio - educaçao 7', 'Pergunta educaçao 7', '7a - educaçao', '7b - educaçao (certa)', '7c - educaçao', '7d - educaçao', '7b - educaçao (certa)', 'Explicação')
+    const eduQ7 = new Questao(7, 'texto introdutorio - educaçao 7', 'Pergunta educaçao 7', '7a - educaçao', '7b - educaçao (certa)', '7c - educaçao', '7d - educaçao', '7b - educaçao (certa)', 'Explicação')
 
-    // const eduQ8 = new Questao(8, 'texto introdutorio - educaçao 8', 'Pergunta educaçao 8', '8a - educaçao (certa)', '8b - educaçao', '8c - educaçao', '8d - educaçao', '8a - educaçao (certa)', 'Explicação')
+    const eduQ8 = new Questao(8, 'texto introdutorio - educaçao 8', 'Pergunta educaçao 8', '8a - educaçao (certa)', '8b - educaçao', '8c - educaçao', '8d - educaçao', '8a - educaçao (certa)', 'Explicação')
 
-    // const eduQ9 = new Questao(9, 'texto introdutorio - educaçao 9', 'Pergunta educaçao 9', '9a - educaçao', '9b - educaçao', '9c - educaçao (certa)', '9d - educaçao', '9c - educaçao (certa)', 'Explicação')
+    const eduQ9 = new Questao(9, 'texto introdutorio - educaçao 9', 'Pergunta educaçao 9', '9a - educaçao', '9b - educaçao', '9c - educaçao (certa)', '9d - educaçao', '9c - educaçao (certa)', 'Explicação')
 
-    // const eduQ10 = new Questao(10, 'texto introdutorio - educaçao 10', 'Pergunta educaçao 10', '10a - educaçao', '10b - educaçao', '10c - educaçao', '10d - educaçao (certa)', '10d - educaçao (certa)', 'Você acertou!')
+    const eduQ10 = new Questao(10, 'texto introdutorio - educaçao 10', 'Pergunta educaçao 10', '10a - educaçao', '10b - educaçao', '10c - educaçao', '10d - educaçao (certa)', '10d - educaçao (certa)', 'Você acertou!')
 
-    // const eduQuestoes = [eduQ1, eduQ2, eduQ3, eduQ4, eduQ5, eduQ6, eduQ7, eduQ8, eduQ9, eduQ10]
+    const eduQuestoes = [eduQ1, eduQ2, eduQ3, eduQ4, eduQ5, eduQ6, eduQ7, eduQ8, eduQ9, eduQ10]
 
-    const eduQuestoes = [eduQ1, eduQ2, eduQ3, eduQ4]
 
 
     return eduQuestoes

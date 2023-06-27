@@ -42,21 +42,19 @@ function questoesSaude() {
         'Inovação e empreendedorismo.',
         'Zniber demonstrou habilidades empreendedoras ao liderar a empresa em diferentes setores, desde alimentos e bebidas até plásticos e distribuição. Sua capacidade de identificar oportunidades de negócios e implementar estratégias inovadoras contribuiu para o crescimento e sucesso da empresa.')
 
-    // const saudeQ5 = new Questao(5, 'texto introdutorio - saude 5', 'Pergunta saude 5', '5a - saude', '5b - saude', '5c - saude', '5d - saude (certa)', '5d - saude (certa)', 'Você acertou!', 'Explicação')
+    const saudeQ5 = new Questao(5, 'texto introdutorio - saude 5', 'Pergunta saude 5', '5a - saude', '5b - saude', '5c - saude', '5d - saude (certa)', '5d - saude (certa)', 'Você acertou!', 'Explicação')
 
-    // const saudeQ6 = new Questao(6, 'texto introdutorio - saude 6', 'Pergunta saude 6', '6a - saude', '6b - saude', '6c - saude', '6d - saude (certa)', '6d - saude (certa)', 'Você acertou!', 'Explicação')
+    const saudeQ6 = new Questao(6, 'texto introdutorio - saude 6', 'Pergunta saude 6', '6a - saude', '6b - saude', '6c - saude', '6d - saude (certa)', '6d - saude (certa)', 'Você acertou!', 'Explicação')
 
-    // const saudeQ7 = new Questao(7, 'texto introdutorio - saude 7', 'Pergunta saude 7', '7a - saude', '7b - saude (certa)', '7c - saude', '7d - saude', '7b - saude (certa)', 'Você acertou!', 'Explicação')
+    const saudeQ7 = new Questao(7, 'texto introdutorio - saude 7', 'Pergunta saude 7', '7a - saude', '7b - saude (certa)', '7c - saude', '7d - saude', '7b - saude (certa)', 'Você acertou!', 'Explicação')
 
-    // const saudeQ8 = new Questao(8, 'texto introdutorio - saude 8', 'Pergunta saude 8', '8a - saude (certa)', '8b - saude', '8c - saude', '8d - saude', '8a - saude (certa)', 'Você acertou!', 'Explicação')
+    const saudeQ8 = new Questao(8, 'texto introdutorio - saude 8', 'Pergunta saude 8', '8a - saude (certa)', '8b - saude', '8c - saude', '8d - saude', '8a - saude (certa)', 'Você acertou!', 'Explicação')
 
-    // const saudeQ9 = new Questao(9, 'texto introdutorio - saude 9', 'Pergunta saude 9', '9a - saude', '9b - saude', '9c - saude (certa)', '9d - saude', '9c - saude (certa)', 'Você acertou!', 'Explicação')
+    const saudeQ9 = new Questao(9, 'texto introdutorio - saude 9', 'Pergunta saude 9', '9a - saude', '9b - saude', '9c - saude (certa)', '9d - saude', '9c - saude (certa)', 'Você acertou!', 'Explicação')
 
-    // const saudeQ10 = new Questao(10, 'texto introdutorio - saude 10', 'Pergunta saude 10', '10a - saude', '10b - saude', '10c - saude', '10d - saude (certa)', '10d - saude (certa)', 'Você acertou!', 'Explicação')
+    const saudeQ10 = new Questao(10, 'texto introdutorio - saude 10', 'Pergunta saude 10', '10a - saude', '10b - saude', '10c - saude', '10d - saude (certa)', '10d - saude (certa)', 'Você acertou!', 'Explicação')
 
-    // const saudeQuestoes = [saudeQ1, saudeQ2, saudeQ3, saudeQ4, saudeQ5, saudeQ6, saudeQ7, saudeQ8, saudeQ9, saudeQ10]
-
-    const saudeQuestoes = [saudeQ1, saudeQ2, saudeQ3, saudeQ4]
+    const saudeQuestoes = [saudeQ1, saudeQ2, saudeQ3, saudeQ4, saudeQ5, saudeQ6, saudeQ7, saudeQ8, saudeQ9, saudeQ10]
 
 
     return saudeQuestoes

@@ -82,12 +82,11 @@ function questoesInovacao() {
         'A participação das mulheres ajuda a acelerar o desenvolvimento e reforça a narrativa tecnológica na África.',
         'A participação das mulheres desempenha um papel crucial na aceleração do desenvolvimento e no fortalecimento da tecnologia na África. Ao serem capacitadas e terem acesso igualitário às oportunidades digitais, elas contribuem de maneira significativa para o crescimento econômico e social do continente.')
 
-    // const inovQ9 = new Questao(9, 'texto introdutorio - inovação 9', 'Pergunta inovação 9', '9a - inovação', '9b - inovação', '9c - inovação (certa)', '9d - inovação', '9c - inovação (certa)', 'Explicação')
+    const inovQ9 = new Questao(9, 'texto introdutorio - inovação 9', 'Pergunta inovação 9', '9a - inovação', '9b - inovação', '9c - inovação (certa)', '9d - inovação', '9c - inovação (certa)', 'Explicação')
 
-    // const inovQ10 = new Questao(10, 'texto introdutorio - inovação 10', 'Pergunta inovação 10', '10a - inovação', '10b - inovação', '10c - inovação', '10d - inovação (certa)', '10d - inovação (certa)', 'Explicação')
+    const inovQ10 = new Questao(10, 'texto introdutorio - inovação 10', 'Pergunta inovação 10', '10a - inovação', '10b - inovação', '10c - inovação', '10d - inovação (certa)', '10d - inovação (certa)', 'Explicação')
 
-    // const inovQuestoes = [inovQ1, inovQ2, inovQ3, inovQ4, inovQ5, inovQ6, inovQ7, inovQ8, inovQ9, inovQ10]
-    const inovQuestoes = [inovQ1, inovQ2, inovQ3, inovQ4, inovQ5, inovQ6, inovQ7, inovQ8]
+    const inovQuestoes = [inovQ1, inovQ2, inovQ3, inovQ4, inovQ5, inovQ6, inovQ7, inovQ8, inovQ9, inovQ10]
 
     return inovQuestoes
 
