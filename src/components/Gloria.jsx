@@ -79,7 +79,7 @@ const Gloria = ({animacao, maxWidth, scale}) => {
 
   return (
     <div className='container-gloria'>
-      <video id="video" ref={videoRef} src={animacao} className="none"  autoPlay muted loop></video>
+      <video id="video" ref={videoRef} src={animacao} className="none"  autoPlay muted preload='auto'></video>
       <canvas id="canva" ref={canvasRef} className="none"></canvas>
       <canvas id="c2" ref={canvas2Ref} className="gloria-imagem"></canvas>
     </div>

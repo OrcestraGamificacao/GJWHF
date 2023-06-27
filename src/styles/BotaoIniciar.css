@@ -26,13 +26,13 @@
 
 
 .grow_ellipse:hover {
-  color: #612368;
+  /* color: #612368; */
   animation: pulse 2s infinite;
   transform: scale(0.85);
 }
 .grow_ellipse::after {
   content: "";
-  background: #ffca68;
+  /* background: #ffca68; */
   position: absolute;
   z-index: -1;
   padding: 0.85em 0.75em;

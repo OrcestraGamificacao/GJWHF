@@ -1,12 +1,16 @@
 import React, { useEffect, useState } from "react";
+import { BiSolidHelpCircle } from "react-icons/bi";
 
-import questoesTecnologia from "../../Model/Banco de Questoes/tecnologia";
-import questoesPolitica from "../../Model/Banco de Questoes/politica";
+import gloriaFalando from '../../gloria/gloria_falando.mp4';
+
+import questoesInovacao from "../../Model/Banco de Questoes/inovacao";
+import questoesAtivismo from "../../Model/Banco de Questoes/ativismo";
 import questoesEducacao from "../../Model/Banco de Questoes/educacao";
 import questoesSaude from "../../Model/Banco de Questoes/saude";
 
 import BotaoResposta from "../../components/Botao de Resposta/BotaoResposta";
 import "./TelaQuestionario.css";
+import Gloria from "../../components/Gloria";
 
 const useLocalStorage = (key) => {
 	const [data] = useState(localStorage.getItem(key));
@@ -27,6 +31,15 @@ function shuffleArray(arr) {
 }
 
 function TelaQuestionario() {
+
+
+	const [scale, setScale] = useState(1)
+
+	useEffect(() => {
+	  if (window.innerWidth > 720) {
+		setScale(0.3)
+	  }
+	}, [])
 	const [numQuestao, setNumQuestão] = useState(0);
 	const temaSorteado = useLocalStorage("temaSorteado");
 
@@ -38,10 +51,10 @@ function TelaQuestionario() {
 	const getQuestoes = () => {
 		switch (temaSorteado) {
 			case "Tecnologia":
-				setQuestoesTema(() => shuffleArray([...questoesTecnologia()]));
+				setQuestoesTema(() => shuffleArray([...questoesInovacao()]));
 				break;
 			case "Política":
-				setQuestoesTema(() => shuffleArray([...questoesPolitica()]));
+				setQuestoesTema(() => shuffleArray([...questoesAtivismo()]));
 				break;
 			case "Educação":
 				setQuestoesTema(() => shuffleArray([...questoesEducacao()]));
@@ -115,19 +128,36 @@ function TelaQuestionario() {
 
 	return (
 		<div className="containerQuestionario">
-			<h1 className="questionarioEnunciado" id="#pergunta">
-				{questoesTema[indexArray].pergunta}
-			</h1>
+
 			<p className="questionarioNumPergunta">Pergunta {indexArray + 1} de 5</p>
-			<ol>
-				<BotaoResposta texto={questoesTema[indexArray].alternativaA} questao={'QuesA'} acao={verificaQuestao} disabled={desabilitado}/>
-				<BotaoResposta texto={questoesTema[indexArray].alternativaB} questao={'QuesB'} acao={verificaQuestao} disabled={desabilitado}/>
-				<BotaoResposta texto={questoesTema[indexArray].alternativaC} questao={'QuesC'} acao={verificaQuestao} disabled={desabilitado}/>
-				<BotaoResposta texto={questoesTema[indexArray].alternativaD} questao={'QuesD'} acao={verificaQuestao} disabled={desabilitado}/>
-			</ol>
+			<button className="iconContexto"><BiSolidHelpCircle/></button>
+
+			<div className="enunciado">
+				<h1 className="questionarioEnunciado" id="#pergunta">
+					{questoesTema[indexArray].pergunta}
+				</h1>
+			</div>
+
+			<div className="boxQuestoes">
+				<div className="questoesEsquerda">
+					<BotaoResposta texto={questoesTema[indexArray].alternativaA} questao={'QuesA'} acao={verificaQuestao} disabled={desabilitado}/>
+					<BotaoResposta texto={questoesTema[indexArray].alternativaB} questao={'QuesB'} acao={verificaQuestao} disabled={desabilitado}/>
+				</div>
+				<div className="questoesDireita">
+					<BotaoResposta texto={questoesTema[indexArray].alternativaC} questao={'QuesC'} acao={verificaQuestao} disabled={desabilitado}/>
+					<BotaoResposta texto={questoesTema[indexArray].alternativaD} questao={'QuesD'} acao={verificaQuestao} disabled={desabilitado}/>
+				</div>
+
+			</div>
+			
+			<div className='container-gloria-init'>
+        	<Gloria animacao={gloriaFalando} maxWidth={60000} scale={scale}/>
+      		</div>
+
 			<button id="btnProximaQuestao" onClick={proximaQuestao}>
 				Próxima Questão
-			</button>
+			</button> 
+			
 		</div>
 	);
 }

@@ -41,10 +41,9 @@ function BoxInvite() {
           <br></br>
           E para não ficar sozinha nessa missão gostaria de convidar você, que está aproveitando o Na Praia Festival, para me ajudar a conquistar este objetivo.<br>
           </br><br></br>
-          O que me diz? Vamos juntos contribuir para um mundo melhor para todas elas? <br>
-          </br><br></br>
+          O que me diz? Vamos juntos contribuir para um mundo melhor para todas elas?
           </h3>
-          <input value={nome} type="text" placeholder= "Digite seu nome" id='input-nome' onChange={(e) => handleInputChange(e)}/>
+          <input value={nome} type="text" className="inputNome" placeholder= "Digite seu nome" id='inputNome' onChange={(e) => handleInputChange(e)}/>
           <button onClick={changeUrl} className="grow_ellipse">SÓ SE FOR AGORA</button>
         </div>
       </div>

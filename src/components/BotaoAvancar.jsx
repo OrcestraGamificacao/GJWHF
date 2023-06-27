@@ -12,8 +12,8 @@ function BotaoAvancar() {
   return (
     <div className="wrapper" onClick={changeUrl}>
       <a href="" className="cta">
-        <span>AVANÇAR</span>
-        <span>
+        <span className="botaoAvancarSpan">AVANÇAR</span>
+        <span className="botaoAvancarSpan">
           <svg
             width="66px"
             height="43px"
