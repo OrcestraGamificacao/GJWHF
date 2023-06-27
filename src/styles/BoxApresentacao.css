@@ -7,19 +7,18 @@
   position: relative;
   z-index: 1;
   /* margin-top: 5%; */
-  padding: 0 10%;
+  padding: 8%;
+  padding-bottom: 2%;
 }
 
 
 h3 {
-  /* margin-top: 7%;
-  margin-bottom: 7%; */
   font-weight: 600;
   text-align: center;
   color: #050505;
   text-align: justify;
   font-size: 14px;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 
@@ -43,7 +42,7 @@ h3 {
   border: 5px solid aliceblue;
   background: linear-gradient(180deg, rgb(255, 202, 5, 0.7) 0%, rgb(188, 136, 188, 0.7) 71.98%);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
-  border-radius: 59.8751px;
+  border-radius: 40px;
   /* top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -56,6 +55,7 @@ h3 {
   justify-content: flex-start;
   align-items: center;
   overflow: hidden;
+
 }
 
 /* @media screen and (max-width: 1024px) {
@@ -174,4 +174,3 @@ transform: translate(-50%, -50%);
     width: 90%;
   }
 }
-  
