@@ -28,5 +28,6 @@ body {
   width: 100vw;
   background-size: cover;
   background-position: center;
+  overflow-y: hidden;
 }
 
