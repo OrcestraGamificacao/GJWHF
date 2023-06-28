@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+} 
+
+#root {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.premio-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-size: cover;
+    background-position: 80% 10%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.premio-box {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    bottom: 20%;
+    color: white;
+}
+
+.premio-nome {
+    font-size: 2em;
+    text-shadow: 0.1em 0.1em 0.2em rgb(255, 255, 255, 0.3);
+}
+
+.premio-box-data {
+    font-size: 1.2em;
+}
+
+@media screen and (min-width: 700px) {
+    .premio-container {
+        width: 85%;
+        height: 75%;
+        background-size: cover;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    .premio-box {
+        bottom: 40%;
+        left: 12%;
+    }
+}
+
+@media screen and (min-width: 1020px) {
+    .premio-container {
+        height: 80%;
+    }
+
+    .premio-box {
+        bottom: 35%;
+        left: 22%;
+    }
+}

@@ -1,8 +1,9 @@
-const PremioBomDesempenho = () => {
+import Premio from "../components/Premio"
 
+const PremioParticipacao = () => {
   return (
-    <div className='PremioBomDesempenho'>PremioBomDesempenho</div>
+    <Premio nota="alto"/>
   )
 }
 
-export default PremioBomDesempenho;
+export default PremioParticipacao;
