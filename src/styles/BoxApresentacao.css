@@ -123,11 +123,11 @@ transform: translate(-50%, -50%);
   width: 32%;
   height: auto;
   opacity: 1;
-  max-width: 260px;
+  max-width: 250px;
 }
 
 #logo-napraia {
-  width: 20%;
+  max-width: 70px;
 }
 
 .container-gloria {
