@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/BotaoAvancar.css";
+import "../styles/BotaoIniciar.css";
 import { useNavigate } from "react-router-dom";
 
 function BotaoIniciar() {
@@ -11,7 +11,7 @@ function BotaoIniciar() {
 
   return (
       <div className="wrapper-btniniciar">
-        <button onClick={changeUrl} className="grow_ellipse">VAMOS COMEÇAR!</button>
+        <button onClick={changeUrl} className="grow_ellipse">SÓ SE FOR AGORA</button>
       </div>
   );
 }

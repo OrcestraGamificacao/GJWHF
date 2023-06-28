@@ -4,7 +4,6 @@ import Gloria from "./Gloria";
 
 import "../styles/BotaoIniciar.css";
 import '../styles/BoxInvite.css';
-import BotaoAvancarInvite from '../components/BotaoAvancarInvite'
 
 import gloriaFalando from '../gloria/Gloria_Meio_Da_Fala.mp4';
 
@@ -47,8 +46,7 @@ function BoxInvite() {
           Então começamos com... Qual o seu nome?
           </h3>
           <input value={nome} type="text" className="inputNome" placeholder= "Digite seu nome" id='inputNome' onChange={(e) => handleInputChange(e)}/>
-          <button onClick={changeUrl} className="grow_ellipse">VAMOS COMEÇAR!</button>
-          <BotaoAvancarInvite/>
+          <button onClick={changeUrl} className="grow_ellipse">SÓ SE FOR AGORA</button>
         </div>
       </div>
       <div className='container-gloria-invite'>
