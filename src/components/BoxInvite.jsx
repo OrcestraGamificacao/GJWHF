@@ -48,8 +48,9 @@ function BoxInvite() {
           <br></br>
           Então começamos com... Qual o seu nome?
           </h3>
-          <input value={nome} type="text" className="inputNome" placeholder= "Digite seu nome" id='inputNome' onChange={(e) => handleInputChange(e)}/>
-          <button onClick={changeUrl} className="grow_ellipse" /*disabled={nome ? false : true}*/ >SÓ SE FOR AGORA</button>
+          <br></br>
+          <input value={nome} type="text" className="inputNome" placeholder= "Digite seu nome e sobrenome" id='inputNome' onChange={(e) => handleInputChange(e)}/>
+          <button onClick={changeUrl} className="grow_ellipse" /*disabled={nome ? false : true}*/ >VAMOS COMEÇAR!</button>
         </div>
       </div>
       <div className='container-gloria-invite'>
