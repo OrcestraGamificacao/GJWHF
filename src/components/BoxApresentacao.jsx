@@ -3,9 +3,10 @@ import BotaoAvancar from "./BotaoAvancar";
 import Gloria from "./Gloria";
 import "../styles/BoxApresentacao.css";
 import logoOrc from "./assets/LogoOrc.png";
-import logoGloria from "./assets/LogoGloria.png";
+import logoGloria from "./assets/LogoGloria.svg";
 import logoNaPraia from "./assets/LogoNaParia.png";
 import gloriaFalando from '../gloria/Gloria_Meio_Da_Fala.mp4';
+
 
 function BoxApresentacao() {
   const [scale, setScale] = useState(1)
