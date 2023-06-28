@@ -109,15 +109,15 @@
     position: absolute;
     pointer-events: none;
     border-radius: 0%;
-    animation: confetti-fall 4s linear infinite;
-  }
-  
-  .confetti.confetti--animation-slow {
     animation: confetti-fall 3s linear infinite;
   }
   
+  .confetti.confetti--animation-slow {
+    animation: confetti-fall 2.5s linear infinite;
+  }
+  
   .confetti.confetti--animation-medium {
-    animation: confetti-fall 2s linear infinite;
+    animation: confetti-fall 1.8s linear infinite;
   }
   
   .confetti.confetti--animation-fast {
