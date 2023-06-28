@@ -1,6 +1,6 @@
 import BoxTelaTchau from "../components/BoxTelaTchau"
 import '../styles/BoxTelaTchau.css'
-import React, { useEffect } from 'react';
+import React, { useEffect , useState} from 'react';
 import { useNavigate } from "react-router-dom";
 
 const Confettiful = function(el) {
@@ -64,8 +64,22 @@ const TelaTchau = () => {
 
   const navigate = useNavigate();
 
+  const useLocalStorage = (key) => {
+    const [data] = useState(localStorage.getItem(key));
+  
+    return data;
+  };
+
+  const pontuacao = useLocalStorage('pontuacao')
+
   const changeUrl = () => {
-    navigate("/PremioBomDesempenho");
+    if(pontuacao == 5){
+      navigate('/PremioBomDesempenho');
+    } else if (pontuacao >= 3 && pontuacao < 5){
+      navigate('/PremioMedioDesempenho')
+    } else {
+      navigate('/PremioParticipacao')
+    }
   };
 
   return (

@@ -68,7 +68,7 @@ function TelaQuestionario() {
 		Swal.fire({
 			title: 'Explicação',
 			html: questoesTema[indexArray].textoExplicativo,
-			confirmButtonText: 'Próxima questão',
+			confirmButtonText: indexArray < 4 ? 'Próxima questão' : 'Terminar',
 			// showCancelButton: false,
 			confirmButtonColor: '#bc88bc',
 			position: 'top'
@@ -109,14 +109,8 @@ function TelaQuestionario() {
 		if (indexArray < 4) {
 			setIndexArray((valorAtual) => valorAtual + 1);
 		} else{
-			if (pontuacao == 5){
-			
-				navigate('/PremioBomDesempenho')
-			} else if (pontuacao >= 3 && pontuacao < 5){
-				console.log('redirecionar pra tela')
-			} else {
-				navigate('/PremioParticipacao')
-			}
+			navigate('/TelaTchau')
+			localStorage.setItem('pontuacao', pontuacao.toString())
 		}
 	};
 
