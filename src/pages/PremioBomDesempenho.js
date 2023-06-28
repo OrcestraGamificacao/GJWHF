@@ -1,9 +1,9 @@
 import Premio from "../components/Premio"
 
-const PremioParticipacao = () => {
+const PremioBomDesempenho = () => {
   return (
     <Premio nota="alto"/>
   )
 }
 
-export default PremioParticipacao;
+export default PremioBomDesempenho;
