@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, Alert } from 'react';
 import { useNavigate } from "react-router-dom";
 import Gloria from "./Gloria";
 
@@ -11,11 +11,13 @@ function BoxInvite() {
   const [scale, setScale] = useState(1)
 
   const [nome, setNome] = useState("");
+  const [showAlert, setShowAlert] = useState(false);
 
   const navigate = useNavigate();
 
   const changeUrl = () => {
-    sessionStorage.setItem("nome", nome);
+      setShowAlert(true);
+
 
     navigate("/BoxApresentacao2");
   };
@@ -34,6 +36,7 @@ function BoxInvite() {
   return (
     <div className='container-invite'>
       <div className="box-invite">
+        {showAlert && <p>Preencha o campo nome!</p>}
         <div className="box-invite-elements">
           <h3 className="box-invite-title">
           Você sabia que mais de 27% das mulheres de 15 a 49 anos já foram vítimas de pelo menos um ato de violência? E por esse e vários outros casos que estou aqui. <br>
@@ -46,7 +49,7 @@ function BoxInvite() {
           Então começamos com... Qual o seu nome?
           </h3>
           <input value={nome} type="text" className="inputNome" placeholder= "Digite seu nome" id='inputNome' onChange={(e) => handleInputChange(e)}/>
-          <button onClick={changeUrl} className="grow_ellipse">SÓ SE FOR AGORA</button>
+          <button onClick={changeUrl} className="grow_ellipse" disabled={nome ? false : true}>SÓ SE FOR AGORA</button>
         </div>
       </div>
       <div className='container-gloria-invite'>

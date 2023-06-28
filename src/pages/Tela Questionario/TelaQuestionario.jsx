@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { BiSolidHelpCircle } from "react-icons/bi";
+import { useNavigate } from "react-router-dom";
 
 import gloriaFalando from '../../gloria/Gloria_Meio_Da_Fala.mp4';
 import gloriaSorrindo from '../../gloria/Gloria_Sorrindo.mp4';
@@ -39,13 +40,40 @@ function TelaQuestionario() {
 	const [scale, setScale] = useState(1)
 
 	useEffect(() => {
-	  if (window.innerWidth > 720) {
-		setScale(0.3)
+	  if (window.innerWidth > 1) {
+		setScale(0.21)
 	  }
 	}, [])
 	const [numQuestao, setNumQuestão] = useState(0);
 	const temaSorteado = useLocalStorage("temaSorteado");
 
+	const Swal = require('sweetalert2')
+	function contextoPopUp(){
+		Swal.fire({
+			title: 'Contexto',
+			html: questoesTema[indexArray].textoIntrodutorio,
+			showCancelButton: false,
+			confirmButtonText: 'Voltar ao questionário',
+			confirmButtonColor: '#612368',
+			customClass: {
+				containerContexto: 'my-swal-container', // Classe personalizada para o container do SweetAlert
+				titleContexto: 'my-swal-title', // Classe personalizada para o título do SweetAlert
+				textContexto: 'my-swal-text', // Classe personalizada para o texto do SweetAlert
+				confirmButtonContexto: 'my-swal-confirm-button', // Classe personalizada para o botão de confirmação do SweetAlert
+			}
+		})
+	}
+
+	function respostaPopUp(){
+		Swal.fire({
+			title: 'Explicação',
+			html: questoesTema[indexArray].textoExplicativo,
+			confirmButtonText: 'Próxima questão',
+			// showCancelButton: false,
+			confirmButtonColor: '#bc88bc',
+			position: 'top'
+		}).then(() => proximaQuestao())
+	}
 
 	const [gloriaAnimacao, setGloriaAnimacao ] = useState(gloriaFalando)
 	const [questoesTema, setQuestoesTema] = useState(false);
@@ -72,13 +100,23 @@ function TelaQuestionario() {
 				break;
 		}
 	};
-
+	
+	const navigate = useNavigate()
 	const proximaQuestao = () => {
 		setDesabilitado(false)
 		setGloriaAnimacao(gloriaFalando)
 
 		if (indexArray < 4) {
 			setIndexArray((valorAtual) => valorAtual + 1);
+		} else{
+			if (pontuacao == 5){
+			
+				navigate('/PremioBomDesempenho')
+			} else if (pontuacao >= 3 && pontuacao < 5){
+				console.log('redirecionar pra tela')
+			} else {
+				navigate('/PremioParticipacao')
+			}
 		}
 	};
 
@@ -94,6 +132,7 @@ function TelaQuestionario() {
 				else{
 					setGloriaAnimacao(gloriaBrava)
 				}
+				
 				break;
 			case "QuesB":
 				if (questoesTema[indexArray].alternativaB === questoesTema[indexArray].resposta){
@@ -104,6 +143,7 @@ function TelaQuestionario() {
 				else{
 					setGloriaAnimacao(gloriaBrava)
 				}
+
 				break;
 			case "QuesC":
 				if (questoesTema[indexArray].alternativaC === questoesTema[indexArray].resposta){
@@ -114,6 +154,7 @@ function TelaQuestionario() {
 				else{
 					setGloriaAnimacao(gloriaBrava)
 				}
+
 				break;
 			case "QuesD":
 				if (questoesTema[indexArray].alternativaD === questoesTema[indexArray].resposta){
@@ -124,10 +165,15 @@ function TelaQuestionario() {
 				else{
 					setGloriaAnimacao(gloriaBrava)
 				}
+
 				break;
 			default:
 				break;
 		}
+		setTimeout(() => {
+			respostaPopUp()
+
+		}, 1000)
 		setDesabilitado(true)
 	}
 
@@ -150,36 +196,31 @@ function TelaQuestionario() {
 
 	return (
 		<div className="containerQuestionario">
-
-			<p className="questionarioNumPergunta">Pergunta {indexArray + 1} de 5</p>
-			<button className="iconContexto"><BiSolidHelpCircle/></button>
+			<div className="cabecalho">
+				<p className="questionarioNumPergunta">Pergunta {indexArray + 1} de 5</p>
+				<BiSolidHelpCircle className="iconContexto" onClick={contextoPopUp}/>
+			</div>
 
 			<div className="enunciado">
 				<h1 className="questionarioEnunciado" id="#pergunta">
-					{questoesTema[indexArray].pergunta}
+						{questoesTema[indexArray].pergunta}
 				</h1>
 			</div>
 
 			<div className="boxQuestoes">
-				<div className="questoesEsquerda">
+				 <div className="questoesEsquerda">
 					<BotaoResposta texto={questoesTema[indexArray].alternativaA} questao={'QuesA'} acao={verificaQuestao} disabled={desabilitado}/>
 					<BotaoResposta texto={questoesTema[indexArray].alternativaB} questao={'QuesB'} acao={verificaQuestao} disabled={desabilitado}/>
 				</div>
 				<div className="questoesDireita">
 					<BotaoResposta texto={questoesTema[indexArray].alternativaC} questao={'QuesC'} acao={verificaQuestao} disabled={desabilitado}/>
 					<BotaoResposta texto={questoesTema[indexArray].alternativaD} questao={'QuesD'} acao={verificaQuestao} disabled={desabilitado}/>
-				</div>
-
+				</div> 
 			</div>
-			
-			<div className='container-gloria-init'>
-        	<Gloria animacao={gloriaAnimacao} maxWidth={60000} scale={scale}/>
-      		</div>
 
-			<button id="btnProximaQuestao" onClick={proximaQuestao}>
-				Próxima Questão
-			</button> 
-			
+			<div className='container-gloria-init'>
+					<Gloria animacao={gloriaAnimacao} maxWidth={60000} scale={scale}/>
+			</div>
 		</div>
 	);
 }

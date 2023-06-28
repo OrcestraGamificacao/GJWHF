@@ -1,31 +1,54 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 .frame {
-  width: 15em;
-  margin: 40px auto;
-  text-align: center;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  align-items: flex-start;
 }
 
+.frame:nth-child(2n){
+  justify-content: flex-start;
+}
+
+/*Isso aqui era uma firula pra alinhar os botoões todo no centro, mas ficou meio esquisito com os botões de tamanhos diferentes*/
+/* 
+.frame:nth-child(1), .frame:nth-child(2){
+  align-items: flex-end;
+}
+
+.frame:nth-child(3), .frame:nth-child(4){
+  align-items: flex-start;
+} 
+*/
+
+.frame:nth-child(2n + 1){
+  justify-content: flex-end;
+}
+
+
 .botao {
-  margin: 10px;
+  height: auto;
 }
 
 .customBtn {
-  width: 100%;
+  width: 18.75rem;
+  /* height: 100%; */
   max-width: 350px;
-  height: 70px;
+  min-height: 100px;
+  height: auto;
   color: #fff;
   border-radius: 5px;
   padding: 10px 25px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   background: transparent;
   cursor: pointer;
-  transition: all 0.3s ease;
   position: relative;
+  transition: all 0.3s ease;
   display: inline-block;
-  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.502),
     7px 7px 20px 0px rgba(0, 0, 0, .1),
     4px 4px 5px 0px rgba(0, 0, 0, .1);
   outline: none;
@@ -40,9 +63,9 @@
 
 .btn1 {
   background-color: #f0ecfc;
-  background-image: linear-gradient(315deg, #f0ecfc 0%, #bc88bc 74%);
-  line-height: 42px;
-  padding: 0;
+  background-image: linear-gradient(315deg, #e2c6e2 0%, #bc88bc 74%);
+  line-height: 30px;
+  padding: 5px;
   border: none;
 }
 
