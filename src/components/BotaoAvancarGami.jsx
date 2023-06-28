@@ -11,6 +11,7 @@ function BotaoAvancar3() {
 
   return (
     <div className="wrapper" style={{ marginLeft: "20%"}} onClick={changeUrl}>
+      {/* eslint-disable-next-line */}
       <a href="" className="cta">
         <span>BORA COMEÇAR</span>
         <span>
