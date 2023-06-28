@@ -1,12 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
-* {
-    margin: 0;
-} 
 
-#root {
-    width: 100%;
-    height: 100%;
+.premio-container {
+    width: 100vw;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -14,7 +11,7 @@
 /* Container que está a img
     - A img é trocada a depender do tam da tela (ver arquivo Premio.jsx) 
 */
-.premio-container {
+.premio-container-img {
     width: 100%;
     height: 100%;
     background-size: 100% 100%;
@@ -55,7 +52,7 @@
 /* Por padrão, o css está ajustado para telas de smartphone */
 /* Tela desktop */
 @media screen and (min-width: 1024px) {
-    .premio-container {
+    .premio-container-img {
         width: 75%;
         height: 80%;
         align-items: flex-start;
@@ -70,7 +67,7 @@
 
 /* Tela tablet */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-    .premio-container {
+    .premio-container-img {
         width: 90%;
     }
     .premio-nome{

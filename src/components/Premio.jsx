@@ -50,13 +50,15 @@ export default function Premio(props) {
     }
 
     return (
-        <div className="premio-container" style={{backgroundImage: `url('${back}')`}}>
-            <div className="premio-box-space-ajust"></div>
-            <div className="premio-box">
-                <span className="premio-nome">{sessionStorage.getItem("nome")||"NULL SOBRENOME" }</span>
-                <div className="premio-box-data">{}
-                    <span className="premio-hora">{data.hour}:{data.minute} | </span>
-                    <span className="premio-data">{data.day}.{data.month}</span>
+        <div className="premio-container">
+            <div className="premio-container-img" style={{backgroundImage: `url('${back}')`}}>
+                <div className="premio-box-space-ajust"></div>
+                <div className="premio-box">
+                    <span className="premio-nome">{sessionStorage.getItem("nome")||"NULL SOBRENOME" }</span>
+                    <div className="premio-box-data">{}
+                        <span className="premio-hora">{data.hour}:{data.minute} | </span>
+                        <span className="premio-data">{data.day}.{data.month}</span>
+                    </div>
                 </div>
             </div>
         </div>
