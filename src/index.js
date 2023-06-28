@@ -14,6 +14,8 @@ import Resposta from './pages/Resposta'
 import TelaRoleta from './pages/TelaRoleta'
 import Apresentacao2 from './pages/Apresentacao2'
 import ApresentacaoGami from './pages/ExplicacaoGamificacao'
+import TelaTchau from './pages/TelaTchau'
+
 
 import './styles/index.css'
 
@@ -61,6 +63,10 @@ const router = createBrowserRouter([
   {
     path: '/TelaRoleta',
     element: <TelaRoleta />
+  },
+  {
+    path: '/TelaTchau',
+    element: <TelaTchau />
   },
   ])
 
