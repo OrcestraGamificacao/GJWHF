@@ -125,10 +125,12 @@ transform: translate(-50%, -50%);
   height: auto;
   opacity: 1;
   max-width: 250px;
+  margin-right: 2%;
 }
 
 #logo-napraia {
   max-width: 70px;
+  transform: scale(0.8);
 }
 
 .container-gloria {
