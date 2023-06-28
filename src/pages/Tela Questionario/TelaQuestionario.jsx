@@ -100,7 +100,7 @@ function TelaQuestionario() {
 				break;
 		}
 	};
-	
+
 	const navigate = useNavigate()
 	const proximaQuestao = () => {
 		setDesabilitado(false)
@@ -126,7 +126,7 @@ function TelaQuestionario() {
 				else{
 					setGloriaAnimacao(gloriaBrava)
 				}
-				
+
 				break;
 			case "QuesB":
 				if (questoesTema[indexArray].alternativaB === questoesTema[indexArray].resposta){
@@ -202,14 +202,18 @@ function TelaQuestionario() {
 			</div>
 
 			<div className="boxQuestoes">
-				 <div className="questoesEsquerda">
+				 {/* <div className="questoesEsquerda">
 					<BotaoResposta texto={questoesTema[indexArray].alternativaA} questao={'QuesA'} acao={verificaQuestao} disabled={desabilitado}/>
 					<BotaoResposta texto={questoesTema[indexArray].alternativaB} questao={'QuesB'} acao={verificaQuestao} disabled={desabilitado}/>
 				</div>
 				<div className="questoesDireita">
 					<BotaoResposta texto={questoesTema[indexArray].alternativaC} questao={'QuesC'} acao={verificaQuestao} disabled={desabilitado}/>
 					<BotaoResposta texto={questoesTema[indexArray].alternativaD} questao={'QuesD'} acao={verificaQuestao} disabled={desabilitado}/>
-				</div> 
+				</div>  */}
+				<BotaoResposta texto={questoesTema[indexArray].alternativaA} questao={'QuesA'} acao={verificaQuestao} disabled={desabilitado}/>
+				<BotaoResposta texto={questoesTema[indexArray].alternativaB} questao={'QuesB'} acao={verificaQuestao} disabled={desabilitado}/>
+				<BotaoResposta texto={questoesTema[indexArray].alternativaC} questao={'QuesC'} acao={verificaQuestao} disabled={desabilitado}/>
+				<BotaoResposta texto={questoesTema[indexArray].alternativaD} questao={'QuesD'} acao={verificaQuestao} disabled={desabilitado}/>
 			</div>
 
 			<div className='container-gloria-init'>
