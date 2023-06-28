@@ -13,6 +13,31 @@ function BoxInvite() {
   const [nome, setNome] = useState("");
   const [showAlert, setShowAlert] = useState(false);
 
+  const Swal = require('sweetalert2')
+	function getNamePopUp(){
+		Swal.fire({
+		  inputLabel: 'Primeiro, preciso que me diga seu nome',
+      input: 'text',
+			showCancelButton: false,
+			confirmButtonText: 'Vamos lá!',
+			confirmButtonColor: '#612368',
+			customClass: {
+				containerContexto: 'my-swal-container', // Classe personalizada para o container do SweetAlert
+				titleContexto: 'my-swal-title', // Classe personalizada para o título do SweetAlert
+				textContexto: 'my-swal-text', // Classe personalizada para o texto do SweetAlert
+				confirmButtonContexto: 'my-swal-confirm-button', // Classe personalizada para o botão de confirmação do SweetAlert
+			},
+      inputValidator: (value) => {
+        if (!value) {
+          return 'Você precisa escrever seu nome completo!'
+        }
+      }
+		}).then((result) => {
+      sessionStorage.setItem('nome', result.value);
+      changeUrl();
+    })
+	}
+
   const navigate = useNavigate();
 
   const changeUrl = () => {
@@ -49,8 +74,8 @@ function BoxInvite() {
           Então começamos com... Qual o seu nome?
           </h3>
           <br></br>
-          <input value={nome} type="text" className="inputNome" placeholder= "Digite seu nome e sobrenome" id='inputNome' onChange={(e) => handleInputChange(e)}/>
-          <button onClick={changeUrl} className="grow_ellipse" /*disabled={nome ? false : true}*/ >VAMOS COMEÇAR!</button>
+          {/* <input value={nome} type="text" className="inputNome" placeholder= "Digite seu nome e sobrenome" id='inputNome' onChange={(e) => handleInputChange(e)}/> */}
+          <button onClick={getNamePopUp} className="grow_ellipse" /*disabled={nome ? false : true}*/ >VAMOS COMEÇAR!</button>
         </div>
       </div>
       <div className='container-gloria-invite'>
