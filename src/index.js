@@ -10,6 +10,7 @@ import PerguntaFullText from './pages/PerguntaFullText'
 import TelaQuestionario from './pages/Tela Questionario/TelaQuestionario'
 import PremioBomDesempenho from './pages/PremioBomDesempenho'
 import PremioParticipacao from './pages/PremioParticipacao'
+import PremioMedioDesempenho from './pages/PremioMedioDesempenho'
 import Resposta from './pages/Resposta'
 import TelaRoleta from './pages/TelaRoleta'
 import Apresentacao2 from './pages/Apresentacao2'
@@ -51,6 +52,10 @@ const router = createBrowserRouter([
   {
     path: '/PremioBomDesempenho',
     element: <PremioBomDesempenho />
+  },
+  {
+    path: '/PremioMedioDesempenho',
+    element: <PremioMedioDesempenho />
   },
   {
     path: '/PremioParticipacao',
