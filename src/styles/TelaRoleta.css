@@ -11,13 +11,16 @@
 }
 
 .roletaTitle{
-    text-align: center;
+    text-align: justify;
     font-size: 25px;
     font-weight: 600;
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 1px;
     padding: 0;
     color: #612368;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
 }
 
 .roletaDivInferior{
@@ -45,12 +48,56 @@
     position: absolute;
     top: 50%;
     left: -32%;
+    left: 30%;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 2%;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1024px) {
     .Roleta {
         transform: scale(0.6);
         top: 50%;
         left: auto;
+    }
+    .background-roleta{
+        margin-top: 5%;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .Roleta {
+        transform: scale(0.6);
+        top: 50%;
+        margin-top: 10%;
+        left: -25%;
+    }
+    .background-roleta{
+        margin-top: 20%;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .Roleta {
+        transform: scale(0.55);
+        top: 50%;
+        margin-top: 10%;
+        left: -30%;
+    }
+    .background-roleta{
+        margin-top: 20%;
+    }
+  }
+
+  @media screen and (max-width: 380px) {
+    .Roleta {
+        transform: scale(0.55);
+        top: 50%;
+        margin-top: 10%;
+        left: -33%;
+    }
+    .background-roleta{
+        margin-top: 1%;
     }
 }
