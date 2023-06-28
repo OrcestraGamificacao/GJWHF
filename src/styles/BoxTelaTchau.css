@@ -110,6 +110,7 @@
     pointer-events: none;
     border-radius: 0%;
     animation: confetti-fall 3s linear infinite;
+    z-index: 1;
   }
   
   .confetti.confetti--animation-slow {
