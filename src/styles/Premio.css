@@ -11,31 +11,40 @@
     align-items: center;
     justify-content: center;
 }
-
+/* Container que está a img
+    - A img é trocada a depender do tam da tela (ver arquivo Premio.jsx) 
+*/
 .premio-container {
     width: 100%;
     height: 100%;
-    position: relative;
-    background-size: cover;
-    background-position: 80% 10%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+
+/* Espaçamento vertical para o premio-box */
+.premio-box-space-ajust{
+    height: 52%;
 }
 
 .premio-box {
-    position: absolute;
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     font-family: 'Roboto', sans-serif;
-    bottom: 20%;
     color: white;
 }
 
 .premio-nome {
-    font-size: 2em;
+    width: max-content;
+    margin-bottom: 0.3em;
+    font-size: 1.75em;
     text-shadow: 0.1em 0.1em 0.2em rgb(255, 255, 255, 0.3);
 }
 
@@ -43,29 +52,28 @@
     font-size: 1.2em;
 }
 
-@media screen and (min-width: 700px) {
+/* Por padrão, o css está ajustado para telas de smartphone */
+/* Tela desktop */
+@media screen and (min-width: 1024px) {
     .premio-container {
-        width: 85%;
-        height: 75%;
-        background-size: cover;
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
+        width: 75%;
+        height: 80%;
+        align-items: flex-start;
     }
-
-    .premio-box {
-        bottom: 40%;
-        left: 12%;
+    .premio-box-space-ajust{
+        height: 10%;
+    }
+    .premio-nome{
+        font-size: 2em;
     }
 }
 
-@media screen and (min-width: 1020px) {
+/* Tela tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
     .premio-container {
-        height: 80%;
+        width: 90%;
     }
-
-    .premio-box {
-        bottom: 35%;
-        left: 22%;
+    .premio-nome{
+        font-size: 2.2em;
     }
 }

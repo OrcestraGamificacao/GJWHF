@@ -37,13 +37,13 @@ export default function Premio(props) {
 
     switch (props.nota) {
         case "baixo":
-            back = window.innerWidth < 450 ? baixoMobile : baixoDesktop
+            back = window.innerWidth < 1024 ? baixoMobile : baixoDesktop
             break;
         case "medio":
-            back = window.innerWidth < 450 ? medioMobile : medioDesktop
+            back = window.innerWidth < 1024 ? medioMobile : medioDesktop
             break;
         case "alto":
-            back = window.innerWidth < 450 ? altoMobile : altoDesktop
+            back = window.innerWidth < 1024 ? altoMobile : altoDesktop
             break;
         default:
             break;
@@ -51,8 +51,9 @@ export default function Premio(props) {
 
     return (
         <div className="premio-container" style={{backgroundImage: `url('${back}')`}}>
+            <div className="premio-box-space-ajust"></div>
             <div className="premio-box">
-                <span className="premio-nome">{sessionStorage.getItem("nome")}</span>
+                <span className="premio-nome">{sessionStorage.getItem("nome")||"NULL SOBRENOME" }</span>
                 <div className="premio-box-data">{}
                     <span className="premio-hora">{data.hour}:{data.minute} | </span>
                     <span className="premio-data">{data.day}.{data.month}</span>
