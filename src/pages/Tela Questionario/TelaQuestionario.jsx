@@ -71,7 +71,7 @@ function TelaQuestionario() {
 			confirmButtonText: indexArray < 4 ? 'Próxima questão' : 'Terminar',
 			// showCancelButton: false,
 			confirmButtonColor: '#bc88bc',
-			position: 'top'
+			position: 'middle'
 		}).then(() => proximaQuestao())
 	}
 
