@@ -11,6 +11,7 @@ function BotaoAvancar() {
 
   return (
     <div className="wrapper" onClick={changeUrl}>
+      {/* // eslint-disable-next-line */}
       <a href="" className="cta">
         <span className="botaoAvancarSpan">AVANÇAR</span>
         <span className="botaoAvancarSpan">
