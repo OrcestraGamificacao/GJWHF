@@ -1,3 +1,5 @@
+import '../styles/PremioBomDesempenho.css'
+
 const PremioBomDesempenho = () => {
 
   return (
