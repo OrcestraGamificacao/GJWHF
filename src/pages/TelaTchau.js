@@ -72,18 +72,18 @@ const TelaTchau = () => {
 
   const navigate = useNavigate()
 
-  const useLocalStorage = key => {
-    const [data] = useState(localStorage.getItem(key))
+  const useSessionStorage = key => {
+    const [data] = useState(sessionStorage.getItem(key))
 
     return data
   }
 
-  const pontuacao = useLocalStorage('pontuacao')
+  const pontuacao = useSessionStorage('pontuacao')
 
   const changeUrl = () => {
-    if (pontuacao === 5) {
+    if (Number(pontuacao) === 5) {
       navigate('/PremioBomDesempenho')
-    } else if (pontuacao >= 3 && pontuacao < 5) {
+    } else if (Number(pontuacao) >= 3 && Number(pontuacao) < 5) {
       navigate('/PremioMedioDesempenho')
     } else {
       navigate('/PremioParticipacao')

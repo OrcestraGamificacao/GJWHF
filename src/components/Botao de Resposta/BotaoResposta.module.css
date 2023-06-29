@@ -11,21 +11,9 @@
   justify-content: flex-start;
 }
 
-/*Isso aqui era uma firula pra alinhar os botoões todo no centro, mas ficou meio esquisito com os botões de tamanhos diferentes*/
-/*
-.frame:nth-child(1), .frame:nth-child(2){
-  align-items: flex-end;
-}
-
-.frame:nth-child(3), .frame:nth-child(4){
-  align-items: flex-start;
-}
-*/
-
 .frame:nth-child(2n + 1){
   justify-content: flex-end;
 }
-
 
 .botao {
   height: auto;
@@ -107,7 +95,8 @@
 
 .btn1:hover {
   background: transparent;
-
+  transition: 1s;
+  background:rgb(188, 136, 188, 0.6);
 }
 
 .detalhes:hover {
@@ -123,16 +112,6 @@
   background: #bc88bc;
   transition: all 0.3s ease;
 }
-
-/* .detalhes:before {
-  width: 2px;
-  height: 0%;
-}
-
-.detalhes:after {
-  height: 2px;
-  width: 0%;
-} */
 
 .detalhes:hover:before {
   height: 100%;

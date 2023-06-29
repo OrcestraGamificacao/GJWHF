@@ -72,7 +72,7 @@ const Roleta = () => {
                     },
                     willClose: () => {
                         clearInterval(timerInterval)
-                        localStorage.setItem('temaSorteado', boxGanhador)
+                        sessionStorage.setItem('temaSorteado', boxGanhador)
                         navigate("/Questionario");
                     }
                 }).then((result) => {

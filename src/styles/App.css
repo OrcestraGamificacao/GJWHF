@@ -8,7 +8,7 @@
 }
 
 .background {
-  height: 100vh;
+  height: 101vh;
   width: 100%;
   background-size: cover;
   background-position: center;
@@ -21,6 +21,7 @@
   transform: scale(1.05); */
   position: absolute;
   top: -1%;
+  overflow: hidden;
 }
 
 body {

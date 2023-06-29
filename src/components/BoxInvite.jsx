@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { useNavigate } from "react-router-dom";
 import Gloria from "./Gloria";
 import Swal from 'sweetalert2';
@@ -6,12 +6,10 @@ import Swal from 'sweetalert2';
 import "../styles/BotaoIniciar.css";
 import '../styles/BoxInvite.css';
 
-import gloriaFalando from '../gloria/Gloria_Meio_Da_Fala.mp4';
+import gloriaFalando from '../gloria/gloria-talk-animation.webm';
 
 function BoxInvite() {
-  const [scale, setScale] = useState(1)
-
-  const [nome, setNome] = useState("");
+  const navigate = useNavigate();
 
 	function getNamePopUp(){
 		Swal.fire({
@@ -32,19 +30,6 @@ function BoxInvite() {
     })
 	}
 
-  const navigate = useNavigate();
-
-  const handleInputChange = (e) => {
-    e.preventDefault();
-    setNome(e.currentTarget.value);
-  }
-
-  useEffect(() => {
-    if (window.innerWidth > 720) {
-      setScale(0.3)
-    }
-  }, [])
-
   return (
     <div className='container-invite'>
       <div className="box-invite">
@@ -59,12 +44,11 @@ function BoxInvite() {
           <br></br>
           </h3>
           <br></br>
-          {/* <input value={nome} type="text" className="inputNome" placeholder= "Digite seu nome e sobrenome" id='inputNome' onChange={(e) => handleInputChange(e)}/> */}
           <button onClick={getNamePopUp} className="grow_ellipse" /*disabled={nome ? false : true}*/ >VAMOS COMEÇAR!</button>
         </div>
       </div>
       <div className='container-gloria-invite'>
-      <Gloria animacao={gloriaFalando} maxWidth={60000} scale={scale}/>
+        <Gloria animacao={gloriaFalando} />
       </div>
     </div>
   );

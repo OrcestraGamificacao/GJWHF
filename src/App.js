@@ -11,8 +11,6 @@ function App() {
     <div className="App">
       <div className="background">
         <BoxApresentacao />
-        {/* <Gloria animacao={gloriaFalando}/>
-        <BotaoAvancar /> */}
       </div>
     </div>
   )
