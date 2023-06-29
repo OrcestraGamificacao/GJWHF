@@ -100,14 +100,14 @@ function questoesInovacao() {
     'A participação das mulheres ajuda a acelerar o desenvolvimento e reforça a narrativa tecnológica na África',
     'A participação das mulheres desempenha um papel crucial na aceleração do desenvolvimento e no fortalecimento da tecnologia na África. Ao serem capacitadas e terem acesso igualitário às oportunidades digitais, elas contribuem de maneira significativa para o crescimento econômico e social do continente.')
 
-    const inovQ11 = new Questao(10, 'Rita possui uma fundação, em atividade desde maio de 1982, dedicada a ajudar no processo de adoção. Hoje, a Associação apoia integralmente cerca de 350 crianças abandonadas à nascença.',
-    'Rita Zniber descobriu uma falha de cuidado que levava à morte dos bebês órfãos recém nascidos em um hospital marroquino. Escolha a alternativa que você acha que descreve como Rita agiu diante da situação com a sua fundação:',
-    'Rita processou o hospital, com uma alegação de infração aos direitos humanos e das crianças',
-    'Rita protestou em frente ao hospital por dias com apoiadores para o hospital pagar uma multa',
-    'Rita criou um espaço no hospital para cuidar dessas crianças que tinham sido abandonadas',
-    'Rita comprou o hospital e treinou todos os funcionários para cuidar melhor dessas crianças em situação de risco',
-    'Rita criou um espaço no hospital para cuidar dessas crianças que tinham sido abandonadas',
-    'O NID, é o nome do Centro que Rita Zniber criou. Teve uma colaboração com o hospital muito difícil, por múltiplas razões, mas mesmo assim conseguiu salvar da morte 23 crianças que não tinham sido adotadas! O mais velho dos quais tinha 19 meses. E depois o NID foi expandido para ajudar em várias áreas pediátricas de crianças de várias idades.')
+    const inovQ11 = new Questao(11, 'Asmaa Morine Azzouzi depois de se formar no Instituto Superior de Comércio e Administração de Empresas (ISCAE) em Casablanca, após isso Asmaa fez uma pós-graduação em Comércio Internacional e obteve um MBA em Inteligência Econômica e Gestão Estratégica pela Paris School of Economic Warfare (EGE).', 
+    'Asmaa Azzouzi criou uma associação, sobre o que é a associação baseado na sua formação?', 
+    'Apoiar as mulheres marroquinas na criação e desenvolvimento do seu negócio', 
+    'Instalar incubadoras e fazer advocacia junto ao poder público', 
+    'Ensinar empreendedorismo para crianças pequenas', 
+    'Comprar empresas indo à falência e transformar as mesmas em lucro', 
+    'Apoiar as mulheres marroquinas na criação e desenvolvimento do seu negócio', 
+    'A Associação de Mulheres Empresárias de Marrocos (AFEM) apoia as mulheres marroquinas na criação e desenvolvimento do seu negócio, apoio que inclui a constituição de incubadoras e sua presidente é Asmaa Morine Azzouzi. Das cerca de 15.000 mulheres líderes empresariais no Reino de Marrocos, 600 aderiram à Associação de Mulheres Empresárias de Marrocos (AFEM).')
 
     const inovQuestoes = [inovQ1, inovQ2, inovQ3, inovQ4, inovQ5, inovQ6, inovQ7, inovQ8, inovQ9, inovQ10, inovQ11]
 
