@@ -1,3 +1,7 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/65b9d86c-bf64-4a78-8e15-31c09406fff1/deploy-status)](https://app.netlify.com/sites/gloria-gamificacao/deploys?branch=main)
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
