@@ -1,5 +1,4 @@
-import BoxTelaTchau from '../components/BoxTelaTchau'
-import '../styles/BoxTelaTchau.css'
+import '../styles/TelaTchau.css'
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
@@ -94,22 +93,20 @@ const TelaTchau = () => {
   return (
     <div className="TelaTchau">
       <div className="js-container confetti-container"></div>
-      <div className="background-TelaTchau">
-        <BoxTelaTchau />
-      </div>
-      <h2 className="box-TelaTchau-parabens">Parabéns!</h2>
-      <h3 className="box-TelaTchau-title">
-        Você completou sua gamificação e descobriu novos protagonismos
-        femininos.
-        <br />
-        Agora receba seu selo e procure alguém do Instituto Glória
-        <br /> para te auxiliar no recebimento do seu prêmio.
-      </h3>
-      <div className="botaoPegarSelo">
-        <button className="pulsating-button" onClick={changeUrl}>
-          Pegar selo
-        </button>
-      </div>
+        <div className="background-TelaTchau">
+        </div>
+        <div className='box-TelaTchau'>
+          <h2 className="box-TelaTchau-title">Parabéns!</h2>
+          <h3 className="box-TelaTchau-text">
+            Você completou a gamificação e descobriu novos protagonismos femininos.
+            Agora receba seu selo e procure alguém do Instituto Glória para te auxiliar no recebimento do seu prêmio.
+          </h3>
+          <div className="botaoPegarSelo">
+            <button className="pulsating-button" onClick={changeUrl}>
+              Pegar selo
+            </button>
+          </div>
+        </div>
     </div>
   )
 }

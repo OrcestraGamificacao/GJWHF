@@ -1,0 +1,140 @@
+.box-TelaTchau {
+  /* Rectangle */
+  position: absolute;
+  width: 40%;
+  height: 80%;
+  border: 5px solid aliceblue;
+  background: linear-gradient(180deg, rgb(185,166,186, 0.6) -100%, rgb(211,211,211, 0.6) 100%);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.box-TelaTchau-title {
+  font-weight: 700;
+  text-align: center;
+  color: #2d1f2e;
+  text-align: center;
+  font-size: 3em;
+  transform: translateX(0em);
+  margin-top: 8%;
+  margin-bottom: 2%;
+}
+
+.box-TelaTchau-text {
+  font-weight: 600;
+  color: #341d36;
+  text-align: center;
+  font-size: 1.5em;
+
+}
+
+@media screen and (max-width: 1024px) {
+  .box-TelaTchau {
+    width: 60%;
+    padding: 2em 1.5em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .box-TelaTchau {
+    width: 80%;
+    padding: 2em 1em;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .box-TelaTchau {
+    width: 80%;
+    padding: 2em 1em;
+  }
+  .box-TelaTchau-text{
+    font-size: 1.5em;
+  }
+}
+
+/* Confetti */
+.confetti-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.confetti {
+  position: absolute;
+  pointer-events: none;
+  border-radius: 0%;
+  animation: confetti-fall 3s linear infinite;
+  z-index: 1;
+}
+
+.confetti.confetti--animation-slow {
+  animation: confetti-fall 2.5s linear infinite;
+}
+
+.confetti.confetti--animation-medium {
+  animation: confetti-fall 1.8s linear infinite;
+}
+
+.confetti.confetti--animation-fast {
+  animation: confetti-fall 1s linear infinite;
+}
+
+@keyframes confetti-fall {
+  0% {
+    transform: translate3d(0, -100%, 0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translate3d(0, 100vh, 0) rotate(1080deg);
+    opacity: 0;
+  }
+}
+
+/*botao final*/
+.botaoPegarSelo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pulsating-button {
+  /* Button styles */
+  width: 8em;
+  font-size: 2em;
+  padding: 0.8em 1.2em;
+  background-color: #612368;
+  color: #f5f5f7;
+  border-radius: 25px;
+  position: relative;
+  overflow: hidden;
+  animation: pulsate 2s infinite;
+  cursor: pointer;
+  border: 5px solid #f5f5f7;
+}
+
+@keyframes pulsate {
+  0% {
+    transform: scale(0.6);
+  }
+  50% {
+    transform: scale(0.75);
+  }
+  100% {
+    transform: scale(0.6);
+  }
+} 
+

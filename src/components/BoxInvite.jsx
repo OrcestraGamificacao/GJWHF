@@ -17,15 +17,10 @@ function BoxInvite() {
 		Swal.fire({
 		  inputLabel: 'Primeiro, preciso que me diga seu nome',
       input: 'text',
+      inputPlaceholder: 'Nome completo',
 			showCancelButton: false,
 			confirmButtonText: 'Vamos lá!',
 			confirmButtonColor: '#612368',
-			customClass: {
-				containerContexto: 'my-swal-container', // Classe personalizada para o container do SweetAlert
-				titleContexto: 'my-swal-title', // Classe personalizada para o título do SweetAlert
-				textContexto: 'my-swal-text', // Classe personalizada para o texto do SweetAlert
-				confirmButtonContexto: 'my-swal-confirm-button', // Classe personalizada para o botão de confirmação do SweetAlert
-			},
       inputValidator: (value) => {
         if (!value) {
           return 'Você precisa escrever seu nome completo!'

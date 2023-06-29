@@ -6,7 +6,6 @@ import gloriaFalando from '../../gloria/Gloria_Meio_Da_Fala.mp4';
 import gloriaSorrindo from '../../gloria/Gloria_Sorrindo.mp4';
 import gloriaBrava from '../../gloria/Gloria_Sem_Entender.mp4';
 
-
 import questoesInovacao from "../../Model/Banco de Questoes/inovacao";
 import questoesAtivismo from "../../Model/Banco de Questoes/ativismo";
 import questoesEducacao from "../../Model/Banco de Questoes/educacao";
