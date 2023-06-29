@@ -73,7 +73,7 @@ const Gloria = ({animacao, maxWidth, scale}) => {
 
     useEffect(() => {
       handleClick(); // Chama handleClick quando o componente for montado
-      const {innerWidth: width, innerHeight: height} = window;
+      // const {innerWidth: width, innerHeight: height} = window;
     });
 
 

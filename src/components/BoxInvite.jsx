@@ -1,4 +1,4 @@
-import React, { useEffect, useState, Alert } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useNavigate } from "react-router-dom";
 import Gloria from "./Gloria";
 
@@ -41,8 +41,8 @@ function BoxInvite() {
   const navigate = useNavigate();
 
   const changeUrl = () => {
-      setShowAlert(true);
-
+    setShowAlert(true);
+    sessionStorage.setItem("nome", nome);
 
     navigate("/BoxApresentacao2");
   };

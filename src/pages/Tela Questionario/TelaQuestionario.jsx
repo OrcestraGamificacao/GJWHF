@@ -44,7 +44,7 @@ function TelaQuestionario() {
 		setScale(0.21)
 	  }
 	}, [])
-	const [numQuestao, setNumQuestão] = useState(0);
+	// const [numQuestao, setNumQuestão] = useState(0);
 	const temaSorteado = useLocalStorage("temaSorteado");
 
 	const Swal = require('sweetalert2')
@@ -184,6 +184,7 @@ function TelaQuestionario() {
 		if (!questoesTema) getQuestoes();
 
 		return () => {};
+	// eslint-disable-next-line
 	}, [questoesTema, setQuestoesTema]);
 
 	if (!questoesTema) return <></>;
