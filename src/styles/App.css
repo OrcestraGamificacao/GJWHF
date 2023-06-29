@@ -30,6 +30,6 @@ body {
   width: 100vw;
   background-size: cover;
   background-position: center;
-  overflow-y: hidden; /* Hide vertical scroll bar */
+  overflow-x: hidden; /* Hide vertical scroll bar */
 }
 
