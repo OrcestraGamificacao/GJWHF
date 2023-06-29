@@ -98,7 +98,7 @@ const TelaTchau = () => {
         <div className='box-TelaTchau'>
           <h2 className="box-TelaTchau-title">Parabéns!</h2>
           <h3 className="box-TelaTchau-text">
-            Você completou a gamificação e descobriu novos protagonismos femininos.
+            Você chegou ao final da sua gamificação e espero que meu objetivo de te ensinar mais sobre o empoderamento feminino tenha enriquecido seu conhecimento.
             Agora receba seu selo e procure alguém do Instituto Glória para te auxiliar no recebimento do seu prêmio.
           </h3>
           <div className="botaoPegarSelo">
