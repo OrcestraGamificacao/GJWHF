@@ -16,8 +16,8 @@ function BoxInvite() {
   const navigate = useNavigate();
 
   const changeUrl = () => {
-      setShowAlert(true);
-
+    setShowAlert(true);
+    sessionStorage.setItem("nome", nome);
 
     navigate("/BoxApresentacao2");
   };
