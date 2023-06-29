@@ -18,6 +18,8 @@ function questoesAtivismo() {
         'Jornalista de campo residente em Marrocos',
         'Apresentadora de um programa matinal no Marrocos',
         'Fez parte do exército marroquino',
+        'Escritora, publicando seu próprio livro',
+        'Jornalista de campo residente em Marrocos',
         'Samia trabalhou como jornalista em Marrocos, reportando para a Associated Press, uma agência de notícias independente, fundada em maio de 1846, cujos proprietários são os jornais e estações de rádio e televisão estadunidenses, e, posteriormente, para a Reuters, a maior agência internacional de notícias do mundo, com sede em Londres.')
 
     const ativQ3 = new Questao(3,

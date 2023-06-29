@@ -8,7 +8,7 @@ function questoesEducacao() {
         'Mobilizar a doação de livros para jovens que não possuem acesso a esse material nas escolas',
         'Oferecer bolsas  de estudo para estudantes africanas',
         'Fortalecer o empoderamento político e econômico de mulheres e jovens na África',
-        ' Incentivar o intercâmbio de jovens para fora do continente africano',
+        'Incentivar o intercâmbio de jovens para fora do continente africano',
         'Fortalecer o empoderamento político e econômico de mulheres e jovens na África',
         'A incrível organização “Africa my home”, fundada por Rhanem, possui parceria com a Helpline Foundation for the Needy Abuja e a ILCS para promover a educação de meninas africanas, desenvolver plataformas digitais de coaching para mulheres e organizar o primeiro diálogo da sociedade civil entre Marrocos e Nigéria.')
 

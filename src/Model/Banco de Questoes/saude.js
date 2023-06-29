@@ -57,7 +57,7 @@ function questoesSaude() {
         'Produtos apenas para cabelo', 
         'Produtos para maquiagem',
         'Produtos para unhas',
-        'Produtos para pele, cabelo e corpo.',
+        'Produtos para pele, cabelo e corpo',
         'Produtos para pele, cabelo e corpo', 
         'Abbassy criou sua linha de produtos para cuidados com a pele, totalmente naturais, há 10 anos, inspirada em receitas antigas marroquinas. Hoje, a marca oferece produtos para a pele, cabelo e corpo. Os Estados Unidos e o Reino Unido são os maiores mercados da marca fora do GCC, registrando um crescimento de 40% e 50% nas vendas online em 2021, respectivamente.')
 
