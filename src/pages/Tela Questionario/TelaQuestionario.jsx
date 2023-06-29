@@ -35,12 +35,11 @@ function shuffleArray(arr) {
 
 function TelaQuestionario() {
 
-
 	const [scale, setScale] = useState(1)
 
 	useEffect(() => {
-	  if (window.innerWidth > 1) {
-		setScale(0.21)
+	  if (window.innerWidth > 720) {
+		setScale(0.3)
 	  }
 	}, [])
 	// const [numQuestao, setNumQuestão] = useState(0);
@@ -207,8 +206,8 @@ function TelaQuestionario() {
 				<BotaoResposta texto={questoesTema[indexArray].alternativaD} questao={'QuesD'} acao={verificaQuestao} disabled={desabilitado}/>
 			</div>
 
-			<div className='container-gloria-init'>
-					<Gloria animacao={gloriaAnimacao} maxWidth={60000} scale={scale}/>
+			<div className='container-gloria-questionario'>
+					<Gloria animacao={gloriaAnimacao} maxWidth={60000} scale={scale} styleProps={{position:'unset'}}/>
 			</div>
 		</div>
 	);

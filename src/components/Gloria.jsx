@@ -3,7 +3,7 @@ import "../styles/BoxApresentacao.css";
 import { useEffect } from 'react';
 import PropTypes from 'prop-types';
 
-const Gloria = ({animacao, maxWidth, scale}) => {
+const Gloria = ({animacao, maxWidth, scale, styleProps}) => {
   const videoRef = useRef(null);
   const canvasRef = useRef(null);
   const canvas2Ref = useRef(null);
@@ -78,7 +78,7 @@ const Gloria = ({animacao, maxWidth, scale}) => {
 
 
   return (
-    <div className='container-gloria'>
+    <div style={styleProps} className='container-gloria'>
       <video id="video" ref={videoRef} src={animacao} className="none"  autoPlay muted preload='auto'></video>
       <canvas id="canva" ref={canvasRef} className="none"></canvas>
       <canvas id="c2" ref={canvas2Ref} className="gloria-imagem"></canvas>
@@ -91,5 +91,11 @@ Gloria.propTypes = {
     animacao: PropTypes.string.isRequired,
     maxWidth: PropTypes.isRequired,
     scale: PropTypes.isRequired, // Prop para a URL do vídeo
-  };
+    styleProps: PropTypes.arrayOf(PropTypes.string)
+};
+
+Gloria.defaultProps = {
+  styleProps: {position: 'absolute', zIndex:2}
+};
+
 export default Gloria
