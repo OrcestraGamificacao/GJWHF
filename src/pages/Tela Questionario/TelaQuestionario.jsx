@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { BiSolidHelpCircle } from "react-icons/bi";
+import { BiSearch } from "react-icons/bi";
 import { useNavigate } from "react-router-dom";
 
 
-import gloriaFalando from '../../gloria/gloria_comecando_fala.webm';
+import gloriaFalando from '../../gloria/gloria-talk-animation.webm';
 import gloriaSorrindo from '../../gloria/gloria_sorrindo.webm';
 import gloriaBrava from '../../gloria/gloria_sem_entender.webm';
 
@@ -207,7 +207,11 @@ return (
 <div className="containerQuestionario">
 <div className="cabecalho">
 <p className="questionarioNumPergunta">Pergunta {indexArray + 1} de 5</p>
-<BiSolidHelpCircle className="iconContexto" onClick={contextoPopUp}/>
+
+<button className="iconContextoBox" onClick={contextoPopUp}>
+    <BiSearch className="iconContexto" onClick={contextoPopUp}/>
+    <p className="contextoBoxText">Contexto</p>
+</button>
 </div>
 
 
