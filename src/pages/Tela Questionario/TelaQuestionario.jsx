@@ -3,9 +3,9 @@ import { BiSolidHelpCircle } from "react-icons/bi";
 import { useNavigate } from "react-router-dom";
 
 
-import gloriaFalando from '../../gloria/gloria-talk-animation.webm';
-import gloriaSorrindo from '../../gloria/gloria-talk-animation.webm';
-import gloriaBrava from '../../gloria/gloria-talk-animation.webm';
+import gloriaFalando from '../../gloria/gloria_comecando_fala.webm';
+import gloriaSorrindo from '../../gloria/gloria_sorrindo.webm';
+import gloriaBrava from '../../gloria/gloria_sem_entender.webm';
 
 
 import questoesInovacao from "../../Model/Banco de Questoes/inovacao";
