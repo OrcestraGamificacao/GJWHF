@@ -15,22 +15,23 @@
     text-align: center;
     color: #050505;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 3em;
     transform: translateX(0em);
-    margin-top: -18%;
+    margin-top: 8%;
+    margin-bottom: 2%;
     font-family: 'Montserrat', sans-serif;
     
   }
 
 .box-TelaTchau-title {
-    font-weight: 700;
+    font-weight: 600;
     text-align: center;
     color: #050505;
     text-align: center;
-    font-size: 0.9em;
-    transform: translateX(32em);
-    margin-top: 0%;
-    margin-right: 60%;
+    font-size: 1.5em;
+    transform: scale(0.9);
+    margin-left: 5%;
+    margin-right: 5%;
     
   }
 
@@ -131,12 +132,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 1%;
+    margin-top: 21%;
+    
   }
   
   .pulsating-button {
     /* Button styles */
-    font-size: 1.5em;
+    font-size: 2.4em;
     padding: 1em 2em;
     background-color: #612368;
     color: #fff;

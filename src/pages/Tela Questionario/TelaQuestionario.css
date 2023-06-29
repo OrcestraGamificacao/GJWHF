@@ -15,6 +15,7 @@ body{
   gap: 1rem;
   width: 100vw;
   height: 100vh;
+  transform: scale(1);
 }
 
 .questionarioNumPergunta{
@@ -119,6 +120,7 @@ body{
   justify-content: center;
   width: 60%;
   height: auto;
+
 }
 
 /* .container-gloria-botao {
@@ -147,5 +149,29 @@ body{
 
   .enunciado{
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .questionarioEnunciado{
+    font-size: 13px;
+  }
+
+  .enunciado{
+    width: 90%;
+  }
+  .boxQuestoes{
+    transform: scale(0.9);
+  }
+
+  .container-gloria-init {
+    position: absolute;
+    bottom: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: auto;
+  
   }
 }

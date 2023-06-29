@@ -94,7 +94,7 @@ const TelaTchau = () => {
         Agora receba seu selo e procure alguém do Instituto Glória<br /> para te auxiliar no recebimento do seu prêmio.
       </h3>
       <div className="botaoPegarSelo">
-        <button class="pulsating-button" onClick={changeUrl}>Pegar selo</button>
+        <button className="pulsating-button" onClick={changeUrl}>Pegar selo</button>
       </div>
     </div>
   );

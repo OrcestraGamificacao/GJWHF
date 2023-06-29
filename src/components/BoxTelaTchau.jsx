@@ -6,7 +6,6 @@ function BoxTelaTchau() {
     <div>
       <div className="box-TelaTchau">
         <div className="box-TelaTchau-elements">
-        
         </div>
       </div>
       </div>

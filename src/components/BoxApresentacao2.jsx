@@ -11,7 +11,7 @@ function BoxApresentacao2() {
             Muito feliz que você, {sessionStorage.getItem("nome")}, aceitou esse desafio!
             <br></br>
             <br></br>
-            Eu vou interagir com você, fornecendo informações importantes sobre <strong style={{color: 'red'}}>(falar sobre os temas)</strong>, te conectando a histórias relevantes!
+            Eu vou interagir com você, fornecendo informações importantes sobre Ativismo, Inovação, Saúde e Educação, te conectando histórias muito interessantes!
             <br></br>
             <br></br>
             Tudo isso através do uso da tecnologia e da gamificação!

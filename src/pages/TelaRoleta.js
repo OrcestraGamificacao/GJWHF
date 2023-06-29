@@ -22,15 +22,11 @@ const TelaRoleta = () => {
     <div className='TelaRoleta'>
       <div className="background-roleta">
         <di className="roletaTitleBox">
-          <h1 className="roletaTitle">Gire a roleta e descubra qual será seu tema sobre o mundo do protagonismo feminino!</h1>
+          <h1 className="roletaTitle">Gire a roleta e descubra qual será o seu tema <br></br> sobre o mundo do protagonismo feminino!</h1>
         </di>
-        <div className="roletaDivInferior">
-
           <div className="Roleta">
             <Roleta/>
-          </div>
-        </div>
-        
+          </div>        
       </div>
     </div>
   )

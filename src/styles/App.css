@@ -4,6 +4,7 @@
   align-items: center;
   margin: 0;
   padding: 0;
+
 }
 
 .background {
@@ -28,5 +29,6 @@ body {
   width: 100vw;
   background-size: cover;
   background-position: center;
+  overflow-y: hidden; /* Hide vertical scroll bar */
 }
 

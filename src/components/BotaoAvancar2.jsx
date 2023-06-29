@@ -12,7 +12,7 @@ function BotaoAvancar2() {
   return (
     <div className="wrapper" onClick={changeUrl}>
       <a href="" className="cta">
-        <span>AVANÇAR</span>
+        <span style={{ marginRight: '1Em', alignItems: 'center'}}>AVANÇAR</span>
         <span>
           <svg
             width="66px"
