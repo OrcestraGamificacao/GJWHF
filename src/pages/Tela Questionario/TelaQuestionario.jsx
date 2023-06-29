@@ -63,13 +63,15 @@ function TelaQuestionario() {
 	}
 
 	function respostaPopUp(){
-		Swal.fire({
-			title: 'Explicação',
-			html: questoesTema[indexArray].textoExplicativo,
-			confirmButtonText: indexArray < 4 ? 'Próxima questão' : 'Terminar',
-			confirmButtonColor: '#bc88bc',
-			position: 'middle'
-		}).then(() => proximaQuestao())
+		setTimeout(() => {
+			Swal.fire({
+				title: 'Explicação',
+				html: questoesTema[indexArray].textoExplicativo,
+				confirmButtonText: indexArray < 4 ? 'Próxima questão' : 'Terminar',
+				confirmButtonColor: '#bc88bc',
+				position: 'middle'
+			}).then(() => proximaQuestao())
+		}, 1300) 
 	}
 
 	const [gloriaAnimacao, setGloriaAnimacao ] = useState(gloriaFalando)
