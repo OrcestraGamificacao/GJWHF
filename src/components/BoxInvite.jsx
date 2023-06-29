@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from "react-router-dom";
 import Gloria from "./Gloria";
+import Swal from 'sweetalert2';
 
 import "../styles/BotaoIniciar.css";
 import '../styles/BoxInvite.css';
@@ -11,9 +12,7 @@ function BoxInvite() {
   const [scale, setScale] = useState(1)
 
   const [nome, setNome] = useState("");
-  const [showAlert, setShowAlert] = useState(false);
 
-  const Swal = require('sweetalert2')
 	function getNamePopUp(){
 		Swal.fire({
 		  inputLabel: 'Primeiro, preciso que me diga seu nome',
@@ -34,18 +33,11 @@ function BoxInvite() {
       }
 		}).then((result) => {
       sessionStorage.setItem('nome', result.value);
-      changeUrl();
+      navigate("/BoxApresentacao2");
     })
 	}
 
   const navigate = useNavigate();
-
-  const changeUrl = () => {
-    setShowAlert(true);
-    sessionStorage.setItem("nome", nome);
-
-    navigate("/BoxApresentacao2");
-  };
 
   const handleInputChange = (e) => {
     e.preventDefault();
@@ -61,7 +53,6 @@ function BoxInvite() {
   return (
     <div className='container-invite'>
       <div className="box-invite">
-        {showAlert && <p>Preencha o campo nome!</p>}
         <div className="box-invite-elements">
           <h3 className="box-invite-title">
           Você sabia que mais de 27% das mulheres de 15 a 49 anos já foram vítimas de pelo menos um ato de violência? E por esse e vários outros casos que estou aqui. <br>
@@ -71,7 +62,6 @@ function BoxInvite() {
           </br><br></br>
           O que me diz? Vamos juntos contribuir para um mundo melhor para todas elas?
           <br></br>
-          Então começamos com... Qual o seu nome?
           </h3>
           <br></br>
           {/* <input value={nome} type="text" className="inputNome" placeholder= "Digite seu nome e sobrenome" id='inputNome' onChange={(e) => handleInputChange(e)}/> */}

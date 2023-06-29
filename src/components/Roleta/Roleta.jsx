@@ -63,8 +63,6 @@ const Roleta = () => {
                     title: 'O tema sorteado foi:',
                     html: boxGanhador,
                     timer: 2500,
-                    //timerProgressBar: true,
-                    width: '40%',
                     padding: '15px',
                     background: '#F5F5F7',
                     color: '#612368',

@@ -69,7 +69,6 @@ function TelaQuestionario() {
 			title: 'Explicação',
 			html: questoesTema[indexArray].textoExplicativo,
 			confirmButtonText: indexArray < 4 ? 'Próxima questão' : 'Terminar',
-			// showCancelButton: false,
 			confirmButtonColor: '#bc88bc',
 			position: 'middle'
 		}).then(() => proximaQuestao())
@@ -203,14 +202,6 @@ function TelaQuestionario() {
 			</div>
 
 			<div className="boxQuestoes">
-				 {/* <div className="questoesEsquerda">
-					<BotaoResposta texto={questoesTema[indexArray].alternativaA} questao={'QuesA'} acao={verificaQuestao} disabled={desabilitado}/>
-					<BotaoResposta texto={questoesTema[indexArray].alternativaB} questao={'QuesB'} acao={verificaQuestao} disabled={desabilitado}/>
-				</div>
-				<div className="questoesDireita">
-					<BotaoResposta texto={questoesTema[indexArray].alternativaC} questao={'QuesC'} acao={verificaQuestao} disabled={desabilitado}/>
-					<BotaoResposta texto={questoesTema[indexArray].alternativaD} questao={'QuesD'} acao={verificaQuestao} disabled={desabilitado}/>
-				</div>  */}
 				<BotaoResposta texto={questoesTema[indexArray].alternativaA} questao={'QuesA'} acao={verificaQuestao} disabled={desabilitado}/>
 				<BotaoResposta texto={questoesTema[indexArray].alternativaB} questao={'QuesB'} acao={verificaQuestao} disabled={desabilitado}/>
 				<BotaoResposta texto={questoesTema[indexArray].alternativaC} questao={'QuesC'} acao={verificaQuestao} disabled={desabilitado}/>
