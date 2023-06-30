@@ -35,12 +35,12 @@ Confettiful.prototype._renderConfetti = function () {
     const confettiSize = Math.floor(Math.random() * 10) + 10 + 'px'
     const confettiBackground =
       this.confettiColors[
-        Math.floor(Math.random() * this.confettiColors.length)
+      Math.floor(Math.random() * this.confettiColors.length)
       ]
     const confettiLeft = Math.floor(Math.random() * this.el.offsetWidth) + 'px'
     const confettiAnimation =
       this.confettiAnimations[
-        Math.floor(Math.random() * this.confettiAnimations.length)
+      Math.floor(Math.random() * this.confettiAnimations.length)
       ]
 
     confettiEl.classList.add(
@@ -93,20 +93,22 @@ const TelaTchau = () => {
   return (
     <div className="TelaTchau">
       <div className="js-container confetti-container"></div>
-        <div className="background-TelaTchau">
-        </div>
-        <div className='box-TelaTchau'>
+      <div className='box-TelaTchau'>
+        <div className="box-TelaTchau-text-container">
           <h2 className="box-TelaTchau-title">Parabéns!</h2>
           <h3 className="box-TelaTchau-text">
-            Você chegou ao final da sua gamificação e espero que meu objetivo de te ensinar mais sobre o empoderamento feminino tenha enriquecido seu conhecimento.
-            Agora receba seu selo e procure alguém do Instituto Glória para te auxiliar no recebimento do seu prêmio.
+            Você completou sua gamificação e descobriu sobre os protagonimos femininos.
           </h3>
-          <div className="botaoPegarSelo">
-            <button className="pulsating-button" onClick={changeUrl}>
-              Pegar selo
-            </button>
-          </div>
+          <h3 className="box-TelaTchau-text">
+            Agora receba seu selo e, caso tenha conseguido os 5 <span style={{ color: '#800080' }}>SELOS ROXOS</span>, procure alguém do Instituto Glória para te auxiliar no recebimento do seu prêmio!
+          </h3>
         </div>
+        <div className="botaoPegarSelo">
+          <button className="pulsating-button" onClick={changeUrl}>
+            Pegar selo
+          </button>
+        </div>
+      </div>
     </div>
   )
 }
