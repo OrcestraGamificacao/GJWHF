@@ -120,3 +120,11 @@
 .detalhes:hover:after {
   width: 100%;
 }
+
+@media screen and (max-width: 680px){
+  .customBtn{
+    line-height: 15px;
+    font-size: 12px;
+    min-height: 110px;
+  }
+}
