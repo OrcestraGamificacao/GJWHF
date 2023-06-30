@@ -80,4 +80,7 @@
     .box-apresentation2-title{
       font-size: 0.85em;
     }
+    .box-apresentation2-elements{
+      line-height: 16px;
+    }
   }
