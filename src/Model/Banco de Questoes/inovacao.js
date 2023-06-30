@@ -40,10 +40,10 @@ function questoesInovacao() {
         'Têxtil, na fabricação de acessórios de moda e artesanato',
         'Têxtil, na fabricação de Hijab',
         'Têxtil, na fabricação de acessórios de moda e artesanato',
-        'Boucharouette Eco-Création é uma empresa especializada na reciclagem de tecidos tecidos e feitos à mão para transformá-los em acessórios de moda, como bolsas, e artesanato, como capas de almofadas.')
+        'Boucharouette Eco-Création é uma empresa especializada na reciclagem de tecidos feitos à mão para transformá-los em acessórios de moda, como bolsas, e artesanato, como capas de almofadas.')
 
     const inovQ5 = new Questao(5,
-        'Fatim-Zahra trabalhou vários anos como consultor de negócios em Paris para multinacionais líderes e especializou-se em gerenciamento de projetos, estratégia de gerenciamento de mudanças. Ela também realizou estudos sobre a experiência do cliente.',
+        'Fatim-Zahra trabalhou vários anos como consultora de negócios em Paris para multinacionais líderes e especializou-se em gerenciamento de projetos, estratégia de gerenciamento de mudanças. Ela também realizou estudos sobre a experiência do cliente.',
         'Qual iniciativa Fatim-Zahra construiu no Marrocos que aproveita toda sua experiência no meio empresarial?',
         'Aceleradora de Startup',
         'Agência de crédito para empresas',
@@ -91,7 +91,7 @@ function questoesInovacao() {
     'Revendas',
     'O aplicativo de Sophia conecta revendedores em países que possuem como idioma oficial o francês na África a companhias em outras regiões do planeta, buscando financiar mais de 200 mil donos de lojas em Marrocos, para que possam expandir seus negócios.')
 
-    const inovQ10 = new Questao(10, 'Hanae Bezad é a fundadora da Douar Tech, um centro de tecnologia inclusiva que ajuda a capacitar jovens e mulheres com habilidades digitais em áreas rurais e semi-urbanas em Marrocos, também já trabalhou como  gerente de projetos em startups e ecossistemas TIC para  a Smart Africa.',
+    const inovQ10 = new Questao(10, 'Hanae Bezad é a fundadora da Douar Tech, um centro de tecnologia inclusiva que ajuda a capacitar jovens e mulheres com habilidades digitais em áreas rurais e semi-urbanas em Marrocos, também já trabalhou como gerente de projetos em startups e ecossistemas TIC para a Smart Africa.',
     'De que forma mulheres como Hanae Bezad contribuem para a revolução digital na África?',
     'Contribui para a promoção da alfabetização digital entre as comunidades urbanas',
     'As mulheres têm habilidades técnicas superiores em comparação com os homens',
@@ -100,14 +100,15 @@ function questoesInovacao() {
     'A participação das mulheres ajuda a acelerar o desenvolvimento e reforça a narrativa tecnológica na África',
     'A participação das mulheres desempenha um papel crucial na aceleração do desenvolvimento e no fortalecimento da tecnologia na África. Ao serem capacitadas e terem acesso igualitário às oportunidades digitais, elas contribuem de maneira significativa para o crescimento econômico e social do continente.')
 
-    const inovQ11 = new Questao(11, 'Asmaa Morine Azzouzi depois de se formar no Instituto Superior de Comércio e Administração de Empresas (ISCAE) em Casablanca, após isso Asmaa fez uma pós-graduação em Comércio Internacional e obteve um MBA em Inteligência Econômica e Gestão Estratégica pela Paris School of Economic Warfare (EGE).', 
-    'Asmaa Azzouzi criou uma associação, sobre o que é a associação baseado na sua formação?', 
-    'Apoiar as mulheres marroquinas na criação e desenvolvimento do seu negócio', 
-    'Instalar incubadoras e fazer advocacia junto ao poder público', 
-    'Ensinar empreendedorismo para crianças pequenas', 
-    'Comprar empresas indo à falência e transformar as mesmas em lucro', 
-    'Apoiar as mulheres marroquinas na criação e desenvolvimento do seu negócio', 
-    'A Associação de Mulheres Empresárias de Marrocos (AFEM) apoia as mulheres marroquinas na criação e desenvolvimento do seu negócio, apoio que inclui a constituição de incubadoras e sua presidente é Asmaa Morine Azzouzi. Das cerca de 15.000 mulheres líderes empresariais no Reino de Marrocos, 600 aderiram à Associação de Mulheres Empresárias de Marrocos (AFEM).')
+    const inovQ11 = new Questao(11, 'Rita Zniber é presidente e CEO da Diana Holding, é reconhecida por suas diversas parcerias estratégicas e por seus acordos de investimento, como a aquisição da Atlas Bottling Company em parceria com a Equatorial Coca-Cola Bottling Company. Suas aquisições a fizeram aparecer na lista da Forbes das 100 mulheres mais poderosas do Oriente Médio.',
+    'Qual critério pode ter sido o responsável pela aparição de Rita Zniber na lista da Forbes?',
+    'Filantropia e trabalho social',
+    'Inovação e empreendedorismo',
+    'Sustentabilidade empresarial',
+    'Contribuição para a área da saúde',
+    'Inovação e empreendedorismo',
+    'Zniber demonstrou habilidades empreendedoras ao liderar a empresa em diferentes setores, desde alimentos e bebidas até plásticos e distribuição. Sua capacidade de identificar oportunidades de negócios e implementar estratégias inovadoras contribuiu para o crescimento e sucesso da empresa.'
+    )
 
     const inovQuestoes = [inovQ1, inovQ2, inovQ3, inovQ4, inovQ5, inovQ6, inovQ7, inovQ8, inovQ9, inovQ10, inovQ11]
 

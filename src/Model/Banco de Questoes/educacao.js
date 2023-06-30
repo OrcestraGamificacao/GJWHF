@@ -23,14 +23,14 @@ function questoesEducacao() {
         'A incrível  Aicha Ech-Channa, por meio da Associação Solidàriaé Féminine, buscava ajudar mães solteiras a manter sua própria subsistência por meio de programas de instrução vocacional, acesso a serviços médicos, aconselhamento psicológico, assistência jurídica e creche.')
 
     const eduQ3 = new Questao(3,
-        'Sana é uma premiada especialista em gênero, defensora das mulheres e palestrante sobre feminismo e questões femininas. Ela é autora de “Mulheres Invisíveis do Oriente Médio”. Ela falou em 50 países em universidades, painéis de discussão e eventos internacionais.  Sana estabeleceu a Iniciativa Womenpreneur que visa promover o lugar das mulheres no cenário empresarial, tecnologia, inovação e sociedade.',
+        'Sana é uma premiada especialista em gênero, defensora das mulheres e palestrante sobre feminismo e questões femininas. Ela é autora de “Mulheres Invisíveis do Oriente Médio”. Ela falou em 50 países em universidades, painéis de discussão e eventos internacionais. Sana estabeleceu a Iniciativa Womenpreneur que visa promover o lugar das mulheres no cenário empresarial, tecnologia, inovação e sociedade.',
         'Sana Afouaiz é a co-fundadora da Womenquake. Sobre o que é essa instituição?',
         'É um movimento global, que revisita e examina criticamente as crenças, mitos e ideias sobre gênero',
         'É um movimento que visa quebrar a barreira salarial entre as mulheres e homens',
         'É um movimento que visa conscientizar sobre as mudanças climáticas usando palestrantes e cientistas mulheres',
         'É um movimento que visa incentivar mulheres a entrarem e estudar cursos de ciência e tecnologia',
         'É um movimento global, que revisita e examina criticamente as crenças, mitos e ideias sobre gênero',
-        'Dentro da Womenpreneur foi co-fundadora do Womenquake, um movimento global, que revisita e examina criticamente as crenças, mitos e ideias sobre gênero. Ela usa sua plataforma para promover a agenda de igualdade por meio de histórias, campanhas sociais e ferramentas de compartilhamento para capacitar as mulheres. Essas experiências a levaram a organizar várias campanhas, incluindo a reforma da lei marroquina que permitia que vestupradores se casassem com suas vítimas.')
+        'Dentro da Womenpreneur foi co-fundadora do Womenquake, um movimento global, que revisita e examina criticamente as crenças, mitos e ideias sobre gênero. Ela usa sua plataforma para promover a agenda de igualdade por meio de histórias, campanhas sociais e ferramentas de compartilhamento para capacitar as mulheres. Essas experiências a levaram a organizar várias campanhas, incluindo a reforma da lei marroquina que permitia que estupradores se casassem com suas vítimas.')
 
     const eduQ4 = new Questao(4,
         'Khadija nasceu em Bruxelas (Bélgica) de pais marroquinos. Durante a adolescência, ela defendeu a educação e promoveu o conhecimento de várias formas criativas e ousadas. Por sua dedicação, foi selecionada para o programa Programa de Jovens Líderes da WIEF.',
@@ -40,16 +40,17 @@ function questoesEducacao() {
         'Restrição da participação das mulheres em atividades extracurriculares',
         'Inspirar outras jovens a se envolverem em atividades educacionais',
         'Inspirar outras jovens a se envolverem em atividades educacionais',
-        'AMuitas jovens enfrentam barreiras culturais, sociais ou econômicas para acessar a educação. Ao inspirá-las a se envolverem em atividades educacionais, elas são ajudadas a quebrar essas barreiras, e encorajadas a superar desafios e acreditar em seu potencial. Essa inspiração pode abrir portas e oportunidades antes consideradas inalcançáveis.')
+        'Muitas jovens enfrentam barreiras culturais, sociais ou econômicas para acessar a educação. Ao inspirá-las a se envolverem em atividades educacionais, elas são ajudadas a quebrar essas barreiras, e encorajadas a superar desafios e acreditar em seu potencial. Essa inspiração pode abrir portas e oportunidades antes consideradas inalcançáveis.')
 
-    const eduQ5 = new Questao(5, 'Rita possui uma fundação, em atividade desde maio de 1982, dedicada a ajudar no processo de adoção. Hoje, a Associação apoia integralmente cerca de 350 crianças abandonadas à nascença.',
-    'Rita Zniber descobriu uma falha de cuidado que levava à morte dos bebês órfãos recém nascidos em um hospital marroquino. Escolha a alternativa que você acha que descreve como Rita agiu diante da situação com a sua fundação:',
-    'Rita processou o hospital, com uma alegação de infração aos direitos humanos e das crianças',
-    'Rita protestou em frente ao hospital por dias com apoiadores para o hospital pagar uma multa',
-    'Rita criou um espaço no hospital para cuidar dessas crianças que tinham sido abandonadas',
-    'Rita comprou o hospital e treinou todos os funcionários para cuidar melhor dessas crianças em situação de risco',
-    'Rita criou um espaço no hospital para cuidar dessas crianças que tinham sido abandonadas',
-    'O NID, é o nome do Centro que Rita Zniber criou. Teve uma colaboração com o hospital muito difícil, por múltiplas razões, mas mesmo assim conseguiu salvar da morte 23 crianças que não tinham sido adotadas! O mais velho dos quais tinha 19 meses. E depois o NID foi expandido para ajudar em várias áreas pediátricas de crianças de várias idades.')
+    const eduQ5 = new Questao(5, 'Anália Emília Franco nasceu em Resende, no estado do Rio de Janeiro, no dia 1º de fevereiro de 1853, e faleceu em 20 de janeiro de 1919, com 62 anos. Ela foi literata, jornalista e poetisa no Brasil do século 19.',
+    'Qual foi a diplomação de Anália Franco?',
+    'Normalista',
+    'Direito',
+    'Enfermagem',
+    'Literatura',
+    'Normalista',
+    'Anália Franco diplomou-se Normalista, curso de licenciatura plena de formação de professores para atuar na educação infantil e/ou nos anos iniciais do ensino fundamental. Ela publicou numerosos folhetos referentes aos cursos ministrados em suas escolas, tratados especialmente sobre a infância, nos quais as professoras encontraram meios de desenvolver as habilidades morais das crianças, instruindo-as ao mesmo tempo.'
+    )
 
     const eduQ6 = new Questao(6, 'Salwa Idriss Akhannouch, fundadora e CEO do Aksal Group, é uma das empresárias mais poderosas do Marrocos e uma das mais ricas empreendedoras do norte da África.',
     'Em 2011, Salwa Akhannouch criou a Aksal Social Initiative que busca apoiar:', 
@@ -89,7 +90,16 @@ function questoesEducacao() {
     'Incorporando diferentes abordagens culturais e filosóficas em suas pesquisas', 
     'Ao ter uma formação e vivência em duas culturas distintas, Ilham Kadri foi exposta a diferentes maneiras de pensar, enxergar o mundo e abordar problemas. Isso pode ter ampliado sua capacidade de pensar de forma mais abrangente e flexível, permitindo que ela aborde questões científicas com uma perspectiva mais diversificada.')
 
-    const eduQuestoes = [eduQ1, eduQ2, eduQ3, eduQ4, eduQ5, eduQ6, eduQ7, eduQ8, eduQ9]
+    const eduQ10 = new Questao(10, 'Asmaa Morine Azzouzi depois de se formar no Instituto Superior de Comércio e Administração de Empresas (ISCAE) em Casablanca, após isso Asmaa fez uma pós-graduação em Comércio Internacional e obteve um MBA em Inteligência Econômica e Gestão Estratégica pela Paris School of Economic Warfare (EGE).', 
+    'Asmaa Azzouzi criou uma associação, sobre o que é a associação baseado na sua formação?', 
+    'Apoiar as mulheres marroquinas na criação e desenvolvimento do seu negócio', 
+    'Instalar incubadoras e fazer advocacia junto ao poder público', 
+    'Ensinar empreendedorismo para crianças pequenas', 
+    'Comprar empresas indo à falência e transformar as mesmas em lucro', 
+    'Apoiar as mulheres marroquinas na criação e desenvolvimento do seu negócio', 
+    'A Associação de Mulheres Empresárias de Marrocos (AFEM) apoia as mulheres marroquinas na criação e desenvolvimento do seu negócio, apoio que inclui a constituição de incubadoras e sua presidente é Asmaa Morine Azzouzi. Das cerca de 15.000 mulheres líderes empresariais no Reino de Marrocos, 600 aderiram à Associação de Mulheres Empresárias de Marrocos (AFEM).')
+
+    const eduQuestoes = [eduQ1, eduQ2, eduQ3, eduQ4, eduQ5, eduQ6, eduQ7, eduQ8, eduQ9, eduQ10]
 
 
 
