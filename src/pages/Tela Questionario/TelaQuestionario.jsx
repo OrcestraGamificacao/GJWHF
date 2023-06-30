@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, lazy } from "react";
 import { BiSearch } from "react-icons/bi";
 import { useNavigate } from "react-router-dom";
 
 
 //import gloriaFalando from '../../gloria/gloria_comeco_da_fala.gif';
 import gloriaSorrindo from '../../gloria/gloria_sorrindo.gif';
-import gloriaBrava from '../../gloria/gloria_sem_entender.gif';
+import gloriaBrava from "../../gloria/gloria_sem_entender.gif";
 
 
 import questoesInovacao from "../../Model/Banco de Questoes/inovacao";
@@ -16,7 +16,8 @@ import questoesSaude from "../../Model/Banco de Questoes/saude";
 
 import BotaoResposta from "../../components/Botao de Resposta/BotaoResposta";
 import "./TelaQuestionario.css";
-import Gloria from "../../components/Gloria";
+
+const Gloria = lazy(() => import("../../components/Gloria"));
 
 
 const useSessionStorage = (key) => {
@@ -221,7 +222,12 @@ function TelaQuestionario() {
 			</div>
 
 			<div className='container-gloria-quest'>
-				{animation.localeCompare("certo") === 0 ? <Gloria animacao={gloriaSorrindo} /> : <Gloria animacao={gloriaBrava} />}
+				{
+					<>
+						<Gloria animacao={gloriaSorrindo} display={animation.localeCompare("certo") === 0 ? "block" : "none"} />
+						<Gloria animacao={gloriaBrava} display={animation.localeCompare("certo") === 0 ? "none" : "block"} />
+					</>
+				}
 			</div>
 		</div>
 	);
