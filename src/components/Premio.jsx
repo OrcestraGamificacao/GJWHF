@@ -4,9 +4,9 @@ import "../styles/Premio.css"
 import baixoMobile from "../images/gloriaMobileBaixo.png"
 import medioMobile from "../images/gloriaMobileMedio.png"
 import altoMobile from "../images/gloriaMobileAlto.png"
-import baixoDesktop from "../images/gloriaDesktopBaixo.png"
-import medioDesktop from "../images/gloriaDesktopMedio.png"
-import altoDesktop from "../images/gloriaDesktopAlto.png"
+import baixoDesktop from "../images/gloria-selo-cinza.png"
+import medioDesktop from "../images/gloria-selo-rosa.png"
+import altoDesktop from "../images/gloria-selo-roxo.png"
 
 export default function Premio(props) {
     let back = medioMobile
