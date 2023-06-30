@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* .background-box-ExplicacaoGami2{
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  margin-top: 0%;
+} */
+.box-ExplicacaoGami2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.background-box-ExplicacaoGami2{
+  background-color: aqua;
+  /* Rectangle */
+  position: absolute;
+  width: 40%;
+  height: 80%;
+  border: 5px solid aliceblue;
+  background: linear-gradient(180deg, rgb(238, 206, 92) 0%, rgb(188, 136, 188, 0.7) 71.98%);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.background-box-ExplicacaoGami2 {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify; */
+  text-align: justify;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.box-ExplicacaoGami2-title {
+    font-weight: 700;
+    /* text-align: center; */
+    color: #050505;
+    /* text-align: justify; */
+    font-size: 0.9em;
+    margin: 0 auto;
+    padding: 7%;
+  }
+
+
+  /*.box-ExplicacaoGami2 {
+    position: absolute;
+    width: 40%;
+    height: 80%;
+    border: 5px solid aliceblue;
+    background: linear-gradient(180deg, rgb(238, 206, 92) 0%, rgb(188, 136, 188, 0.7) 71.98%);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+*/
+  .botaoAvançar-ExplicacaoGami2{
+    /* Centraliza o botão */
+    width: 100%;
+    justify-content: center;
+    margin-top: 10%;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .box-ExplicacaoGami2 {
+      width: 60%;
+    }
+    .background-box-ExplicacaoGami2{
+      width: 60%;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .box-ExplicacaoGami2 {
+      width: 80%;
+    }
+    .background-box-ExplicacaoGami2{
+      width: 60%;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .box-ExplicacaoGami2 {
+      width: 80%;
+      
+    }
+    .box-ExplicacaoGami2-title{
+      font-size: 0.7em;
+      padding: 2em;
+    }
+    .background-box-ExplicacaoGami2{
+      width: 80%;
+    }
+  }
+
+  @media screen and (max-width: 380px) {
+    .box-ExplicacaoGami2 {
+      width: 80%;
+      
+    }
+    .box-ExplicacaoGami2-title{
+      font-size: 0.85em;
+      padding: 2em;
+    }
+    .background-box-ExplicacaoGami2{
+      width: 80%;
+    }
+  }

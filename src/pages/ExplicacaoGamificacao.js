@@ -1,20 +1,12 @@
-// import BoxExplicacaoGami from '../components/BoxExplicacaoGami'
-// import BotaoAvancarGami from '../components/BotaoAvancarGami'
-// import Gloria from '../components/Gloria'
-// import gloriaFalando from './gloria/gloria_falando.mp4';
+import '../styles/BoxExplicacaoGami2.css'
+import BoxExplicacaoGami2 from '../components/BoxExplicacaoGami2'
 
-// const ExplicacaoGamificacao = () => {
-//   return (
-//     <div className="ExplicacaoGamificacao">
-//       <div className="background-ExplicacaoGamificacao">
-//         <BoxExplicacaoGami />
-//         <Gloria animacao={gloriaFalando}/>
-//       </div>
-//       <div className="botaoAvançar">
-//         <BotaoAvancarGami />
-//       </div>
-//     </div>
-//   )
-// }
+const ExplicacaoGamficacao = () => {
+  return (
+    <div className="box-ExplicacaoGami2">
+        <BoxExplicacaoGami2 />
+    </div>
+  )
+}
 
-// export default ExplicacaoGamificacao
+export default ExplicacaoGamficacao
