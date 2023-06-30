@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "../styles/Premio.css"
 
-import baixoMobile from "../images/gloriaMobileBaixo.png"
-import medioMobile from "../images/gloriaMobileMedio.png"
-import altoMobile from "../images/gloriaMobileAlto.png"
+import baixoMobile from "../images/gloria-selo-mobile-cinza.png"
+import medioMobile from "../images/gloria-selo-mobile-rosa.png"
+import altoMobile from "../images/gloria-selo-mobile-roxo.png"
 import baixoDesktop from "../images/gloria-selo-cinza.png"
 import medioDesktop from "../images/gloria-selo-rosa.png"
 import altoDesktop from "../images/gloria-selo-roxo.png"
