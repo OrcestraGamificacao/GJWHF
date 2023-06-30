@@ -101,10 +101,10 @@
   @media screen and (max-width: 400px) {
     .box-ExplicacaoGami2 {
       width: 80%;
+      font-size: 0.8em;
       
     }
     .box-ExplicacaoGami2-title{
-      font-size: 0.7em;
       padding: 2em;
     }
     .background-box-ExplicacaoGami2{
