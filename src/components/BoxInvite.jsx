@@ -5,31 +5,35 @@ import Swal from 'sweetalert2';
 import "../styles/BotaoIniciar.css";
 import '../styles/BoxInvite.css';
 
-import videoNormal from '../gloria/gloria-talk-animation.webm'
-import videoIos from '../gloria/gloria_sorrindo_Apple_ProRes_4444.mov'
+import videoNormal from '../gloria/gloriafodasetaligado.gif'
+// import videoIos from '../gloria/gloria_sorrindo_Apple_ProRes_4444.mov'
 
 
 function BoxInvite() {
   const navigate = useNavigate();
 
-	function getNamePopUp(){
-		Swal.fire({
-		  inputLabel: 'Primeiro, preciso que me diga seu nome',
-      input: 'text',
-      inputPlaceholder: 'Nome completo',
-			showCancelButton: false,
-			confirmButtonText: 'Vamos lá!',
-			confirmButtonColor: '#612368',
-      inputValidator: (value) => {
-        if (!value) {
-          return 'Você precisa escrever seu nome completo!'
-        }
-      }
-		}).then((result) => {
-      sessionStorage.setItem('nome', result.value);
-      navigate("/BoxApresentacao2");
-    })
-	}
+  function getNamePopUp(){
+    Swal.fire({
+      inputLabel: 'Primeiro, preciso que me diga seu nome',
+  input: 'text',
+  inputPlaceholder: 'Nome completo',
+        showCancelButton: false,
+        confirmButtonText: 'Vamos lá!',
+        confirmButtonColor: '#612368',
+  allowOutsideClick: false,
+  showCloseButton: true,
+  inputValidator: (value) => {
+    if (!value) {
+      return 'Você precisa escrever seu nome completo!'
+    }
+  }
+    }).then((result) => {
+  if (!result.isDismissed) {
+    sessionStorage.setItem('nome', result.value);
+    navigate("/BoxApresentacao2");
+  }
+})
+}
 
   return (
     <div className='container-invite'>
@@ -49,8 +53,8 @@ function BoxInvite() {
         </div>
       </div>
       <div className='container-gloria-invite'>
-        <video src={videoIos} type="video/webm"></video>
-        <video src={videoNormal} type="video/mov"></video>
+        {/* <video src={videoIos} type="video/webm"></video> */}
+        <img src={videoNormal} style={{width:'150%'} } alt='gloria'></img>
       </div>
     </div>
   );
