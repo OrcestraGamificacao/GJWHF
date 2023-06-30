@@ -4,7 +4,7 @@ import "../styles/Gloria.css";
 
 const Gloria = ({animacao}) => {
 return (
-<video autoPlay={true} loop={true} muted={true} src={animacao} className='video-gloria'></video>
+    <img src={animacao} alt='gloria' className='video-gloria'></img>
 )
 }
 

@@ -1,11 +1,12 @@
 import React from 'react';
 import { useNavigate } from "react-router-dom";
 import Swal from 'sweetalert2';
+import Gloria from './Gloria';
 
 import "../styles/BotaoIniciar.css";
 import '../styles/BoxInvite.css';
 
-import videoNormal from '../gloria/gloriafodasetaligado.gif'
+import videoNormal from '../gloria/gloria_comeco_da_fala.gif'
 // import videoIos from '../gloria/gloria_sorrindo_Apple_ProRes_4444.mov'
 
 
@@ -53,8 +54,7 @@ function BoxInvite() {
         </div>
       </div>
       <div className='container-gloria-invite'>
-        {/* <video src={videoIos} type="video/webm"></video> */}
-        <img src={videoNormal} style={{width:'150%'} } alt='gloria'></img>
+        <Gloria animacao={videoNormal}/>
       </div>
     </div>
   );

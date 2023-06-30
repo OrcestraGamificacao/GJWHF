@@ -5,7 +5,7 @@ import "../styles/BoxApresentacao.css";
 import logoOrc from "./assets/LogoOrc.png";
 import logoGloria from "../components/assets/LogoGloria.svg"
 import logoNaPraia from "./assets/LogoNaPraiaFestival.png";
-import gloriaFalando from '../gloria/gloria-talk-animation.webm';
+import gloriaFalando from '../gloria/gloria_meio_da_fala.gif';
 
 function BoxApresentacao() {
   return (
