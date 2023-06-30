@@ -181,7 +181,7 @@ function TelaQuestionario() {
 	elem.style.backgroundColor = 'transparent'
 
 
-	}, 1000)
+	}, 2500)
 	setDesabilitado(true)
 	}
 

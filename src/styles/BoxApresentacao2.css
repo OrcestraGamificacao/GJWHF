@@ -26,7 +26,7 @@
   }
 
 .box-apresentation2-title {
-    font-weight: 700;
+    font-weight: 600;
     text-align: center;
     color: #050505;
     text-align: justify;
@@ -58,7 +58,7 @@
     display: flex;
     width: 100%;
     justify-content: center;
-    margin-top: 10%;
+    margin-top: 0;
   }
 
   @media screen and (max-width: 1024px) {
@@ -75,12 +75,18 @@
 
   @media screen and (max-width: 400px) {
     .box-apresentation2 {
-      width: 80%;
+      display: flex;
+      flex-direction: column;
+      width: 80%;      
+      gap: 0px;
     }
     .box-apresentation2-title{
       font-size: 0.85em;
     }
     .box-apresentation2-elements{
       line-height: 16px;
+    }
+    .botaoAvançar-apresentation{
+      padding-top: 0;
     }
   }
