@@ -24,7 +24,7 @@ const Roleta = () => {
         roletaObj.btnStop.style.visibility = 'visible'
         // roletaObj.roleta.style.animation = 'roleta 2s linear infinite'
 
-        const tempos = [3000, 3250 , 3500, 3750, 4000]
+        const tempos = [3000, 3250 , 3500, 3750, 3950]
         let tempoSorteado = tempos[Math.floor(Math.random()*tempos.length)]
         console.log(tempoSorteado)
     
