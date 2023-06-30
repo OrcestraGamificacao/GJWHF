@@ -97,7 +97,7 @@ const TelaTchau = () => {
         <div className="box-TelaTchau-text-container">
           <h2 className="box-TelaTchau-title">Parabéns!</h2>
           <h3 className="box-TelaTchau-text">
-            Você completou sua gamificação e descobriu sobre os protagonimos femininos.
+            Você completou o desafio e descobriu sobre os protagonimos femininos.
           </h3>
           <h3 className="box-TelaTchau-text">
             Agora receba seu selo e, caso tenha conseguido os 5 <span style={{ color: '#800080' }}>SELOS ROXOS</span>, procure alguém do Instituto Glória para te auxiliar no recebimento do seu prêmio!
