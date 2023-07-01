@@ -1,18 +1,14 @@
-import React, { useEffect, useState, lazy } from "react";
+import React, { useEffect, useState, lazy, Suspense } from "react";
 import { BiSearch } from "react-icons/bi";
 import { useNavigate } from "react-router-dom";
 
-
-//import gloriaFalando from '../../gloria/gloria_comeco_da_fala.gif';
 import gloriaSorrindo from '../../gloria/gloria_sorrindo.gif';
 import gloriaBrava from "../../gloria/gloria_sem_entender.gif";
-
 
 import questoesInovacao from "../../Model/Banco de Questoes/inovacao";
 import questoesAtivismo from "../../Model/Banco de Questoes/ativismo";
 import questoesEducacao from "../../Model/Banco de Questoes/educacao";
 import questoesSaude from "../../Model/Banco de Questoes/saude";
-
 
 import BotaoResposta from "../../components/Botao de Resposta/BotaoResposta";
 import "./TelaQuestionario.css";
@@ -92,7 +88,6 @@ function TelaQuestionario() {
 				setQuestoesTema(() => shuffleArray([...questoesSaude()]));
 				break;
 			default:
-				console.log("Sem tema");
 				break;
 		}
 	};
@@ -111,12 +106,10 @@ function TelaQuestionario() {
 	function verificaQuestao(e) {
 		const elemId = e.currentTarget.id;
 		const elem = e.currentTarget;
-		console.log(elem)
 		switch (elemId) {
 			case "QuesA":
 				if (questoesTema[indexArray].alternativaA === questoesTema[indexArray].resposta) {
 					setPontuacao((ponto) => ponto + 1)
-					console.log('certo')
 					setAnimation("certo")
 					elem.style.backgroundColor = 'green'
 				}
@@ -129,7 +122,6 @@ function TelaQuestionario() {
 			case "QuesB":
 				if (questoesTema[indexArray].alternativaB === questoesTema[indexArray].resposta) {
 					setPontuacao((ponto) => ponto + 1)
-					console.log('certo')
 					setAnimation("certo")
 					elem.style.backgroundColor = 'green'
 				}
@@ -142,7 +134,6 @@ function TelaQuestionario() {
 			case "QuesC":
 				if (questoesTema[indexArray].alternativaC === questoesTema[indexArray].resposta) {
 					setPontuacao((ponto) => ponto + 1)
-					console.log('certo')
 					setAnimation("certo")
 					elem.style.backgroundColor = 'green'
 				}
@@ -155,7 +146,6 @@ function TelaQuestionario() {
 			case "QuesD":
 				if (questoesTema[indexArray].alternativaD === questoesTema[indexArray].resposta) {
 					setPontuacao((ponto) => ponto + 1)
-					console.log('certo')
 					setAnimation("certo")
 					elem.style.backgroundColor = 'green'
 				}
@@ -178,12 +168,10 @@ function TelaQuestionario() {
 	}
 
 	useEffect(() => {
-		console.log(pontuacao)
 		sessionStorage.setItem('pontuacao', pontuacao.toString())
 	}, [pontuacao])
 
 	useEffect(() => {
-		console.log({ questoesTema });
 		return () => { };
 	}, [questoesTema]);
 
@@ -223,10 +211,10 @@ function TelaQuestionario() {
 
 			<div className='container-gloria-quest'>
 				{
-					<>
+					<Suspense fallback={<span>Loading...</span>}>
 						<Gloria animacao={gloriaSorrindo} display={animation.localeCompare("certo") === 0 ? "block" : "none"} />
 						<Gloria animacao={gloriaBrava} display={animation.localeCompare("certo") === 0 ? "none" : "block"} />
-					</>
+					</Suspense>
 				}
 			</div>
 		</div>

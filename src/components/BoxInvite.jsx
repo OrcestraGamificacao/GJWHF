@@ -1,14 +1,13 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 import { useNavigate } from "react-router-dom";
 import Swal from 'sweetalert2';
-import Gloria from './Gloria';
 
 import "../styles/BotaoIniciar.css";
 import '../styles/BoxInvite.css';
 
 import videoNormal from '../gloria/gloria_comeco_da_fala.gif'
-// import videoIos from '../gloria/gloria_sorrindo_Apple_ProRes_4444.mov'
 
+const Gloria = lazy(() => import("./Gloria"));
 
 function BoxInvite() {
   const navigate = useNavigate();
@@ -54,7 +53,9 @@ function BoxInvite() {
         </div>
       </div>
       <div className='container-gloria-invite'>
-        <Gloria animacao={videoNormal} />
+        <Suspense fallback={<span>Loading...</span>}>
+          <Gloria animacao={videoNormal} />
+        </Suspense>
       </div>
     </div>
   );
