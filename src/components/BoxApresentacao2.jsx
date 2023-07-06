@@ -11,13 +11,13 @@ function BoxApresentacao2() {
             Muito feliz que você, {sessionStorage.getItem("nome")}, aceitou esse desafio!
             <br></br>
             <br></br>
-            Eu vou interagir com você, fornecendo informações importantes sobre Ativismo, Inovação, Saúde e Educação, te conectando histórias muito interessantes!
+            Eu vou fornecer informações importantes sobre Ativismo, Inovação, Saúde e Educação, te apresentando histórias muito interessantes!
             <br></br>
             <br></br>
             Tudo isso através do uso da tecnologia e da gamificação!
             <br></br>
             <br></br>
-            A gamificação é o uso de elementos e mecânicas de jogos em contextos não relacionados a jogos, com o objetivo de engajar, motivar e envolver as pessoas em determinadas atividades, e assim, espero ajudar a ampliar a voz das mulheres e empoderá-las acima de tudo! Junte-se a mim nessa jornada de conhecimento da história de nossas mulheres incríveis!
+            A gamificação é o uso de elementos de jogos em contextos não relacionados a jogos, com o objetivo de engajar, motivar e envolver as pessoas em determinadas atividades, e assim, espero ajudar a ampliar a voz das mulheres e empoderá-las! Junte-se a mim nessa jornada de conhecimento da história de nossas mulheres incríveis!
           </h3>
         </div>
         <div className="botaoAvançar-apresentation2">

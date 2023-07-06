@@ -1,6 +1,5 @@
 //Buscando o tema sorteado e pegando HTML
 const temaSorteado = localStorage.getItem('temaSorteado')
-console.log(temaSorteado)
 
 let instrucoes = document.querySelector('#instrucoes')
 let aviso = document.querySelector('#aviso')

@@ -10,10 +10,10 @@ function BotaoAvancar3() {
   };
 
   return (
-    <div className="wrapper" style={{ marginLeft: "20%"}} onClick={changeUrl}>
+    <div className="wrapper" onClick={changeUrl}>
       {/* eslint-disable-next-line */}
       <a href="" className="cta">
-        <span>BORA COMEÇAR</span>
+        <span style={{ alignItems: 'center', width: '10em'}}>BORA COMEÇAR</span>
         <span>
           <svg
             width="66px"

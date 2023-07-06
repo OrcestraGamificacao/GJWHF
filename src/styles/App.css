@@ -25,11 +25,11 @@
 }
 
 body {
-  background: url('../images/FundoGloriaA.jpg');
+  background: url('../images/FundoGloriaA2.jpg');
   height: 100vh;
   width: 100vw;
   background-size: cover;
   background-position: center;
-  overflow-y: hidden; /* Hide vertical scroll bar */
+  overflow-x: hidden; /* Hide vertical scroll bar */
 }
 

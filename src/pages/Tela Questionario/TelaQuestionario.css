@@ -30,15 +30,30 @@ letter-spacing: 1px;
 
 .iconContexto{
 color: #f5f5f7;
-padding: 1px;
 cursor: pointer;
-width: 1.7em;
-height: 1.7em;
-background-color: #bc88bc;
-border-radius: 50%;
-box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
-7px 7px 20px 0px rgba(0, 0, 0, .1),
-4px 4px 5px 0px rgba(0, 0, 0, .1);
+width: 1.2em;
+height: 1.2em;
+}
+
+.iconContextoBox{
+    display: flex;
+    flex-direction: row;
+    padding: 0.3em 0.8em;
+    justify-content: space-between;
+    margin-left: 2em;
+    width: 7em;
+    background-color: #bc88bc;
+    border-radius: 10px;
+    border: 1px solid white;
+
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+    7px 7px 20px 0px rgba(0, 0, 0, .1),
+    4px 4px 5px 0px rgba(0, 0, 0, .1);
+}
+
+.contextoBoxText{
+    color: white;
+    font-weight: 500;
 }
 
 
