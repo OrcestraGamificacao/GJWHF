@@ -1,6 +1,6 @@
 import React from 'react';
 import "../styles/BoxApresentacao2.css";
-import BotaoAvancar2 from './BotaoAvancar2';
+import BotaoAvancarGami from './BotaoAvancarGami';
 
 function BoxApresentacao2() {
   return (
@@ -11,19 +11,16 @@ function BoxApresentacao2() {
             Muito feliz que você, {sessionStorage.getItem("nome")}, aceitou esse desafio!
             <br></br>
             <br></br>
-            Eu vou fornecer informações importantes sobre Ativismo, Inovação, Saúde e Educação, te apresentando histórias muito interessantes!
+            Toque na roleta para saber qual tema você irá aprender. Terá um questionário com 5 perguntas sobre mulheres com histórias incríveis. Cada pergunta tem seu contexto, caso queira entender melhor. Sua premiação é definida com um selo oficial que está escrito "Todos com Glória".
             <br></br>
             <br></br>
-            Tudo isso através do uso da tecnologia e da gamificação!
+            Se você acertar as 5 perguntas, ganhará o <span style={{ color: '#800080'}}>SELO ROXO</span>. Caso tenha acertado 3 ou 4 ganhará o <span style={{ color: '#ff0084'}}>SELO ROSA</span> e se acertar 2 ou menos, ganhará o selo <span style={{ color: '#474A51'}}>SELO CINZA</span>.
             <br></br>
             <br></br>
-            A gamificação é o uso de elementos de jogos em contextos não relacionados a jogos, com o objetivo de engajar, motivar e envolver as pessoas em determinadas atividades, e assim, espero ajudar a ampliar a voz das mulheres e empoderá-las! Junte-se a mim nessa jornada de conhecimento da história de nossas mulheres incríveis!
+            TEREMOS PRÊMIO! Para ganhá-lo você precisa colecionar 5 <span style={{ color: '#800080'}}>SELOS ROXOS</span> e apresentar para alguém do Instituto Gloria! Você precisa tirar um print de pelo menos um dos selo ganho e postar no seu Instagram marcando <a href="https://www.instagram.com/eusouagloria/" rel="noreferrer" target="_blank" style={{ color: '#800080' }}>@eusouagloria</a>, <a href="https://www.instagram.com/napraiafestival/" rel="noreferrer" target="_blank" style={{ color: '#800080' }}>@napraiafestival</a> e a <a href="https://www.instagram.com/orcgamificacao/" rel="noreferrer" target="_blank" style={{ color: '#800080' }}>@orcgamificacao</a>
           </h3>
         </div>
-        <div className="botaoAvançar-apresentation2">
-        <BotaoAvancar2 />
-        </div>
-
+        <BotaoAvancarGami />
       </div>
     </div>
 );

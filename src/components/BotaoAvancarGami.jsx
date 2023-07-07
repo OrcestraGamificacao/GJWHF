@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/BotaoAvancar.css";
 import { useNavigate } from "react-router-dom";
 
-function BotaoAvancar3() {
+function BotaoAvancarGami() {
   const navigate = useNavigate();
 
   const changeUrl = () => {
@@ -52,4 +52,4 @@ function BotaoAvancar3() {
   );
 }
 
-export default BotaoAvancar3;
+export default BotaoAvancarGami;
