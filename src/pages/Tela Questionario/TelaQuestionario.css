@@ -29,31 +29,52 @@ letter-spacing: 1px;
 
 
 .iconContexto{
-color: #f5f5f7;
+color: #612368;
 cursor: pointer;
 width: 1.2em;
 height: 1.2em;
+margin-left: 0.5em;
 }
 
 .iconContextoBox{
     display: flex;
     flex-direction: row;
-    padding: 0.3em 0.8em;
+    padding: 0.3em 0.3em;
     justify-content: space-between;
     margin-left: 2em;
-    width: 7em;
-    background-color: #bc88bc;
+    width: 6em;
+    background-color: #ddbedd;
     border-radius: 10px;
-    border: 1px solid white;
+    border: 2px solid #78467f;
 
     box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
     7px 7px 20px 0px rgba(0, 0, 0, .1),
     4px 4px 5px 0px rgba(0, 0, 0, .1);
+    animation: pulse 2s infinite;
 }
 
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(120, 70, 127, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(120, 70, 127, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(120, 70, 127, 0);
+	}
+}
+
+
 .contextoBoxText{
-    color: white;
-    font-weight: 500;
+    color: #612368;
+    font-weight: bold;
+    margin-right: 0.5em;
 }
 
 

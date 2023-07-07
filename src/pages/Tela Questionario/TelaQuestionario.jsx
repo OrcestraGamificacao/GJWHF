@@ -192,7 +192,7 @@ function TelaQuestionario() {
 
 				<button className="iconContextoBox" onClick={contextoPopUp}>
 					<BiSearch className="iconContexto" onClick={contextoPopUp} />
-					<p className="contextoBoxText">Contexto</p>
+					<p className="contextoBoxText">DICA</p>
 				</button>
 			</div>
 
