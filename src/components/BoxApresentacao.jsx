@@ -18,6 +18,9 @@ function BoxApresentacao() {
 
   function getNamePopUp() {
     Swal.fire({
+      customClass: {
+        inputLabel: 'popup-input-label'
+      },
       inputLabel: 'Primeiro, preciso que me diga seu nome completo:',
       input: 'text',
       inputPlaceholder: 'Nome completo',
@@ -48,11 +51,27 @@ function BoxApresentacao() {
       </div>
       <div className="box-apresentation">
         <div className="box-apresentation-elements">
-          <h3 className="box-apresentation-title">
-            Olá, eu sou a Glória, uma inteligência artificial com o propósito de combater a violência contra mulheres e meninas. Sou uma 'robozinha' desenvolvida com a missão de contribuir para um mundo mais seguro e igualitário para todas as mulheres. Meu objetivo principal é criar conscientização, educar e fornecer recursos para prevenir a violência e apoiar as vítimas.
-          </h3>
-          <h3 className="box-apresentation-title">E para não ficar sozinha nessa missão gostaria de convidar você para me ajudar a conquistar este objetivo. O que me diz? Vamos juntos contribuir para um mundo melhor para todas elas?</h3>
-          <button onClick={getNamePopUp} className="grow_ellipse" /*disabled={nome ? false : true}*/ >VAMOS COMEÇAR!</button>
+          <div className="box-apresentation-text-container">
+            <h3 className="box-apresentation-text">
+            Olá, eu sou a Glória, uma inteligência artificial com o propósito de combater a violência contra mulheres e meninas.
+            </h3>
+            <h3 className="box-apresentation-text">
+              Você sabia que mais de 27% das mulheres de 15 a 49 anos já foram vítimas de pelo menos um ato de violência?
+            </h3>
+            <h3 className="box-apresentation-text">
+              E por esse e vários outros casos que estou aqui. Vamos juntos contribuir para um mundo melhor para todas elas?  
+            </h3>
+          </div>
+          <div className="apresentation-button-container">
+            <button 
+              onClick={getNamePopUp} 
+              className="grow_ellipse">
+              VAMOS COMEÇAR!
+            </button>
+          </div>
+
+          {/* Essa div serve para fazer o flexbox alinhar o botão no centro do dispositivo */}
+          <div className="apresentation-align-button-box"></div>
         </div>
       </div>
       <div className='container-gloria-initial'>
