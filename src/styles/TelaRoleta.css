@@ -52,9 +52,3 @@
         left: auto;
     }
 }
-
-@media screen and (max-height: 700px){
-    .roletaTitle{
-        font-size: 20px;
-    }
-}

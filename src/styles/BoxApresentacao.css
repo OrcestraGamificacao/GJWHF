@@ -139,7 +139,7 @@
 /* Alterações para dispositivos mobile com telas muito pequenas
   - Em telas muito pequenas os textos acabam piorando a responsividade 
 */
-@media screen and (max-height: 700px) {
+@media screen and (max-height: 800px) {
   .box-apresentation-text {
     font-size: 0.8em;
   }

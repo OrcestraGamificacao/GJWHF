@@ -52,7 +52,7 @@
 
 
 /* Ajustes para dispositivos móveis com a tela pequena */
-@media screen and (max-height: 700px){
+@media screen and (max-height: 800px){
   .box-apresentation2-text-container{
     font-size: 0.8em;
   }

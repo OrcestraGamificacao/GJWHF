@@ -12,6 +12,7 @@
   width: 100%;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   opacity: 1; /* Adjust the opacity as needed */
   /* margin: 0;
   padding: 0;
@@ -30,6 +31,7 @@ body {
   width: 100vw;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   overflow-x: hidden; /* Hide vertical scroll bar */
 }
 
