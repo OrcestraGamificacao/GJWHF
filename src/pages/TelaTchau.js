@@ -100,6 +100,7 @@ const TelaTchau = () => {
             Você completou o desafio e descobriu sobre os protagonimos femininos.
           </h3>
           <h3 className="box-TelaTchau-text">
+          TEREMOS PRÊMIO! Para ganhá-lo você precisa colecionar 5 <span style={{ color: '#800080'}}>SELOS ROXOS</span> e apresentar para alguém do Instituto Gloria! Você precisa tirar um print de pelo menos um dos selo ganho e postar no seu Instagram marcando <a href="https://www.instagram.com/eusouagloria/" rel="noreferrer" target="_blank" style={{ color: '#800080' }}>@eusouagloria</a>, <a href="https://www.instagram.com/napraiafestival/" rel="noreferrer" target="_blank" style={{ color: '#800080' }}>@napraiafestival</a> e a <a href="https://www.instagram.com/orcgamificacao/" rel="noreferrer" target="_blank" style={{ color: '#800080' }}>@orcgamificacao</a>
             Agora receba seu selo e, caso tenha conseguido os 5 <span style={{ color: '#800080' }}>SELOS ROXOS</span>, procure alguém do Instituto Glória para te auxiliar no recebimento do seu prêmio!
           </h3>
         </div>

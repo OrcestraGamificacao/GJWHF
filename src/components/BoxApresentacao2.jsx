@@ -20,7 +20,9 @@ function BoxApresentacao2() {
             Você precisa acumular 5 <span style={{ color: '#800080'}}>SELOS ROXOS</span>. Boa sorte!
           </h3>
         </div>
-        <BotaoAvancarGami />
+        <div className="apresentacao2-button-div">
+          <BotaoAvancarGami />
+        </div>
       </div>
     </div>
 );

@@ -45,7 +45,6 @@
     top: 50%;
 }
 
-@media screen and (max-width: 1024px) {
 @media screen and (min-width: 1024px) {
     .Roleta {
         transform: scale(0.6);
@@ -53,4 +52,9 @@
         left: auto;
     }
 }
+
+@media screen and (max-height: 700px){
+    .roletaTitle{
+        font-size: 20px;
+    }
 }
