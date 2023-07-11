@@ -47,7 +47,7 @@
 
 /*botao final*/
 .botaoPegarSelo {
-  height: 30%;
+  flex-grow: 1;
   display: flex;
   justify-content: center;
   align-items: center;
