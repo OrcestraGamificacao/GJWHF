@@ -5,6 +5,11 @@
     height: 100vh;
 }
 
+.coracaoGloria {
+    width: 2.5%;
+    height: auto;
+}
+
 .roletaTitleBox{
     margin: 1.5em 5% 0;
     background-color: #F0DBEF;
@@ -73,3 +78,9 @@
         font-size: 1.2em;
     }
   }
+
+@media screen and (max-width: 768px) {
+    .coracaoGloria{
+        width: 6%;
+    }
+}
