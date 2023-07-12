@@ -55,7 +55,7 @@ function TelaQuestionario() {
 			confirmButtonText: 'Voltar ao questionário',
 			confirmButtonColor: '#612368',
 			customClass: {
-				htmlContainer: 'dica-popup-text'
+				htmlContainer: 'popup-text'
 			}
 		})
 	}
@@ -66,7 +66,10 @@ function TelaQuestionario() {
 			html: questoesTema[indexArray].textoExplicativo,
 			confirmButtonText: indexArray < 4 ? 'Próxima questão' : 'Terminar',
 			confirmButtonColor: '#bc88bc',
-			position: 'middle'
+			position: 'middle',
+			customClass: {
+				htmlContainer: 'popup-text'
+			}
 		}).then(() => proximaQuestao())
 	}
 

@@ -41,7 +41,7 @@
   font-weight: 600;
   color: #341d36;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.2em;
 
 }
 
@@ -97,6 +97,18 @@
   }
   .box-TelaTchau-text{
     font-size: 1em;
+  }
+  /* Smartphones com a tela muito pequena em questão de altura */
+  @media screen and (max-height: 600px) {
+    .box-TelaTchau-title{
+      font-size: 3em;
+    }
+    .box-TelaTchau-text{
+      font-size: 0.8em;
+    }
+    .pulsating-button{
+      font-size: 2.2em;
+    }
   }
 }
 

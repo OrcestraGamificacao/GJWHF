@@ -49,6 +49,18 @@
     font-size: 1.2em;
 }
 
+/* Telas de smartphone com alturas menores */
+@media screen and (max-height: 600px) and (max-width: 768px) {
+
+    .premio-nome{
+        font-size: 1.2em;
+    }
+    .premio-box-data {
+        font-size: 1em;
+    }
+    
+}
+
 /* Por padrão, o css está ajustado para telas de smartphone */
 /* Tela desktop */
 @media screen and (min-width: 1024px) {
