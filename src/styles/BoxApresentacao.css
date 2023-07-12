@@ -131,20 +131,18 @@
 @media screen and (min-width: 1024px) {
   .box-apresentation {
     width: 40%;
-    padding: 2%;
-  }
-  .box-apresentation-text {
-    font-size: 1em;
+    padding: 1%;
   }
   .apresentation-button-container{
     width: 70%;
+    padding-top: 4%;
   }
 }
 
 /* Alterações para dispositivos mobile com telas muito pequenas
   - Em telas muito pequenas os textos acabam piorando a responsividade 
 */
-@media screen and (max-height: 800px) {
+@media screen and  (max-width: 768px) and (max-height: 800px) {
   .apresentation-button-container{
     padding-top: 5%;
   }
