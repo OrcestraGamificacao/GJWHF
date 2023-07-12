@@ -17,6 +17,7 @@ function BoxApresentacao() {
 
   function getNamePopUp() {
     Swal.fire({
+      heightAuto: false,
       customClass: {
         inputLabel: 'popup-input-label'
       },
