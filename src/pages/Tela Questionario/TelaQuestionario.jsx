@@ -189,11 +189,6 @@ function TelaQuestionario() {
 		<div className="containerQuestionario">
 			<div className="cabecalho">
 				<p className="questionarioNumPergunta">Pergunta {indexArray + 1} de 5</p>
-
-				<button className="iconContextoBox" onClick={contextoPopUp}>
-					<BiSearch className="iconContexto" onClick={contextoPopUp} />
-					<p className="contextoBoxText">DICA</p>
-				</button>
 			</div>
 
 			<div className="enunciado">
@@ -201,6 +196,11 @@ function TelaQuestionario() {
 					{questoesTema[indexArray].pergunta}
 				</h1>
 			</div>
+
+			<button className="iconContextoBox" onClick={contextoPopUp}>
+				<BiSearch className="iconContexto" onClick={contextoPopUp} />
+				<p className="contextoBoxText">DICA</p>
+			</button>
 
 			<div className="boxQuestoes">
 				<BotaoResposta texto={questoesTema[indexArray].alternativaA} questao={'QuesA'} acao={verificaQuestao} disabled={desabilitado} />
