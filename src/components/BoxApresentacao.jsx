@@ -4,7 +4,6 @@ import { useNavigate } from "react-router-dom";
 import Swal from 'sweetalert2';
 
 import "../styles/BotaoIniciar.css";
-import '../styles/BoxInvite.css';
 
 import logoOrc from "./assets/LogoOrc.png";
 import logoGloria from "../components/assets/LogoGloria.svg"
@@ -69,9 +68,7 @@ function BoxApresentacao() {
               VAMOS COMEÇAR!
             </button>
           </div>
-
-          {/* Essa div serve para fazer o flexbox alinhar o botão no centro do dispositivo */}
-          <div className="apresentation-align-button-box"></div>
+          
         </div>
       </div>
       <div className='container-gloria-initial'>

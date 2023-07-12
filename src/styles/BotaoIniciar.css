@@ -17,7 +17,7 @@
   border: 0.30rem solid #fff;
 
   /* Button text */
-  font-size: 1.1em;
+  font-size: 0.8em;
   color: #ffF;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
@@ -25,7 +25,7 @@
 
 @media screen and (min-width: 1024px) {
   .grow_ellipse {
-    font-size: 1.5em;
+    font-size: 1em;
   }
 }
 
