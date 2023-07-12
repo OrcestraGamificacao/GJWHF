@@ -49,16 +49,13 @@ function TelaQuestionario() {
 	const Swal = require('sweetalert2')
 	function contextoPopUp() {
 		Swal.fire({
-			title: 'Contexto',
+			title: 'Dica',
 			html: questoesTema[indexArray].textoIntrodutorio,
 			showCancelButton: false,
 			confirmButtonText: 'Voltar ao questionário',
 			confirmButtonColor: '#612368',
 			customClass: {
-				containerContexto: 'my-swal-container', // Classe personalizada para o container do SweetAlert
-				titleContexto: 'my-swal-title', // Classe personalizada para o título do SweetAlert
-				textContexto: 'my-swal-text', // Classe personalizada para o texto do SweetAlert
-				confirmButtonContexto: 'my-swal-confirm-button', // Classe personalizada para o botão de confirmação do SweetAlert
+				htmlContainer: 'dica-popup-text'
 			}
 		})
 	}
