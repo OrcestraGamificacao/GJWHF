@@ -145,7 +145,13 @@
   - Em telas muito pequenas os textos acabam piorando a responsividade 
 */
 @media screen and (max-height: 800px) {
+  .apresentation-button-container{
+    padding-top: 5%;
+  }
   .box-apresentation-text {
-    font-size: 0.8em;
+    font-size: 0.7em;
+  }
+  .container-gloria-initial{
+    width: 55vh;
   }
 }
