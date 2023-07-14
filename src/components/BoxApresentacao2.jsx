@@ -1,29 +1,28 @@
 import React from 'react';
 import "../styles/BoxApresentacao2.css";
-import BotaoAvancar2 from './BotaoAvancar2';
+import BotaoAvancarGami from './BotaoAvancarGami';
 
 function BoxApresentacao2() {
   return (
     <div className="container-apresentation2">
       <div className="box-apresentation2">
-        <div className="box-apresentation2-elements">
-          <h3 className="box-apresentation2-title">
+        <div className="box-apresentation2-text-container">
+          <h3 className="box-apresentation2-text">
             Muito feliz que você, {sessionStorage.getItem("nome")}, aceitou esse desafio!
-            <br></br>
-            <br></br>
-            Eu vou fornecer informações importantes sobre Ativismo, Inovação, Saúde e Educação, te apresentando histórias muito interessantes!
-            <br></br>
-            <br></br>
-            Tudo isso através do uso da tecnologia e da gamificação!
-            <br></br>
-            <br></br>
-            A gamificação é o uso de elementos de jogos em contextos não relacionados a jogos, com o objetivo de engajar, motivar e envolver as pessoas em determinadas atividades, e assim, espero ajudar a ampliar a voz das mulheres e empoderá-las! Junte-se a mim nessa jornada de conhecimento da história de nossas mulheres incríveis!
+          </h3>
+          <h3 className="box-apresentation2-text justify-text">
+            Você irá responder um questionário sobre mulheres incríveis e suas conquistas.
+          </h3>
+          <h3 className="box-apresentation2-text">
+            Para ganhar um prêmio, você deve acertar todas as perguntas para ganhar um <span style={{ color: '#800080'}}>SELO ROXO</span>.
+          </h3>
+          <h3 className="box-apresentation2-text">
+            Você precisa acumular 5 <span style={{ color: '#800080'}}>SELOS ROXOS</span>. Boa sorte!
           </h3>
         </div>
-        <div className="botaoAvançar-apresentation2">
-        <BotaoAvancar2 />
+        <div className="apresentacao2-button-div">
+          <BotaoAvancarGami />
         </div>
-
       </div>
     </div>
 );

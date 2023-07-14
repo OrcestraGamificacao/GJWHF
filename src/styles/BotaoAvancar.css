@@ -5,6 +5,7 @@
   justify-content: center;
   transform: scale(0.37);
   z-index: 3;
+  align-items: center;
   /* margin-left: 25%;
   margin-top: 40%; */
 }

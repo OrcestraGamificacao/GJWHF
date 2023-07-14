@@ -49,16 +49,13 @@ function TelaQuestionario() {
 	const Swal = require('sweetalert2')
 	function contextoPopUp() {
 		Swal.fire({
-			title: 'Contexto',
+			title: 'Dica',
 			html: questoesTema[indexArray].textoIntrodutorio,
 			showCancelButton: false,
 			confirmButtonText: 'Voltar ao questionário',
 			confirmButtonColor: '#612368',
 			customClass: {
-				containerContexto: 'my-swal-container', // Classe personalizada para o container do SweetAlert
-				titleContexto: 'my-swal-title', // Classe personalizada para o título do SweetAlert
-				textContexto: 'my-swal-text', // Classe personalizada para o texto do SweetAlert
-				confirmButtonContexto: 'my-swal-confirm-button', // Classe personalizada para o botão de confirmação do SweetAlert
+				htmlContainer: 'popup-text'
 			}
 		})
 	}
@@ -69,7 +66,10 @@ function TelaQuestionario() {
 			html: questoesTema[indexArray].textoExplicativo,
 			confirmButtonText: indexArray < 4 ? 'Próxima questão' : 'Terminar',
 			confirmButtonColor: '#bc88bc',
-			position: 'middle'
+			position: 'middle',
+			customClass: {
+				htmlContainer: 'popup-text'
+			}
 		}).then(() => proximaQuestao())
 	}
 
@@ -189,11 +189,6 @@ function TelaQuestionario() {
 		<div className="containerQuestionario">
 			<div className="cabecalho">
 				<p className="questionarioNumPergunta">Pergunta {indexArray + 1} de 5</p>
-
-				<button className="iconContextoBox" onClick={contextoPopUp}>
-					<BiSearch className="iconContexto" onClick={contextoPopUp} />
-					<p className="contextoBoxText">Contexto</p>
-				</button>
 			</div>
 
 			<div className="enunciado">
@@ -201,6 +196,11 @@ function TelaQuestionario() {
 					{questoesTema[indexArray].pergunta}
 				</h1>
 			</div>
+
+			<button className="iconContextoBox" onClick={contextoPopUp}>
+				<BiSearch className="iconContexto" onClick={contextoPopUp} />
+				<p className="contextoBoxText">DICA</p>
+			</button>
 
 			<div className="boxQuestoes">
 				<BotaoResposta texto={questoesTema[indexArray].alternativaA} questao={'QuesA'} acao={verificaQuestao} disabled={desabilitado} />

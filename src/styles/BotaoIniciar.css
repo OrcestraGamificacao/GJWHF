@@ -1,29 +1,36 @@
-.wrapper-btniniciar {
+/* .wrapper-btniniciar {
   z-index: 1;
-}
+} */
 
 .grow_ellipse {
-  font-size: 2em;
-  background: #612368;
-  color: #ffF;
-  border: 0.30rem solid #fff;
+  /* Button propreties */
+  /* position: absolute; */
+  cursor: pointer;
+
+  /* Button size */
+  width: 80%;
   padding: 0.85em 0.75em;
-  /* margin: 1rem; */
-  /* position: relative; */
-  z-index: 3;
-  /* overflow: hidden; */
+
+  /* Button container */
+  background: #612368;
   border-radius: 50px;
+  border: 0.30rem solid #fff;
+
+  /* Button text */
+  font-size: 0.8em;
+  color: #ffF;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
-  /* margin-top: 39%; */
-  /* margin-left: 50.5%; */
-  cursor: pointer;
-  transform: scale(0.3);
-  position: absolute;
-  bottom: 28vh;
-  width: 500px;
 }
 
+@media screen and (min-width: 1024px) {
+  .grow_ellipse {
+    font-size: 1em;
+  }
+}
+
+
+/* Animação do botão */
 
 .grow_ellipse:hover {
   /* color: #612368; */
@@ -147,8 +154,3 @@
   }
 }
 
-@media screen and (min-width: 1024px) {
-  .grow_ellipse {
-    bottom: 32vh;
-  }
-}

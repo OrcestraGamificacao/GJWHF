@@ -5,10 +5,13 @@
     height: 100vh;
 }
 
+.coracaoGloria {
+    width: 2.5%;
+    height: auto;
+}
+
 .roletaTitleBox{
-    margin-top: 1.5em;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin: 1.5em 5% 0;
     background-color: #F0DBEF;
     border-radius: 10px;
     padding: .5em 2em;
@@ -17,7 +20,7 @@
 
 .roletaTitle{
     text-align: center;
-    font-size: 25px;
+    font-size: 1.5em;
     font-weight: 600;
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 1px;
@@ -45,12 +48,39 @@
     top: 50%;
 }
 
-@media screen and (max-width: 1024px) {
 @media screen and (min-width: 1024px) {
     .Roleta {
         transform: scale(0.6);
         top: 50%;
         left: auto;
     }
+    .roletaTitleBox{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .roletaTitle{
+        font-size: 1.7em;
+    }
 }
+
+/* Alterações para dispositivos mobile com telas muito pequenas
+  - Em telas muito pequenas os textos acabam piorando a responsividade 
+*/
+@media screen and (max-width: 768px) and (max-height: 760px) {
+    .Roleta{
+        transform: scale(0.45);
+        top: 30%;
+    }
+    .roletaTitleBox{
+        padding: 0.5em;
+    }
+    .roletaTitle{
+        font-size: 1.2em;
+    }
+  }
+
+@media screen and (max-width: 768px) {
+    .coracaoGloria{
+        width: 6%;
+    }
 }
