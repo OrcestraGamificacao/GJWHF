@@ -16,8 +16,14 @@ function BoxApresentacao2() {
           <h3 className="box-apresentation2-text">
             Para ganhar um prêmio, você deve acertar todas as perguntas para ganhar um <span style={{ color: '#800080'}}>SELO ROXO</span>.
           </h3>
-          <h3 className="box-apresentation2-text">
-            Você precisa acumular 5 <span style={{ color: '#800080'}}>SELOS ROXOS</span>. Boa sorte!
+          <h3 className="box-apresentation2-text box-apresentation2-premiation-text">
+            As premiações são:
+            <br />
+            5 <span style={{ color: '#800080'}}>SELOS ROXOS</span>: uma cortesia a sua escolha.
+            <br />
+            3 ou 4 <span style={{ color: '#800080'}}>SELOS ROXOS</span>: cartão Zig.
+            <br />
+            1 ou 2 <span style={{ color: '#800080'}}>SELOS ROXOS</span>: ecocopo do Na Praia.
           </h3>
         </div>
         <div className="apresentacao2-button-div">
