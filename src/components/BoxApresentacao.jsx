@@ -15,6 +15,12 @@ const Gloria = lazy(() => import("./Gloria"));
 function BoxApresentacao() {
   const navigate = useNavigate();
 
+
+function validateName(name){
+  const nameRegex = /^[A-Za-z]{2,}(?: [A-Za-z]{2,})+$/i;
+  return nameRegex.test(name);
+}
+
   function getNamePopUp() {
     Swal.fire({
       heightAuto: false,
@@ -30,7 +36,7 @@ function BoxApresentacao() {
       allowOutsideClick: false,
       showCloseButton: true,
       inputValidator: (value) => {
-        if (!value) {
+        if (!validateName(value)) {
           return 'Você precisa escrever seu nome completo!'
         }
       }
