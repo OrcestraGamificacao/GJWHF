@@ -3,14 +3,14 @@ import { Questao } from '../modelQuestao'
 // Questoes de educação
 function questoesEducacao() {
     const eduQ1 = new Questao(1,
-        'Karima Rhanem é formada em comunicação e mídia. Seu compromisso com a juventude, a África e a promoção da diplomacia cidadã a levou a ser presidente do Centro Internacional de Diplomacia e fundadora da organização “Africa my home”.',
+        'O compromisso com a juventude, a África e a promoção da diplomacia cidadã, levaram Karima Rhanem a ser presidente do Centro Internacional de Diplomacia e fundadora da organização “Africa my home”, instituição que visa fortalecer o empoderamento de mulheres e jovens na África por meio de inovação e tecnologia.',
         'Em 2017, Rhanem fundou a “Africa my home” que possui como principal propósito:',
         'Mobilizar a doação de livros para jovens mulheres',
         'Oferecer bolsas de estudo para estudantes africanas',
         'Fortalecer o empoderamento político e econômico de mulheres',
         'Incentivar o intercâmbio de jovens africanas',
         'Fortalecer o empoderamento político e econômico de mulheres',
-        'A incrível organização “Africa my home”, fundada por Rhanem, possui parceria com a Helpline Foundation for the Needy Abuja e a ILCS para promover a educação de meninas africanas, desenvolver plataformas digitais de coaching para mulheres e organizar o primeiro diálogo da sociedade civil entre Marrocos e Nigéria.'
+        'A incrível organização “Africa my home”, fundada por Rhanem, possui parceria com a Helpline Foundation for the Needy Abuja e a ILCS que juntos, promovem a educação de meninas africanas, desenvolvem plataformas digitais de coaching para mulheres e organizam o primeiro diálogo da sociedade civil entre Marrocos e Nigéria.'
     );      
 
     const eduQ2 = new Questao(2,
@@ -38,7 +38,7 @@ function questoesEducacao() {
     const eduQ4 = new Questao(4,
         'Khadija nasceu em Bruxelas (Bélgica) de pais marroquinos. Durante a adolescência, ela defendeu a educação e promoveu o conhecimento de várias formas criativas e ousadas. Por sua dedicação, foi selecionada para o programa Programa de Jovens Líderes da WIEF.',
         'Que impacto a defesa da educação, feita por Khadija Hamouchi, pode causar para mulheres?',
-        'Restrigir o desenvolvimento pessoal e profissional',
+        'Restringir o desenvolvimento pessoal e profissional',
         'Exacerbar a desigualdade de poder entre gêneros',
         'Restringir a participação das mulheres em atividades extracurriculares',
         'Inspirar jovens a se envolverem em atividades educacionais',
@@ -59,7 +59,7 @@ function questoesEducacao() {
       
     const eduQ6 = new Questao(6,
         'Salwa Idriss Akhannouch, fundadora e CEO do Aksal Group, é uma das empresárias mais poderosas do Marrocos e uma das mais ricas empreendedoras do norte da África.',
-        'Em 2011, Salwa Akhannouch criou a Aksal Social Initiative que busca apoiar:',
+        'Em 2011, Salwa Akhannouch criou a Aksal Social Initiative (Iniciativa Social Aksal) que busca apoiar:',
         'Ampliação de vendas de artigos de luxo.',
         'Projetos sociais, culturais, educacionais e de saúde.',
         'Lançamento de sua marca de cosméticos e beleza Yan&One.',
@@ -80,14 +80,14 @@ function questoesEducacao() {
     );
     
     const eduQ8 = new Questao(8,
-        'Hind Bouqartacha é uma fotógrafa, cinegrafista e proprietária do “GUILE STUDIO”. A fotografia foi para ela uma potente oportunidade criativa de imortalizar momentos, de se expressar livremente e de descobrir o mundo e a si mesma.',
-        'A série ‘Pedaço de Pão’, que Hind Bouqartacha produziu, tinha como objetivo ressaltar que história?',
+        'Hind Bouqartacha é uma fotógrafa, cinegrafista e proprietária do “GUILE STUDIO”. A fotografia foi para ela uma potente oportunidade criativa de imortalizar momentos, de se expressar livremente e de descobrir o mundo e a si mesma. Sua série “Pedaço de Pão” mergulha em um dia da vida de Milouda, que é uma padeira, vivendo e trabalhando em Tiflet.',
+        'A série “Pedaço de pão”, produzida por Hind Bouqartacha tinha como objetivo ressaltar que história?',
         'Estudantes marroquinas',
         'Comércio no Marrocos',
         'Comidas típicas do Marrocos',
         'Mulheres trabalhadoras',
         'Mulheres trabalhadoras',
-        'A série ‘Pedaço de Pão’ de Bouqartacha mergulha na vida de Milouda, uma padeira que trabalha para sustentar sua família e que construiu sua independência financeira a partir de muita dedicação.'
+        'A série ‘Pedaço de Pão’ de Bouqartacha  mergulha na vida de Milouda, uma padeira que trabalha para sustentar sua família e que construiu sua independência financeira a partir de muita dedicação.'
     );
     
     const eduQ9 = new Questao(9,
@@ -102,7 +102,7 @@ function questoesEducacao() {
     );
     
     const eduQ10 = new Questao(10,
-        'Anália Emília Franco nasceu em Resende, no estado do Rio de Janeiro, no dia 1º de fevereiro de 1853, e faleceu em 20 de janeiro de 1919, com 62 anos. Ela foi literata, jornalista e poetisa no Brasil do século 19.',
+        'Anália Emília Franco nasceu em Resende, no estado do Rio de Janeiro, no dia 1º de fevereiro de 1853, e faleceu em 20 de janeiro de 1919, com 62 anos. Formou-se em Magistério de 1º grau, além disso foi literata, jornalista e poetisa no Brasil do século 19.',
         'Qual foi a diplomação de Anália Franco?',
         'Normalista',
         'Direito',

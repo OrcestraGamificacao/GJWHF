@@ -5,7 +5,7 @@ function questoesAtivismo() {
     const ativQ1 = new Questao(1,
         'A carreira profissional de Nezha Hayat iniciou-se no meio das finanças espanholas. Lá ela descobriu os mercados de capitais internacionais. Viu-se assessorando instituições e gerenciando swaps de dívidas. Com toda essa experiência, Nezha decidiu voltar para o Marrocos e fazer a diferença',
         'Qual é a posição de Nezha Hayat no cenário empresarial marroquino?',
-        'Presidente da Confederação Geral das Empresas Marroquinas',
+        'Presidente das Empresas Sem Fins Lucrativos Marroquinas',
         'Diretora Executiva da Autoridade Marroquina do Mercado de Capitais',
         'CEO da Royal Air Maroc',
         'Fundadora e CEO da Nezha Hayat Consultancy',
@@ -57,18 +57,18 @@ function questoesAtivismo() {
         'Em 2016, Khadija Idrissi lançou um evento internacional. Que evento foi esse?',
         'Tea And Koffee PR Summit',
         'Vital Voices Global Leadership Network Summit',
-        'Meeting and Association of Women Entrepreneurs of Morocco',
+        'Meeting and Association of Men Entrepreneurs of Morocco',
         'Africa Trade and Investment Summit',
         'Africa Trade and Investment Summit',
-        'Em 2016, Khadija lançou o Africa Trade and Investment Summit - Ifrane Forum, um evento anual que acontece em Ifrane, Marrocos, reunindo operadores econômicos e políticos de toda a África, para refletir sobre o futuro da África e criar oportunidades para o desenvolvimento de intra comércio africano e cooperação econômica do Sul.');
+        'Em 2016, Khadija lançou o Africa Trade and Investment Summit – Ifrane Forum, um evento anual que acontece em Ifrane, Marrocos, reunindo operadores econômicos e políticos de toda a África, para refletir sobre o futuro da África e criar oportunidades para o desenvolvimento de intra comércio africano e cooperação econômica do Sul.');
 
     const ativQ7 = new Questao(7,
         'Saïda Karim Lamrani é uma empresária marroquina nascida em 30 de agosto de 1946, em Fez. Advogada de formação, ela é acionista majoritária do Grupo Safari, que é uma das empresas líderes da Arábia Saudita na área de gerenciamento de instalações, construção, comércio e investimento. O grupo iniciou suas atividades no ano de 1984, focando principalmente em todas as áreas de operação e manutenção.',
         'Em 2013, Saïda Karim Lamrani foi reconhecida no jornal Jeune Afrique em qual dessas categorias?',
         '"25 mulheres mais influentes nos negócios na África”',
         '"25 mulheres mais influentes na política na África”',
-        '"25 mulheres mais influentes no comércio na África”',
-        '"25 mulheres mais influentes na gestão de comércio na África”',
+        '"25 mulheres mais influentes no marketing na África”',
+        '"25 mulheres mais influentes na gestão de pessoas na África”',
         '"25 mulheres mais influentes nos negócios na África”',
         'Saïda Karim Lamrani foi considerada uma das “25 mulheres mais influentes nos negócios na África”. Ela é membro do conselho de administração da Mohammed V Foundation for Solidarity, e ocupou o cargo de vice-presidente da Confederação Geral de Empresas Marroquinas (CGEM) e co-presidente do Clube de Líderes Empresariais França-Marrocos.');
 
