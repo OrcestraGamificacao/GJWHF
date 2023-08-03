@@ -36,31 +36,31 @@ function questoesSaude() {
     );
     
     const saudeQ4 = new Questao(4,
-        'Nascida no Marrocos, Mouna Abbassy fundou a Izil em 2013 após uma carreira de marketing de sucesso em empresas multinacionais de prestígio em Dubai. Sua paixão e seu compromisso com a excelência lhe renderam muitos prêmios de prestígio, como o Prêmio Hadafi e o prêmio Cartier Women\'s Initiative, e um lugar entre as 5 melhores mulheres nos negócios pela Arabian Business Startup e entre as 5 mulheres árabes que estão mudando o jogo da beleza pela Vogue Oriente Médio.',
+        'Nascida no Marrocos, Mouna Abbassy cresceu em um país onde os rituais de beleza faziam parte dos assuntos sociais essenciais para as mulheres. Ela testemunhou sua mãe e outras mulheres da comunidade prepararem suas próprias receitas de beleza com ingredientes crus e naturais.',
         'No ramo da beleza, Mouna Abbassy é:',
         'Uma influenciadora digital',
         'Uma cosmetologista em uma multinacional',
         'Uma empresária que lançou uma marca de beleza natural',
         'Uma ativista sobre a importância da estética feminina',
         'Uma empresária que lançou uma marca de beleza natural',
-        'Mouna Abbassy fundou a Izil em 2013 após uma carreira de marketing de sucesso em empresas multinacionais de prestígio em Dubai. Sua paixão e seu compromisso com a excelência lhe renderam muitos prêmios de prestígio, como o Prêmio Hadafi e o prêmio Cartier Womens Initiative, e um lugar entre as 5 melhores mulheres nos negócios pela Arabian Business Startup e entre as 5 mulheres árabes que estão mudando o jogo da beleza pela Vogue Oriente Médio'
+        'Mouna Abbassy fundou a Izil em 2013, sua paixão e seu compromisso com a excelência lhe renderam muitos prêmios de prestígio, como o Prêmio Hadafi e o prêmio Cartier Womens Initiative, e ainda um lugar entre as 5 melhores mulheres nos negócios pela Arabian Business Startup e entre as 5 mulheres árabes que estão mudando o jogo da beleza pela Vogue Oriente Médio.'
     );
     
     const saudeQ5 = new Questao(5,
-        'Rita Zniber possui uma fundação dedicada a ajudar no processo de adoção. Ela ficou conhecida no país quando descobriu uma falha de cuidado que levava à morte dos bebês órfãos recém-nascidos em um hospital marroquino.',
+        'Rita Zniber possui uma fundação dedicada a ajudar no processo de adoção. Ela ficou conhecida no país quando descobriu uma falha de cuidado que levou à morte vários bebês órfãos recém-nascidos em um hospital marroquino.',
         'Escolha a alternativa que descreve como Rita Zniber agiu diante da situação com a sua fundação:',
-        'Processou o hospital, alegando infração aos direitos humanos',
+        'Processou o hospital, com uma alegação de infração aos direitos humanos',
         'Protestou em frente ao hospital para ele pagar uma indenização',
-        'Criou um espaço no hospital para cuidar desses bebês',
+        'Criou um espaço no hospital para cuidar de bebês que não eram adotados',
         'Comprou o hospital e treinou todos os funcionários',
-        'Criou um espaço no hospital para cuidar desses bebês',
-        'O NID, é o nome do Centro que Rita Zniber criou. Teve uma colaboração com o hospital muito difícil, por múltiplas razões, mas mesmo assim conseguiu salvar da morte 23 crianças que não tinham sido adotadas! O mais velho dos quais tinha 19 meses. E depois o NID foi expandido para ajudar em várias áreas pediátricas de crianças de várias idades.'
+        'Criou um espaço no hospital para cuidar de bebês que não eram adotados',
+        'NID, centro que Rita Zniber criou, teve em seu início uma colaboração complicada com o hospital, por múltiplas razões, mas mesmo assim conseguiu salvar da morte 23 crianças que não tinham sido adotadas. Posteriormente, foi expandido para ajudar em várias áreas pediátricas de crianças de várias idades.'
     );
     
     const saudeQ6 = new Questao(6,
-        'Mouna Abbassy fundou sua marca de produtos para cuidados, totalmente naturais, há 10 anos, inspirada em receitas antigas marroquinas. Em 2021, Abassy abriu novos escritórios em Dubai e lançou um Hammam e Spa marroquino no Dubai Mall.',
+        'A marroquina Mouna Abbassy fundou sua marca de produtos para cuidados em diversas áreas, totalmente naturais, há 10 anos, inspirada em receitas antigas marroquinas. Em 2021, Abassy abriu novos escritórios em Dubai e lançou um Hammam e Spa marroquino no Dubai Mall.',
         'Quais tipos de produtos Mouna Abbassy comercializa?',
-        'Produtos para higiene bucal',
+        'Produtos apenas para cabelo',
         'Produtos para maquiagem',
         'Produtos para unhas',
         'Produtos para pele, cabelo e corpo',
@@ -71,11 +71,11 @@ function questoesSaude() {
     const saudeQ7 = new Questao(7,
         'Bertha Lutz foi uma cientista, ativista e diplomata brasileira nascida em 1894 e falecida em 1976. Ela é mais conhecida por seu trabalho em prol dos direitos das mulheres e pela sua contribuição na luta pelo sufrágio feminino no Brasil.',
         'De que forma o legado de Bertha Lutz continua impactando a sociedade atualmente?',
-        'Oportunidade para mulheres ocuparem cargos de liderança',
-        'Descobertas científicas que revolucionaram a medicina',
-        'Leis rígidas de proteção ao meio ambiente',
-        'Conscientização sobre questões sociais',
-        'Oportunidade para mulheres ocuparem cargos de liderança',
+        'Em oportunidades para mulheres ocuparem cargos de liderança',
+        'Com descobertas científicas que revolucionaram a medicina',
+        'Leis de proteção ao meio ambiente',
+        'Trazendo conscientização sobre questões sociais',
+        'Em oportunidades para mulheres ocuparem cargos de liderança',
         'Como uma cientista de destaque, Bertha Lutz tornou-se um exemplo inspirador para outras mulheres interessadas em seguir carreiras científicas. Sua visibilidade e conquistas na área científica mostraram que as mulheres são capazes de contribuir significativamente para o avanço do conhecimento e ocupar posições de liderança nesse campo.'
     );
     

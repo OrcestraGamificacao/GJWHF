@@ -25,36 +25,36 @@ function questoesInovacao() {
     );
     
     const inovQ3 = new Questao(3,
-        'Saloua Karkri Belkeziz é uma empresária na área de Tecnologias da Informação e Comunicação (TIC). Atualmente, é Vice-presidente da Inetum Africa, ex-GFI, e fundadora da Associação de Mulheres Empresárias em Marrocos (AFEM).',
-        'Em 2000, Saloua Karkri Belkeziz fundou a Associação de Mulheres Empresárias em Marrocos (AFEM), a primeira no País. Qual a principal missão desta associação?',
-        'Facilitar o acesso a tecnologias para empreendedores',
+        'Em 2000, Saloua Karkri Belkeziz fundou a Associação de Mulheres Empresárias em Marrocos (AFEM), a primeira no país. Saloua carrega consigo a representação de mulheres no Marrocos que sonham em empreender de alguma forma.',
+        'Qual o principal intuito da associação (AFEM), fundada por Saloua Belkeziz?',
+        'Facilitar o acesso a tecnologias para empreendedoras',
         'Aumentar o número de empresas no Marrocos',
-        'Criação de empresas com tecnologias inovadoras',
+        'Promover o aumento econômico do país a partir da criação de empresas  com tecnologias inovadoras criadas por mulheres',
         'Promover o empreendedorismo feminino',
         'Promover o empreendedorismo feminino',
-        'A Associação de Mulheres Empresárias em Marrocos (AFEM), foi fundada por Belkeziz, depois da observação da baixa presença de mulheres empresárias em organizações profissionais, de forma a ser seu principal objetivo promover o empreendedorismo feminino e incentivar a criação de empresas por mulheres.'
+        'A Associação de Mulheres Empresárias em Marrocos (AFEM), foi fundada por Belkeziz, a partir da observação da baixa presença de mulheres empresárias em organizações profissionais, de forma a ser seu principal objetivo promover o empreendedorismo feminino.'
     );
     
     const inovQ4 = new Questao(4,
-        'Fadwa Moussaif é a fundadora da Boucharouette Eco-Création (B.E.C), uma empresa que começou como um projeto escolar onde os estudantes receberam a atividade de criar uma empresa com soluções de cunho social.',
+        'Fadwa Moussaif é fundadora da Boucharouette Eco-Création (B.E.C), uma empresa que começou como um projeto escolar. Em pesquisa, descobriram que pelo menos 50% das mulheres, de aldeias ao redor, conheciam a arte da fabricação de tapetes, mas não conseguiam fazer disso um negócio próprio.',
         'Em qual área a empresa de Fadwa Moussaif atua na fabricação têxtil?',
         'Túnicas',
-        'Tapetes',
-        'Acessórios de moda e artesanato',
+        'Tapetes persas',
+        'Tapetes Boucharouette',
         'Hijab',
-        'Acessórios de moda e artesanato',
-        'Boucharouette Eco-Création é uma empresa especializada na reciclagem de tecidos tecidos é feitos à mão para transformá-los em acessórios de moda, como bolsas, e artesanato, como capas de almofadas.'
+        'Tapetes Boucharouette',
+        'Boucharouette Eco-Création é uma empresa especializada na reciclagem de tecidos feitos à mão e transformados em tapetes Boucharouette. Eles oferecem aos clientes um produto funcional e decorativo, ainda assim confortável e luxuoso em que os designs são fáceis de serem mantidos.'
     );
     
     const inovQ5 = new Questao(5,
-        'Fatim-Zahra trabalhou vários anos como consultora de negócios em Paris para multinacionais líderes e especializou-se em gerenciamento de projetos, estratégia de gerenciamento de mudanças. Ela também realizou estudos sobre a experiência do cliente.',
+        'Fatim-Zahra trabalhou vários anos como consultora de negócios em Paris para multinacionais líderes e especializou-se em gerenciamento de projetos/empresas, estratégia de gerenciamento de mudanças. Também realizou estudos sobre a experiência do cliente.',
         'Qual iniciativa Fatim-Zahra construiu no Marrocos que aproveita toda sua experiência no meio empresarial?',
         'Aceleradora de Startup',
         'Agência de crédito para empresas',
         'Consultoria de direito empresarial',
         'Escola de empreendedorismo',
         'Aceleradora de Startup',
-        'Fatim-Zahra lançou o New Work Lab que é um ambiente positivo e criativo construído para despertar o espírito empreendedor e disseminar a cultura startup. Dezenas de programas de apoio desenhados e lançados, 15.000 participantes hospedados, 300 empreendedores acompanhados, 60 startups aceleradas. O New Work Lab se tornou o local da comunidade de startups em Casablanca e está desempenhando um papel importante no cenário de startups.'
+        'Fatim-Zahra lançou o New Work Lab, um ambiente construído para despertar o espírito empreendedor e disseminar a cultura startup. Dezenas de programas de apoio desenhados e lançados, 15.000 participantes hospedados, 300 empreendedores acompanhados, 60 startups aceleradas. O New Work Lab se tornou o local da comunidade de startups em Casablanca e está desempenhando um papel importante no cenário de startups.'
     );
     
     const inovQ6 = new Questao(6,
@@ -91,24 +91,24 @@ function questoesInovacao() {
     );
     
     const inovQ9 = new Questao(9,
-        'Sophia Alj fundou, junto de seu marido, a empresa Chari.co, um aplicativo que foi avaliado em 100 bilhões de dólares após ser lançado.',
+        'Sophia Alj fundou, junto de seu marido, a empresa Chari.co, um aplicativo avaliado em 100 bilhões de dólares após seu lançamento, que faz conexão de revendedores de países da África que falam francês com companhias de outros lugares.',
         'Sobre o que é a plataforma de Sophia Alj?',
-        'Aluguéis',
-        'Revendas',
-        'Vendas',
-        'Reservas',
-        'Revendas',
-        'O aplicativo de Sophia conecta revendedores em países que possuem como idioma oficial o francês na África a companhias em outras regiões do planeta, buscando financiar mais de 200 mil donos de lojas em Marrocos, para que possam expandir seus negócios.'
+        'Locadores',
+        'Revendedores',
+        'Vendedores',
+        'Turistas',
+        'Revendedores',
+        'O aplicativo de Sophia conecta revendedores em países que possuem como idioma oficial o francês, na África, à companhias em outras regiões do planeta, buscando financiar mais de 200 mil donos de lojas em Marrocos, para que possam expandir seus negócios.'
     );
     
     const inovQ10 = new Questao(10,
         'Hanae Bezad é a fundadora da Douar Tech, um centro de tecnologia inclusiva que ajuda a capacitar jovens e mulheres com habilidades digitais em áreas rurais e semi-urbanas em Marrocos, também já trabalhou como gerente de projetos em startups e ecossistemas TIC para a Smart Africa.',
         'De que forma mulheres como Hanae Bezad contribuem para a revolução digital na África?',
-        'Alfabetização digital entre as comunidades urbanas',
-        'Desenvolver habilidades técnicas superiores em aos homens',
-        'Promover negócios de mulheres em plataformas online',
-        'Acelerar o desenvolvimento e reforçar a narrativa tecnológica',
-        'Acelerar o desenvolvimento e reforçar a narrativa tecnológica',
+        'Promoção da alfabetização digital entre as comunidades urbanas',
+        'Desenvolvimento habilidades técnicas superiores em comparação com os homens',
+        'Criando plataformas online para promover negócios de mulheres',
+        'Acelerando o desenvolvimento e reforçando a narrativa tecnológica',
+        'Acelerando o desenvolvimento e reforçando a narrativa tecnológica',
         'A participação das mulheres desempenha um papel crucial na aceleração do desenvolvimento e no fortalecimento da tecnologia na África. Ao serem capacitadas e terem acesso igualitário às oportunidades digitais, elas contribuem de maneira significativa para o crescimento econômico e social do continente.'
     );
     
