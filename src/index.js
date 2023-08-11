@@ -8,9 +8,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import PerguntaComentario from './pages/PerguntaComentario'
 import PerguntaFullText from './pages/PerguntaFullText'
 import TelaQuestionario from './pages/Tela Questionario/TelaQuestionario'
-import PremioBomDesempenho from './pages/PremioBomDesempenho'
-import PremioParticipacao from './pages/PremioParticipacao'
-import PremioMedioDesempenho from './pages/PremioMedioDesempenho'
+import Premiacao from './pages/Premiacao'
 import Resposta from './pages/Resposta'
 import TelaRoleta from './pages/TelaRoleta'
 import Apresentacao2 from './pages/Apresentacao2'
@@ -50,16 +48,8 @@ const router = createBrowserRouter([
     element: <TelaQuestionario />
   },
   {
-    path: '/PremioBomDesempenho',
-    element: <PremioBomDesempenho />
-  },
-  {
-    path: '/PremioMedioDesempenho',
-    element: <PremioMedioDesempenho />
-  },
-  {
-    path: '/PremioParticipacao',
-    element: <PremioParticipacao />
+    path: '/Premiacao',
+    element: <Premiacao />
   },
   {
     path: '/Resposta',

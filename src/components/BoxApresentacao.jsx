@@ -43,6 +43,7 @@ function validateName(name){
     }).then((result) => {
       if (!result.isDismissed) {
         sessionStorage.setItem('nome', result.value);
+        sessionStorage.setItem('pontuacao', 0);
         navigate("/BoxApresentacao2");
       }
     })

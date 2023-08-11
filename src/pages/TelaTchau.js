@@ -1,5 +1,5 @@
 import '../styles/TelaTchau.css'
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 const Confettiful = function (el) {
@@ -72,24 +72,6 @@ const TelaTchau = () => {
 
   const navigate = useNavigate()
 
-  const useSessionStorage = key => {
-    const [data] = useState(sessionStorage.getItem(key))
-
-    return data
-  }
-
-  const pontuacao = useSessionStorage('pontuacao')
-
-  const changeUrl = () => {
-    if (Number(pontuacao) === 5) {
-      navigate('/PremioBomDesempenho')
-    } else if (Number(pontuacao) >= 3 && Number(pontuacao) < 5) {
-      navigate('/PremioMedioDesempenho')
-    } else {
-      navigate('/PremioParticipacao')
-    }
-  }
-
   return (
     <div className="TelaTchau">
       <div className="js-container confetti-container"></div>
@@ -107,7 +89,7 @@ const TelaTchau = () => {
           </h3>
         </div>
         <div className="botaoPegarSelo">
-          <button className="pulsating-button" onClick={changeUrl}>
+          <button className="pulsating-button" onClick={() => navigate('/Premiacao')}>
             Pegar selo
           </button>
         </div>
