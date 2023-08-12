@@ -1,5 +1,6 @@
 import { useSelector } from "react-redux";
 import "../styles/Premio.css"
+import {TextToImage, TextToImageWithShadow} from "../utils/textToImage";
 
 import baixoMobile from "../images/gloria-selo-mobile-cinza.png"
 import medioMobile from "../images/gloria-selo-mobile-rosa.png"
@@ -9,10 +10,14 @@ import medioDesktop from "../images/gloria-selo-rosa.png"
 import altoDesktop from "../images/gloria-selo-roxo.png"
 
 
+
 export default function Premio(props) {
 
     const nome = useSelector((state) => state.session.nome);
     const date = useSelector((state) => state.session.data);
+
+    // Largura do nome da pessoa no selo, que muda de acordo com o tamanho da tela
+    let nomeWidth = window.innerWidth < 1024 ? window.innerWidth*0.9 : 450;
 
     const formatDigits = (value) => {
         return value.toString().padStart(2, "0");
@@ -24,6 +29,7 @@ export default function Premio(props) {
         hour: formatDigits(date.getHours()),
         minute: formatDigits(date.getMinutes()),
     }
+    const dataString = `${data.hour}:${data.minute} | ${data.day}.${data.month}`
 
     let back = medioMobile 
 
@@ -46,11 +52,8 @@ export default function Premio(props) {
             <div className="premio-container-img" style={{backgroundImage: `url('${back}')`}}>
                 <div className="premio-box-space-ajust"></div>
                 <div className="premio-box">
-                    <span className="premio-nome">{nome||"NULL" }</span>
-                    <div className="premio-box-data">{}
-                        <span className="premio-hora">{data.hour}:{data.minute} | </span>
-                        <span className="premio-data">{data.day}.{data.month}</span>
-                    </div>
+                    <TextToImageWithShadow width={nomeWidth} textSize='30' text={nome||"NULL"}/>
+                    <TextToImage width='450' textSize='18' text={dataString}/>
                 </div>
             </div>
         </div>
