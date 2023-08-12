@@ -11,7 +11,7 @@ import logoNaPraia from "./assets/LogoNaPraiaFestival.png";
 import gloriaFalando from '../gloria/gloria_meio_da_fala.gif';
 
 const Gloria = lazy(() => import("./Gloria"));
-
+  
 function BoxApresentacao() {
   const navigate = useNavigate();
 
