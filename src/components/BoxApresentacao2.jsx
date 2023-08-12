@@ -1,14 +1,18 @@
 import React from 'react';
 import "../styles/BoxApresentacao2.css";
 import BotaoAvancarGami from './BotaoAvancarGami';
+import { useSelector } from 'react-redux';
 
 function BoxApresentacao2() {
+
+  const nome = useSelector((state) => state.session.nome);
+
   return (
     <div className="container-apresentation2">
       <div className="box-apresentation2">
         <div className="box-apresentation2-text-container">
           <h3 className="box-apresentation2-text">
-            Muito feliz que você, {sessionStorage.getItem("nome")}, aceitou esse desafio!
+            Muito feliz que você, {nome}, aceitou esse desafio!
           </h3>
           <h3 className="box-apresentation2-text justify-text">
             Você irá responder um questionário sobre mulheres incríveis e suas conquistas.

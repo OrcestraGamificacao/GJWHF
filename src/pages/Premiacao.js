@@ -1,14 +1,8 @@
+import { useSelector } from "react-redux";
 import Premio from "../components/Premio"
-import { useState } from "react";
 
 const Premiacao = () => {
-    const useSessionStorage = key => {
-    const [data] = useState(sessionStorage.getItem(key))
-
-    return data
-  }
-
-  const pontuacao = useSessionStorage('pontuacao')
+   const pontuacao = useSelector((state) => state.session.pontuacao);
 
   const selectReward = () => {
     if (Number(pontuacao) === 5) {

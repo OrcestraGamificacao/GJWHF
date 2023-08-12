@@ -9,17 +9,21 @@ import logoOrc from "./assets/LogoOrc.png";
 import logoGloria from "../components/assets/LogoGloria.svg"
 import logoNaPraia from "./assets/LogoNaPraiaFestival.png";
 import gloriaFalando from '../gloria/gloria_meio_da_fala.gif';
+import { useDispatch} from 'react-redux';
+import { setNome } from '../states/sessionSlice';
 
 const Gloria = lazy(() => import("./Gloria"));
   
 function BoxApresentacao() {
   const navigate = useNavigate();
+  // dispatch is used to change Redux states
+  const dispatch = useDispatch();
 
 
-function validateName(name){
-  const nameRegex = /^[A-Za-z]{2,}(?: [A-Za-z]{2,})+$/i;
-  return nameRegex.test(name);
-}
+  function validateName(name){
+    const nameRegex = /^[A-Za-z]{2,}(?: [A-Za-z]{2,})+$/i;
+    return nameRegex.test(name);
+  }
 
   function getNamePopUp() {
     Swal.fire({
@@ -42,8 +46,9 @@ function validateName(name){
       }
     }).then((result) => {
       if (!result.isDismissed) {
-        sessionStorage.setItem('nome', result.value);
-        sessionStorage.setItem('pontuacao', 0);
+        dispatch(setNome(result.value));
+        // sessionStorage.setItem('nome', result.value);
+        // sessionStorage.setItem('pontuacao', 0);
         navigate("/BoxApresentacao2");
       }
     })

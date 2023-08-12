@@ -70,7 +70,12 @@ const TelaTchau = () => {
     }
   }, [])
 
-  const navigate = useNavigate()
+  const navigate = useNavigate();
+
+  const handleNavigate = (e) => {
+    e.preventDefault();
+    navigate('/Premiacao');
+  }
 
   return (
     <div className="TelaTchau">
@@ -89,7 +94,7 @@ const TelaTchau = () => {
           </h3>
         </div>
         <div className="botaoPegarSelo">
-          <button className="pulsating-button" onClick={() => navigate('/Premiacao')}>
+          <button className="pulsating-button" onClick={handleNavigate}>
             Pegar selo
           </button>
         </div>
