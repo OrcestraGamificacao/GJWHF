@@ -35,6 +35,11 @@ const router = createBrowserRouter([
     ])
 
 const RouterApp = () => {
+  window.addEventListener("beforeunload", (event) => {
+    event.preventDefault();
+    event.returnValue = "Você tem certeza que quer sair dessa página?";
+  })
+
     return (
         <RouterProvider router={router} />
     )

@@ -71,7 +71,7 @@ const TelaTchau = () => {
   }, [])
 
   const navigate = useNavigate();
-
+ 
   const handleNavigate = (e) => {
     e.preventDefault();
     navigate('/Premiacao');
