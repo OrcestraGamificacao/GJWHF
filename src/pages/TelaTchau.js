@@ -94,10 +94,6 @@ const TelaTchau = () => {
     }
   }}, [])
 
-  window.addEventListener("beforeunload", (event) => {
-    event.returnValue = "Tem certeza que deseja recarregar a página?"
-  })
-
   const [screen, setScreen] = useState(false);
   
 
