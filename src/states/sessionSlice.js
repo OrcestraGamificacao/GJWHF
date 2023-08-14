@@ -1,10 +1,9 @@
 import { createSlice } from '@reduxjs/toolkit'
 
-
 const initialState = {
-    nome: '',
-    pontuacao: 0,
-    data: new Date()
+  nome: '',
+  pontuacao: 0,
+  data: '',
 }
 
 export const sessionSlice = createSlice({
@@ -14,12 +13,15 @@ export const sessionSlice = createSlice({
     setNome: (state, action) => {
       state.nome = action.payload
     },
-    incrementPontuacao: state => {
-        state.pontuacao += 1
-    }
+    setData: (state, action) => {	
+      state.data = action.payload
+    },
+    setPontuacao: (state, action) => {
+      state.pontuacao = action.payload
+    },
   }
 })
 
-export const { setNome, incrementPontuacao } = sessionSlice.actions
+export const { setNome, setData, incrementPontuacao } = sessionSlice.actions
 
 export default sessionSlice.reducer

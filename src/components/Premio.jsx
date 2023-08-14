@@ -14,7 +14,7 @@ import altoDesktop from "../images/gloria-selo-roxo.png"
 export default function Premio(props) {
 
     const nome = useSelector((state) => state.session.nome);
-    const date = useSelector((state) => state.session.data);
+    const date = new Date(useSelector((state) => state.session.data));
 
     // Largura do nome da pessoa no selo, que muda de acordo com o tamanho da tela
     let nomeWidth = window.innerWidth < 1024 ? window.innerWidth*0.9 : 450;
