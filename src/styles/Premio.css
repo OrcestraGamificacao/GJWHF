@@ -7,10 +7,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: url(../images/FundoGloriaA2.jpg);
 }
 /* Container que está a img
     - A img é trocada a depender do tam da tela (ver arquivo Premio.jsx) 
