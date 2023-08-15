@@ -19,9 +19,12 @@ export const sessionSlice = createSlice({
     setPontuacao: (state, action) => {
       state.pontuacao = action.payload
     },
+    incrementPontuacao: (state) => {
+      state.pontuacao += 1
+    },
   }
 })
 
-export const { setNome, setData, incrementPontuacao } = sessionSlice.actions
+export const { setNome, setData,setPontuacao, incrementPontuacao } = sessionSlice.actions
 
 export default sessionSlice.reducer

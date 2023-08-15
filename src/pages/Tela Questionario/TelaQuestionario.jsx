@@ -2,7 +2,7 @@ import React, { useEffect, useState, lazy, Suspense } from "react";
 import { BiSearch } from "react-icons/bi";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { incrementPontuacao } from "../../states/sessionSlice";
+import { incrementPontuacao, setPontuacao } from "../../states/sessionSlice";
 
 import gloriaSorrindo from '../../gloria/gloria_sorrindo.gif';
 import gloriaBrava from "../../gloria/gloria_sem_entender.gif";
@@ -178,9 +178,9 @@ function TelaQuestionario() {
 
 	useEffect(() => {
 		if (!questoesTema) getQuestoes();
-
-
 		return () => { };
+		// quando iniciar o componente, a pontuação é setada para 0
+		dispatch(setPontuacao(0));
 		// eslint-disable-next-line
 	}, [questoesTema, setQuestoesTema]);
 

@@ -10,8 +10,7 @@ import logoGloria from "../components/assets/LogoGloria.svg"
 import logoNaPraia from "./assets/LogoNaPraiaFestival.png";
 import gloriaFalando from '../gloria/gloria_meio_da_fala.gif';
 import { useDispatch} from 'react-redux';
-import { setNome } from '../states/sessionSlice';
-import signJWT from '../utils/signJWT';
+import { setData, setNome } from '../states/sessionSlice';
 
 const Gloria = lazy(() => import("./Gloria"));
   
@@ -45,13 +44,10 @@ function BoxApresentacao() {
           return 'Você precisa escrever seu nome completo!'
         }
       }
-    }).then(async (result) => {
+    }).then((result) => {
       if (!result.isDismissed) {
-        // codifica o nome para salvar no redux por conta do local storage
-        const nameCoded = await signJWT({nome: result.value}, 'name_secret_key')
-        dispatch(setNome(nameCoded));
-        // sessionStorage.setItem('nome', result.value);
-        // sessionStorage.setItem('pontuacao', 0);
+        dispatch(setNome(result.value));
+        dispatch(setData(new Date().toString()));
         navigate("/BoxApresentacao2");
       }
     })
