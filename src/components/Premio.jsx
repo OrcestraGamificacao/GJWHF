@@ -52,10 +52,7 @@ export default function Premio(props) {
             <div className="premio-container-img" style={{backgroundImage: `url('${back}')`}}>
                 <div className="premio-box-space-ajust"></div>
                 <div className="premio-box">
-                    {
-                        nome && 
-                        <TextToImageWithShadow width={nomeWidth} textSize='32' text={nome||"NULL"}/>
-                    }
+                    <TextToImageWithShadow width={nomeWidth} textSize='32' text={nome||"NULL"}/>
                     <TextToImage width='450' textSize='18' text={dataString}/>
                 </div>
             </div>
