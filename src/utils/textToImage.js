@@ -36,7 +36,7 @@ const TextToImageWithShadow = (props) => {
       context.shadowBlur = 3;
       context.shadowOffsetY = 1.5;
       context.shadowOffsetX = 1.5;
-      console.log("entrou no useeffect do texttoimage")
+      
     }, [props.text, props.width, props.textSize]);
   
     return <canvas width={props.width} height={props.textSize} ref={canvasRef} />;
