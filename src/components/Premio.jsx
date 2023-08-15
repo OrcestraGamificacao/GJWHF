@@ -52,9 +52,11 @@ export default function Premio(props) {
             <div className="premio-container-img" style={{backgroundImage: `url('${back}')`}}>
                 <div className="premio-box-space-ajust"></div>
                 <div className="premio-box">
+                    
+                    <TextToImageWithShadow width={nomeWidth} textSize='32' text="Testando o teste"/>
+                   
                     {
-                        nome && 
-                        <TextToImageWithShadow width={nomeWidth} textSize='32' text={nome||"NULL"}/>
+                        console.log(`nome: ${nome} | data: ${dataString} `)
                     }
                     <TextToImage width='450' textSize='18' text={dataString}/>
                 </div>
