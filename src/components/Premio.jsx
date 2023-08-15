@@ -19,6 +19,9 @@ export default function Premio(props) {
     // Largura do nome da pessoa no selo, que muda de acordo com o tamanho da tela
     let nomeWidth = window.innerWidth < 1024 ? window.innerWidth*0.9 : 450;
 
+    let nomeSize = window.innerWidth < 1024 ? 20 : 28;
+    let dataSize = window.innerWidth < 1024 ? 14 : 18;
+
     const formatDigits = (value) => {
         return value.toString().padStart(2, "0");
     };
@@ -52,8 +55,8 @@ export default function Premio(props) {
             <div className="premio-container-img" style={{backgroundImage: `url('${back}')`}}>
                 <div className="premio-box-space-ajust"></div>
                 <div className="premio-box">
-                    <TextToImageWithShadow width={nomeWidth} textSize={32} text={nome||"NULL"}/>
-                    <TextToImage width={450} textSize={18} text={dataString}/>
+                    <TextToImageWithShadow width={nomeWidth} textSize={nomeSize} text={nome||"NULL"}/>
+                    <TextToImage width={450} textSize={dataSize} text={dataString}/>
                 </div>
             </div>
         </div>

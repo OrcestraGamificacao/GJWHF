@@ -21,12 +21,12 @@ const TextToImage = (props) => {
 
 const TextToImageWithShadow = (props) => {
   return(
-    <Stage width={props.width} height={props.textSize}>
+    <Stage width={props.width} height={props.textSize*2}>
       <Layer>
         <Text
           width={props.width}
+          height={props.textSize*2}
           text={props.text}
-          wrap="none"
           fill="white"
           fontSize={props.textSize}
           fontFamily="Sans-Serif"
