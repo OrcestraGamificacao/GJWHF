@@ -1,4 +1,3 @@
-import { useRef, useEffect } from "react";
 import { Layer, Stage, Text } from "react-konva";
 
 const TextToImage = (props) => {
