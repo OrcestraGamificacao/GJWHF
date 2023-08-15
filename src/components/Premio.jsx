@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux";
 import "../styles/Premio.css"
-import {TextToImage, TextToImageWithShadow} from "../utils/textToImage";
+import {TextToImage, TextToImageWithShadow} from "../utils/textToImageKonva";
 
 import baixoMobile from "../images/gloria-selo-mobile-cinza.png"
 import medioMobile from "../images/gloria-selo-mobile-rosa.png"
@@ -53,7 +53,7 @@ export default function Premio(props) {
                 <div className="premio-box-space-ajust"></div>
                 <div className="premio-box">
                     <TextToImageWithShadow width={nomeWidth} textSize='32' text={nome||"NULL"}/>
-                    <TextToImage width='450' textSize='18' text={dataString}/>
+                    <TextToImage width={450} textSize={18} text={dataString}/>
                 </div>
             </div>
         </div>
