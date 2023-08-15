@@ -25,7 +25,7 @@ const TextToImageWithShadow = (props) => {
     useEffect(() => {
       const canvas = canvasRef.current;
       const context = canvas.getContext("2d");
-      // //n context.clearRect(0, 0, canvas.width, canvas.height);
+      // // context.clearRect(0, 0, canvas.width, canvas.height);
       // context.clearRect(0, 0, 200, 100);
       context.fillText(props.text, props.width/2, 0, props.width);
       context.fillStyle = "white";
@@ -36,6 +36,7 @@ const TextToImageWithShadow = (props) => {
       context.shadowBlur = 3;
       context.shadowOffsetY = 1.5;
       context.shadowOffsetX = 1.5;
+      console.log("entrou no useeffect do texttoimage")
     }, [props.text, props.width, props.textSize]);
   
     return <canvas width={props.width} height={props.textSize} ref={canvasRef} />;

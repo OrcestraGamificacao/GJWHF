@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux";
 import "../styles/Premio.css"
-import {TextToImage, TextToImageWithShadow} from "../utils/textToImage.js";
+import {TextToImage, TextToImageWithShadow} from "../utils/textToImage";
 
 import baixoMobile from "../images/gloria-selo-mobile-cinza.png"
 import medioMobile from "../images/gloria-selo-mobile-rosa.png"
