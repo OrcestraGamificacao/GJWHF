@@ -178,9 +178,10 @@ function TelaQuestionario() {
 
 	useEffect(() => {
 		if (!questoesTema) getQuestoes();
-		return () => { };
 		// quando iniciar o componente, a pontuação é setada para 0
 		dispatch(setPontuacao(0));
+		return () => { };
+		
 		// eslint-disable-next-line
 	}, [questoesTema, setQuestoesTema]);
 
