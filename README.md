@@ -1,4 +1,4 @@
-**Main:** [![Netlify Status](https://api.netlify.com/api/v1/badges/65b9d86c-bf64-4a78-8e15-31c09406fff1/deploy-status)](https://app.netlify.com/sites/gloria-gamificacao/deploys?branch=main)
+**Main:** [![Netlify Status](https://api.netlify.com/api/v1/badges/5728076f-003f-4e8a-b800-be7fc926efd1/deploy-status)](https://app.netlify.com/sites/gloria-gamificacao/deploys)
 
 **Telas:** [![Netlify Status](https://api.netlify.com/api/v1/badges/ba0da3d3-7ea2-425e-ae12-6a72d9aef20c/deploy-status)](https://app.netlify.com/sites/bejewelled-meringue-b248c5/deploys?branch=Branch-Telas)
 
