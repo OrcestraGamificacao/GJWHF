@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from "react";
+import { useSelector } from "react-redux";
 import "../styles/Premio.css"
+import {TextToImage, TextToImageWithShadow} from "../utils/textToImageKonva";
 
 import baixoMobile from "../images/gloria-selo-mobile-cinza.png"
 import medioMobile from "../images/gloria-selo-mobile-rosa.png"
@@ -8,32 +9,32 @@ import baixoDesktop from "../images/gloria-selo-cinza.png"
 import medioDesktop from "../images/gloria-selo-rosa.png"
 import altoDesktop from "../images/gloria-selo-roxo.png"
 
+
+
 export default function Premio(props) {
-    let back = medioMobile
 
-    const [currentTime, setCurrentTime] = useState(new Date());
+    const nome = useSelector((state) => state.session.nome);
+    const date = new Date(useSelector((state) => state.session.data));
 
-    useEffect(() => {
-        const timer = setInterval(() => {
-            setCurrentTime(new Date());
-        }, 1000);
+    // Largura do nome da pessoa no selo, que muda de acordo com o tamanho da tela
+    let nomeWidth = window.innerWidth < 1024 ? window.innerWidth*0.9 : 450;
 
-        return () => {
-            clearInterval(timer);
-        };
-    }, []);
+    let nomeSize = window.innerWidth < 1024 ? 20 : 28;
+    let dataSize = window.innerWidth < 1024 ? 14 : 18;
 
     const formatDigits = (value) => {
         return value.toString().padStart(2, "0");
     };
 
-    const date = new Date()
     const data = {
         month: date.getMonth()+1,
         day: date.getDate(),
-        hour: formatDigits(currentTime.getHours()),
-        minute: formatDigits(currentTime.getMinutes()),
+        hour: formatDigits(date.getHours()),
+        minute: formatDigits(date.getMinutes()),
     }
+    const dataString = `${data.hour}:${data.minute} | ${data.day}.${data.month}`
+
+    let back = medioMobile 
 
     switch (props.nota) {
         case "baixo":
@@ -54,11 +55,8 @@ export default function Premio(props) {
             <div className="premio-container-img" style={{backgroundImage: `url('${back}')`}}>
                 <div className="premio-box-space-ajust"></div>
                 <div className="premio-box">
-                    <span className="premio-nome">{sessionStorage.getItem("nome")||"NULL SOBRENOME" }</span>
-                    <div className="premio-box-data">{}
-                        <span className="premio-hora">{data.hour}:{data.minute} | </span>
-                        <span className="premio-data">{data.day}.{data.month}</span>
-                    </div>
+                    <TextToImageWithShadow width={nomeWidth} textSize={nomeSize} text={nome||"NULL"}/>
+                    <TextToImage width={450} textSize={dataSize} text={dataString}/>
                 </div>
             </div>
         </div>

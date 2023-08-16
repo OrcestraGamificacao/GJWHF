@@ -34,32 +34,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-family: 'Roboto', sans-serif;
-    color: white;
+    gap: 1.5vh;
+
 }
 
-.premio-nome {
-    width: max-content;
-    margin-bottom: 0.3em;
-    font-size: 1.75em;
-    text-shadow: 0.1em 0.1em 0.2em rgb(255, 255, 255, 0.3);
-}
 
-.premio-box-data {
-    font-size: 1.2em;
-}
-
-/* Telas de smartphone com alturas menores */
-@media screen and (max-height: 600px) and (max-width: 768px) {
-
-    .premio-nome{
-        font-size: 1.2em;
-    }
-    .premio-box-data {
-        font-size: 1em;
-    }
-    
-}
 
 /* Por padrão, o css está ajustado para telas de smartphone */
 /* Tela desktop */
@@ -70,10 +49,7 @@
         align-items: flex-start;
     }
     .premio-box-space-ajust{
-        height: 10%;
-    }
-    .premio-nome{
-        font-size: 2em;
+        height: 8%;
     }
 }
 
@@ -81,8 +57,5 @@
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .premio-container-img {
         width: 90%;
-    }
-    .premio-nome{
-        font-size: 2.2em;
     }
 }

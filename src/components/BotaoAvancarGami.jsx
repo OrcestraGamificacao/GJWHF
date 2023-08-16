@@ -5,7 +5,8 @@ import { useNavigate } from "react-router-dom";
 function BotaoAvancarGami() {
   const navigate = useNavigate();
 
-  const changeUrl = () => {
+  const changeUrl = (e) => {
+    e.preventDefault();
     navigate("/TelaRoleta");
   };
 
