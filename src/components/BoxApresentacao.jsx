@@ -21,7 +21,7 @@ function BoxApresentacao() {
 
 
   function validateName(name){
-    const nameRegex = /^[A-Za-z]{2,}(?: [A-Za-z]{2,})+$/i;
+    const nameRegex = /^[A-Za-zÀ-ÖØ-öø-ÿÇç]{2,}(?: [A-Za-zÀ-ÖØ-öø-ÿÇç]{2,})+$/i;
     return nameRegex.test(name);
   }
 
